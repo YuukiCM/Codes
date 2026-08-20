@@ -27,7 +27,7 @@ min-width:0
 }
 
 .marceline-head{
-padding:30px 32px 27px;
+padding:25px 32px 24px;
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
 }
 
@@ -59,22 +59,17 @@ opacity:.25
 }
 
 .marceline h1{
-margin:16px 0 0;
-font:italic 30px/1.15 Georgia,serif
+display:inline-block;
+margin:14px 0 0;
+padding:0 18px 4px 0;
+font:italic 30px/1.15 Georgia,serif;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 65%)
 }
 
 .marceline-post{
-padding:30px 34px 38px;
+padding:25px 34px 30px;
 box-sizing:border-box;
 text-align:justify
-}
-
-.marceline-quote{
-margin-bottom:25px;
-padding-left:15px;
-border-left:2px solid var(--grupo-color);
-font:italic 12px/1.7 Georgia,serif;
-opacity:.8
 }
 
 .marceline-text{
@@ -84,7 +79,7 @@ text-align:justify
 .marceline-data{
 display:flex;
 align-items:center;
-padding:15px 28px;
+padding:13px 28px;
 background:color-mix(in srgb,var(--grupo-color),transparent 93%);
 border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%)
 }
@@ -103,14 +98,14 @@ color:var(--grupo-color)
 
 .marceline-data b{
 width:1px;
-height:22px;
+height:20px;
 background:var(--grupo-color);
 opacity:.3
 }
 
 .marceline-author{
 display:inline-block;
-margin-top:9px;
+margin-top:6px;
 color:var(--grupo-color);
 font:8px Georgia,serif;
 letter-spacing:1.5px;
