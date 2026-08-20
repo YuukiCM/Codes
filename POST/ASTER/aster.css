@@ -1,0 +1,148 @@
+.aster{
+width:500px;
+max-width:94%;
+margin:25px auto;
+box-sizing:border-box;
+color:inherit;
+font:11px/1.85 Arial,sans-serif;
+text-align:left
+}
+
+.aster-frame{
+border:1px solid var(--grupo-color);
+padding:6px;
+box-sizing:border-box
+}
+
+.aster-inner{
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+box-sizing:border-box
+}
+
+.aster-head{
+display:flex;
+min-height:125px;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
+}
+
+.aster-number{
+width:105px;
+flex-shrink:0;
+padding:22px 15px;
+box-sizing:border-box;
+background:color-mix(in srgb,var(--grupo-color),transparent 90%);
+border-right:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+text-align:center
+}
+
+.aster-number strong{
+display:block;
+font:italic 38px/1 Georgia,serif;
+color:var(--grupo-color)
+}
+
+.aster-number span{
+display:block;
+margin-top:9px;
+font-size:7px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.aster-title{
+flex:1;
+padding:22px 25px;
+box-sizing:border-box
+}
+
+.aster-title small{
+display:block;
+font-size:7px;
+letter-spacing:3px;
+color:var(--grupo-color);
+opacity:.8
+}
+
+.aster-title h1{
+margin:7px 0 0;
+font:italic 27px/1.15 Georgia,serif
+}
+
+.aster-post{
+display:flex;
+align-items:stretch;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
+}
+
+.aster-line{
+width:38px;
+flex-shrink:0;
+border-right:1px solid color-mix(in srgb,var(--grupo-color),transparent 70%)
+}
+
+.aster-text{
+flex:1;
+padding:30px 25px 35px;
+box-sizing:border-box;
+text-align:justify
+}
+
+.aster-text:first-letter{
+float:left;
+margin:3px 10px 0 0;
+font:italic 42px/.8 Georgia,serif;
+color:var(--grupo-color)
+}
+
+.aster-info{
+display:flex;
+align-items:center;
+padding:16px 22px;
+box-sizing:border-box;
+background:color-mix(in srgb,var(--grupo-color),transparent 94%)
+}
+
+.aster-info span{
+font-size:7px;
+letter-spacing:2px;
+opacity:.55
+}
+
+.aster-info b{
+height:18px;
+width:1px;
+margin:0 15px;
+background:var(--grupo-color);
+opacity:.3
+}
+
+.aster-info i{
+margin-left:auto;
+color:var(--grupo-color);
+font:italic 13px Georgia,serif
+}
+
+.aster-author{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:14px;
+margin-top:11px
+}
+
+.aster-author:before,
+.aster-author:after{
+content:"";
+height:1px;
+width:45px;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.aster-author a{
+color:var(--grupo-color);
+font:8px Georgia,serif;
+letter-spacing:1.5px;
+text-decoration:none;
+opacity:.65
+}
