@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.roselle{
+width:420px;
+max-width:92%;
+margin:25px auto 0;
+padding:30px 32px 4px;
+box-sizing:border-box;
+color:inherit;
+font:11px/1.8 Arial,sans-serif;
+text-align:left
+}
+
+.roselle h1{
+margin:0;
+font:normal 38px/1.2 'Allura',cursive;
+color:var(--grupo-color);
+text-align:center
+}
+
+.roselle-data{
+margin-top:8px;
+text-align:center;
+font-size:7px;
+letter-spacing:3px;
+opacity:.65
+}
+
+.roselle-sep{
+display:flex;
+align-items:center;
+gap:10px;
+margin:30px 0 32px
+}
+
+.roselle-sep:before{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.roselle-sep span{
+color:var(--grupo-color);
+font-size:9px
+}
+
+.roselle-text{
+padding:0 10px;
+text-align:justify
+}
+
+.roselle-foot{
+display:flex;
+align-items:center;
+gap:10px;
+margin:38px 0 0
+}
+
+.roselle-foot:before{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.roselle-foot span{
+color:var(--grupo-color);
+font-size:9px
+}
+
+.roselle-author{
+display:inline-block;
+margin-top:0;
+color:var(--grupo-color);
+font:8px Georgia,serif;
+letter-spacing:1.5px;
+text-decoration:none;
+opacity:.65
+}
