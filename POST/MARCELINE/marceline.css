@@ -63,6 +63,7 @@ display:inline-block;
 margin:14px 0 0;
 padding:0 18px 4px 0;
 font:italic 30px/1.15 Georgia,serif;
+color:var(--grupo-color);
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 65%)
 }
 
