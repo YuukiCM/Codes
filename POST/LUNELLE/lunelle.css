@@ -6,7 +6,7 @@ padding:30px 32px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:12px/1.8 Arial,sans-serif;
+font:11px/1.8 Arial,sans-serif;
 text-align:left
 }
 
@@ -41,8 +41,10 @@ background:var(--grupo-color)
 
 .lunelle-text{
 padding:25px 20px;
-background:color-mix(in srgb,var(--grupo-color),transparent 88%);
+background:color-mix(in srgb,var(--grupo-color),transparent 86%);
 box-sizing:border-box;
+font-size:12px;
+line-height:1.8;
 text-align:justify
 }
 
