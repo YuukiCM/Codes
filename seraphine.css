@@ -21,7 +21,7 @@ box-sizing:border-box
 .seraphine h1{
 margin:0;
 text-align:center;
-font:italic 38px/1 'Cormorant Garamond',serif;
+font:italic 42px/1 'Cormorant Garamond',serif;
 font-weight:500;
 color:var(--grupo-color)
 }
