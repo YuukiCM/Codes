@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+.katarina-signature{
+--katarina-color:var(--grupo-color);
+width:520px;
+max-width:94%;
+min-height:170px;
+margin:30px auto;
+padding:18px;
+box-sizing:border-box;
+display:flex;
+align-items:center;
+gap:35px;
+position:relative;
+border:1px solid color-mix(in srgb,var(--katarina-color),transparent 35%);
+background:color-mix(in srgb,var(--katarina-color),transparent 94%);
+color:inherit;
+font-family:Arial,sans-serif
+}
+
+.katarina-image{
+width:155px;
+height:135px;
+flex-shrink:0;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center
+}
+
+.katarina-image:before{
+content:"";
+position:absolute;
+width:145px;
+height:125px;
+inset:5px;
+box-sizing:border-box;
+border:1px solid var(--katarina-color);
+transform:rotate(-3deg);
+opacity:.75
+}
+
+.katarina-image:after{
+content:"";
+position:absolute;
+width:145px;
+height:125px;
+inset:5px;
+box-sizing:border-box;
+border:1px solid color-mix(in srgb,var(--katarina-color),transparent 55%);
+transform:rotate(4deg);
+opacity:.55
+}
+
+.katarina-image img{
+position:relative;
+z-index:2;
+width:135px;
+height:115px;
+object-fit:cover;
+object-position:center;
+border-radius:2px
+}
+
+.katarina-info{
+flex:1;
+min-width:0
+}
+
+.katarina-line{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px
+}
+
+.katarina-line:before{
+content:"";
+width:45px;
+height:1px;
+background:var(--katarina-color);
+opacity:.5
+}
+
+.katarina-line span{
+color:var(--katarina-color);
+font-size:9px
+}
+
+.katarina-info h1{
+margin:0;
+font-family:'Parisienne',cursive;
+font-size:50px;
+font-weight:normal;
+line-height:1;
+color:var(--katarina-color)
+}
+
+.katarina-detail{
+position:absolute;
+right:15px;
+bottom:10px;
+color:var(--katarina-color);
+font-size:9px;
+opacity:.7
+}
