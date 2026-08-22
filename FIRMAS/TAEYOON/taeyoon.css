@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+.taeyoon{
+width:340px;
+max-width:92%;
+margin:15px auto;
+color:inherit;
+font-family:Arial,sans-serif;
+text-align:center
+}
+
+.taeyoon-main{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px
+}
+
+.taeyoon-name{
+width:140px;
+text-align:right;
+padding:4px 0
+}
+
+.taeyoon-name strong{
+display:block;
+font:500 20px/1.25 'Cinzel',serif;
+letter-spacing:1px;
+color:var(--grupo-color)
+}
+
+.taeyoon-name:after{
+content:"";
+display:block;
+width:45px;
+height:1px;
+margin:9px 0 0 auto;
+background:var(--grupo-color);
+opacity:.45
+}
+
+.taeyoon-image{
+width:145px;
+height:100px;
+flex-shrink:0;
+padding:4px;
+box-sizing:border-box;
+border:1px solid var(--grupo-color);
+border-radius:50%
+}
+
+.taeyoon-image img{
+display:block;
+width:135px;
+height:90px;
+object-fit:cover;
+border-radius:50%
+}
