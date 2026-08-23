@@ -1,0 +1,147 @@
+/* =========================================================
+   ψuuκï CODES — OTROS RECURSOS
+   ========================================================= */
+
+
+/* =========================================================
+   INSTAGRAM 001
+   ========================================================= */
+
+.instagram-001{
+width:390px;
+max-width:92%;
+margin:25px auto;
+color:inherit;
+font-family:Arial,sans-serif;
+font-size:9px;
+line-height:1.5;
+text-align:left
+}
+
+.instagram-001-box{
+padding:7px;
+border:1px solid var(--grupo-color);
+border-radius:12px;
+box-sizing:border-box
+}
+
+.instagram-001-inner{
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+border-radius:9px;
+overflow:hidden;
+box-sizing:border-box
+}
+
+.instagram-001-header{
+padding:24px 22px 18px
+}
+
+.instagram-001-profile{
+display:flex;
+align-items:center;
+gap:20px
+}
+
+.instagram-001-avatar{
+width:78px;
+height:78px;
+flex-shrink:0;
+object-fit:cover;
+border-radius:50%;
+border:1px solid var(--grupo-color);
+padding:3px;
+box-sizing:border-box
+}
+
+.instagram-001-user{
+flex:1
+}
+
+.instagram-001-username{
+font-family:Georgia,serif;
+font-size:19px;
+font-style:italic;
+color:var(--grupo-color)
+}
+
+.instagram-001-realname{
+margin-top:5px;
+font-size:7px;
+opacity:.6
+}
+
+.instagram-001-stats{
+display:flex;
+gap:12px;
+margin-top:11px;
+font-size:7px;
+text-align:center
+}
+
+.instagram-001-stats span{
+display:block
+}
+
+.instagram-001-stats strong{
+font-size:10px
+}
+
+.instagram-001-bio{
+margin-top:17px;
+padding:0 3px;
+font-size:8px;
+line-height:1.6;
+text-align:left
+}
+
+.instagram-001-actions{
+display:flex;
+gap:7px;
+margin-top:14px
+}
+
+.instagram-001-button{
+flex:1;
+padding:6px 0;
+border:1px solid var(--grupo-color);
+border-radius:6px;
+text-align:center;
+font-size:7px;
+letter-spacing:.5px
+}
+
+.instagram-001-button-small{
+width:30px;
+padding:6px 0;
+border:1px solid var(--grupo-color);
+border-radius:6px;
+box-sizing:border-box;
+text-align:center;
+color:var(--grupo-color)
+}
+
+.instagram-001-nav{
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding:11px 0;
+border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+color:var(--grupo-color);
+font-size:11px
+}
+
+.instagram-001-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:4px;
+padding:4px
+}
+
+.instagram-001-grid img{
+display:block;
+width:100%;
+aspect-ratio:1/1;
+object-fit:cover;
+border-radius:7px
+}
