@@ -56,10 +56,15 @@ opacity:.45
    ψuuκï CODES — PRESENTACIÓN
    ========================================================= */
 
+
+/* ---------------------------------------------------------
+   ESTRUCTURA GENERAL
+   --------------------------------------------------------- */
+
 .yuuki-codes-admin{
-width:500px;
+width:520px;
 max-width:94%;
-margin:35px auto;
+margin:30px auto;
 box-sizing:border-box;
 color:inherit;
 font-family:'Quicksand',sans-serif;
@@ -74,12 +79,12 @@ position:relative
 
 .yuuki-codes-admin-banner{
 position:relative;
-margin-bottom:65px
+margin-bottom:58px
 }
 
 .yuuki-codes-admin-image{
 width:100%;
-height:190px;
+height:205px;
 overflow:hidden;
 border:3px solid var(--grupo-color);
 box-sizing:border-box
@@ -99,10 +104,10 @@ object-fit:cover
 
 .yuuki-codes-admin-title{
 position:absolute;
-left:35px;
-bottom:-48px;
-width:320px;
-padding:17px 23px;
+left:38px;
+bottom:-43px;
+width:340px;
+padding:18px 25px;
 box-sizing:border-box;
 background:var(--grupo-color);
 color:#fff
@@ -116,13 +121,13 @@ opacity:.85
 }
 
 .yuuki-codes-admin-title h1{
-margin:8px 0 0;
-font:italic 38px/1 'Allura',cursive;
+margin:9px 0 0;
+font:italic 40px/1 var(--yuuki-title,'Allura'),cursive;
 font-weight:400
 }
 
 .yuuki-codes-admin-title-bottom{
-margin-top:8px;
+margin-top:9px;
 font:500 7px/1 'Quicksand',sans-serif;
 letter-spacing:2px;
 text-transform:uppercase;
@@ -135,12 +140,12 @@ opacity:.75
    --------------------------------------------------------- */
 
 .yuuki-codes-admin-content{
-padding:0 25px;
+padding:0 28px;
 box-sizing:border-box
 }
 
 .yuuki-codes-admin-section{
-margin-top:28px
+margin-top:25px
 }
 
 .yuuki-codes-admin-section:first-child{
@@ -155,8 +160,8 @@ margin-top:0
 .yuuki-codes-admin-heading{
 display:flex;
 align-items:center;
-gap:15px;
-margin-bottom:10px
+gap:16px;
+margin-bottom:11px
 }
 
 .yuuki-codes-admin-heading span{
@@ -172,7 +177,7 @@ content:"";
 height:1px;
 flex:1;
 background:var(--grupo-color);
-opacity:.5
+opacity:.55
 }
 
 
@@ -213,7 +218,7 @@ overflow-wrap:anywhere
 display:flex;
 align-items:center;
 gap:15px;
-margin:30px 0 14px
+margin:28px 0 14px
 }
 
 .yuuki-codes-admin-closing:before,
@@ -222,7 +227,7 @@ content:"";
 height:1px;
 flex:1;
 background:var(--grupo-color);
-opacity:.5
+opacity:.55
 }
 
 .yuuki-codes-admin-closing span{
