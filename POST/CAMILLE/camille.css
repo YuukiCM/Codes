@@ -1,49 +1,43 @@
 .camille{
-width:420px;
-max-width:92%;
-margin:20px auto;
+width:500px;
+max-width:94%;
+margin:18px auto 0;
 padding:7px;
 box-sizing:border-box;
 border:7px solid color-mix(in srgb,var(--grupo-color),transparent 20%);
 color:inherit;
-font:11px/1.7 Arial,sans-serif;
+font-family:Arial,sans-serif;
+font-size:13px;
+line-height:1.7;
 text-align:center
 }
 
 .camille-in{
-padding:35px 27px 38px;
+padding:25px 27px 18px;
 border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 box-sizing:border-box
 }
 
 .camille h1{
 margin:0;
-font:bold 19px/1 Georgia,serif;
+font-family:Georgia,serif;
+font-size:19px;
+font-weight:bold;
 letter-spacing:1px;
+line-height:1.2;
 color:var(--grupo-color);
 text-transform:uppercase
-}
-
-.camille-subtitle{
-margin-top:5px;
-color:inherit;
-font-size:7px;
-letter-spacing:2px;
-text-transform:uppercase;
-opacity:.65
 }
 
 .camille-data{
 display:flex;
 justify-content:center;
 gap:13px;
-margin-top:25px;
-font-size:9px;
-opacity:.75
-}
-
-.camille-data i{
-color:var(--grupo-color)
+margin-top:5px;
+font-size:8px;
+letter-spacing:2px;
+line-height:1.3;
+opacity:.65
 }
 
 .camille-data span:nth-child(even){
@@ -51,16 +45,27 @@ color:var(--grupo-color)
 }
 
 .camille-text{
-margin:25px 5px 0;
+margin:20px 5px 0;
+font-size:13px;
+line-height:1.7;
 text-align:justify
 }
 
+.camille-text p{
+margin:0 0 8px
+}
+
 .camille-author{
-display:inline-block;
-margin-top:8px;
+display:block;
+width:500px;
+max-width:94%;
+margin:6px auto 0;
+box-sizing:border-box;
 color:var(--grupo-color);
-font:8px Georgia,serif;
+font-family:Georgia,serif;
+font-size:7px;
 letter-spacing:1.5px;
 text-decoration:none;
+text-align:center;
 opacity:.65
 }
