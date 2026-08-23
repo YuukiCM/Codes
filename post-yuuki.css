@@ -1,0 +1,201 @@
+/* =========================================================
+   ψuuκï · POST YUUKI
+   PERSONAL 001
+   ========================================================= */
+
+.yuuki-personal-001 {
+    --yuuki-bg: #f2c1ae;
+    --yuuki-accent: #bf452a;
+    --yuuki-text: #000018;
+    --yuuki-soft: color-mix(in srgb, var(--grupo-color), transparent 75%);
+
+    width: 470px;
+    max-width: 92%;
+    margin: 25px auto;
+    position: relative;
+    box-sizing: border-box;
+    color: var(--yuuki-text);
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.yuuki-personal-001-box {
+    position: relative;
+    min-height: 500px;
+    padding: 30px 34px 32px;
+    box-sizing: border-box;
+    background: var(--yuuki-bg);
+    border-radius: 18px 18px 18px 4px;
+    overflow: hidden;
+}
+
+/* PEQUEÑOS CORTES DECORATIVOS */
+
+.yuuki-personal-001-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 42px;
+    width: 110px;
+    height: 20px;
+    background: var(--yuuki-bg);
+    border-radius: 0 0 14px 14px;
+}
+
+.yuuki-personal-001-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+    width: 95px;
+    height: 20px;
+    background: var(--yuuki-bg);
+    border-radius: 14px 14px 0 0;
+}
+
+/* IMÁGENES */
+
+.yuuki-personal-001-images {
+    position: absolute;
+    top: 28px;
+    left: -18px;
+    width: 92px;
+    z-index: 3;
+}
+
+.yuuki-personal-001-images img {
+    display: block;
+    width: 78px;
+    height: 98px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid var(--yuuki-bg);
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+/* CONTENIDO */
+
+.yuuki-personal-001-content {
+    margin-left: 68px;
+    position: relative;
+    z-index: 2;
+}
+
+/* DATOS */
+
+.yuuki-personal-001-data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 17px;
+}
+
+.yuuki-personal-001-data span {
+    display: inline-block;
+    padding: 4px 9px;
+    background: var(--yuuki-accent);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 7px;
+    line-height: 1.2;
+    letter-spacing: .3px;
+}
+
+/* TEXTO */
+
+.yuuki-personal-001-text {
+    height: 335px;
+    overflow-y: auto;
+    padding-right: 10px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.yuuki-personal-001-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.yuuki-personal-001-text::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.yuuki-personal-001-text::-webkit-scrollbar-thumb {
+    background: var(--yuuki-accent);
+    border-radius: 5px;
+}
+
+/* FIREFOX */
+
+.yuuki-personal-001-text {
+    scrollbar-width: thin;
+    scrollbar-color: var(--yuuki-accent) transparent;
+}
+
+/* TÍTULO */
+
+.yuuki-personal-001-title {
+    margin-top: 18px;
+    padding-right: 4px;
+    color: var(--yuuki-accent);
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1;
+    text-align: right;
+}
+
+/* DETALLE */
+
+.yuuki-personal-001-detail {
+    position: absolute;
+    right: -7px;
+    top: 45px;
+    writing-mode: vertical-rl;
+    color: var(--yuuki-accent);
+    font-size: 7px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ESTRELLA */
+
+.yuuki-personal-001-star {
+    position: absolute;
+    right: 8px;
+    top: 105px;
+    color: var(--yuuki-accent);
+    font-size: 12px;
+}
+
+/* =========================================================
+   RESPUESTA
+   ========================================================= */
+
+.yuuki-personal-001.reply .yuuki-personal-001-box {
+    min-height: 500px;
+    padding: 35px 42px 35px;
+    border-radius: 18px 18px 18px 4px;
+}
+
+.yuuki-personal-001.reply .yuuki-personal-001-content {
+    margin-left: 0;
+    margin-right: 18px;
+}
+
+.yuuki-personal-001.reply .yuuki-personal-001-text {
+    height: 410px;
+    padding-right: 12px;
+}
+
+.yuuki-personal-001.reply .yuuki-personal-001-detail {
+    top: 45px;
+}
+
+.yuuki-personal-001.reply .yuuki-personal-001-star {
+    top: 105px;
+}
