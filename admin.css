@@ -51,10 +51,15 @@ text-transform:uppercase;
 opacity:.45
 }
 
-/* ═══════════════════════════════════════
-   ψuuκï CODES · ADMIN
-   Presentación de códigos
-   ═══════════════════════════════════════ */
+
+/* =========================================================
+   ψuuκï CODES — PRESENTACIÓN
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   ESTRUCTURA GENERAL
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin{
 width:500px;
@@ -67,7 +72,9 @@ position:relative
 }
 
 
-/* ─── BANNER ─── */
+/* ---------------------------------------------------------
+   BANNER
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-banner{
 position:relative;
@@ -90,7 +97,9 @@ object-fit:cover
 }
 
 
-/* ─── TÍTULO ─── */
+/* ---------------------------------------------------------
+   TÍTULO
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-title{
 position:absolute;
@@ -112,7 +121,7 @@ opacity:.85
 
 .yuuki-codes-admin-title h1{
 margin:8px 0 0;
-font:italic 38px/1 'Allura',cursive;
+font:italic 38px/1 var(--yuuki-title,'Allura'),cursive;
 font-weight:400
 }
 
@@ -125,7 +134,9 @@ opacity:.75
 }
 
 
-/* ─── CONTENIDO ─── */
+/* ---------------------------------------------------------
+   CONTENIDO
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-content{
 padding:0 25px;
@@ -141,7 +152,9 @@ margin-top:0
 }
 
 
-/* ─── ENCABEZADOS ─── */
+/* ---------------------------------------------------------
+   ENCABEZADOS
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-heading{
 display:flex;
@@ -154,7 +167,8 @@ margin-bottom:10px
 font:600 11px/1 'Quicksand',sans-serif;
 letter-spacing:3px;
 text-transform:uppercase;
-color:var(--grupo-color)
+color:var(--grupo-color);
+white-space:nowrap
 }
 
 .yuuki-codes-admin-heading:after{
@@ -166,15 +180,23 @@ opacity:.5
 }
 
 
-/* ─── TEXTO ─── */
+/* ---------------------------------------------------------
+   TEXTO
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-text{
 font:13px/1.7 'Quicksand',sans-serif;
 text-align:justify
 }
 
+.yuuki-codes-admin-space{
+margin-top:10px
+}
 
-/* ─── CÓDIGO ─── */
+
+/* ---------------------------------------------------------
+   BLOQUES DE CÓDIGO
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-code{
 margin:10px 0;
@@ -186,7 +208,9 @@ overflow-wrap:anywhere
 }
 
 
-/* ─── CIERRE ─── */
+/* ---------------------------------------------------------
+   CIERRE
+   --------------------------------------------------------- */
 
 .yuuki-codes-admin-closing{
 display:flex;
