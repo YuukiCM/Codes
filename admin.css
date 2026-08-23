@@ -51,150 +51,165 @@ text-transform:uppercase;
 opacity:.45
 }
 
-/* =========================================================
-   ψuuκï CODES — PRESENTACIÓN
-   ========================================================= */
+/* ═══════════════════════════════════════
+   ψuuκï CODES · ADMIN
+   Presentación de códigos
+   ═══════════════════════════════════════ */
 
 .yuuki-codes-admin{
-width:470px;
+width:500px;
 max-width:94%;
-margin:20px auto;
-padding:7px;
-box-sizing:border-box;
-border:1px solid var(--grupo-color);
+margin:35px auto;
 color:inherit;
 font-family:'Quicksand',sans-serif;
-text-align:left
+text-align:left;
+position:relative
 }
 
-.yuuki-codes-admin-in{
-padding:28px 30px 25px;
+
+/* ─── BANNER ─── */
+
+.yuuki-codes-admin-banner{
+position:relative;
+margin-bottom:65px
+}
+
+.yuuki-codes-admin-image{
+width:100%;
+height:190px;
+overflow:hidden;
+border:3px solid var(--grupo-color);
+box-sizing:border-box
+}
+
+.yuuki-codes-admin-image img{
+width:100%;
+height:100%;
+display:block;
+object-fit:cover
+}
+
+
+/* ─── TÍTULO ─── */
+
+.yuuki-codes-admin-title{
+position:absolute;
+left:35px;
+bottom:-48px;
+width:320px;
+padding:17px 23px;
 box-sizing:border-box;
-border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
+background:var(--grupo-color);
+color:#fff
 }
 
-.yuuki-codes-admin-head{
-text-align:center
-}
-
-.yuuki-codes-admin-label{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-margin-bottom:5px;
-font:500 7px/1 var(--yuuki-post-font,'Quicksand',sans-serif);
+.yuuki-codes-admin-title-top{
+font:500 7px/1 'Quicksand',sans-serif;
 letter-spacing:3px;
 text-transform:uppercase;
-color:var(--grupo-color);
+opacity:.85
+}
+
+.yuuki-codes-admin-title h1{
+margin:8px 0 0;
+font:italic 38px/1 'Allura',cursive;
+font-weight:400
+}
+
+.yuuki-codes-admin-title-bottom{
+margin-top:8px;
+font:500 7px/1 'Quicksand',sans-serif;
+letter-spacing:2px;
+text-transform:uppercase;
 opacity:.75
 }
 
-.yuuki-codes-admin-label:before,
-.yuuki-codes-admin-label:after{
-content:"";
-height:1px;
-flex:1;
-background:var(--grupo-color);
-opacity:.4
-}
 
-.yuuki-codes-admin h1{
-height:56px;
-margin:0;
-display:flex;
-align-items:center;
-justify-content:center;
-font:italic 38px/normal var(--yuuki-title,Georgia,serif);
-font-weight:500;
-color:var(--grupo-color)
-}
+/* ─── CONTENIDO ─── */
 
-.yuuki-codes-admin-subtitle{
-margin:0;
-font:500 8px/1.4 var(--yuuki-post-font,'Quicksand',sans-serif);
-letter-spacing:3px;
-text-transform:uppercase;
-opacity:.55
-}
-
-.yuuki-codes-admin-sep{
-display:flex;
-align-items:center;
-gap:9px;
-margin:18px 0 20px
-}
-
-.yuuki-codes-admin-sep:before,
-.yuuki-codes-admin-sep:after{
-content:"";
-height:1px;
-flex:1;
-background:var(--grupo-color);
-opacity:.4
-}
-
-.yuuki-codes-admin-sep span{
-color:var(--grupo-color);
-font-size:10px
+.yuuki-codes-admin-content{
+padding:0 25px;
+box-sizing:border-box
 }
 
 .yuuki-codes-admin-section{
-margin-top:19px
+margin-top:28px
 }
 
-.yuuki-codes-admin-section:first-of-type{
+.yuuki-codes-admin-section:first-child{
 margin-top:0
 }
 
-.yuuki-codes-admin-section h2{
-margin:0 0 7px;
-font:600 9px/1.3 var(--yuuki-post-font,'Quicksand',sans-serif);
-letter-spacing:2px;
+
+/* ─── ENCABEZADOS ─── */
+
+.yuuki-codes-admin-heading{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:10px
+}
+
+.yuuki-codes-admin-heading span{
+font:600 11px/1 'Quicksand',sans-serif;
+letter-spacing:3px;
 text-transform:uppercase;
 color:var(--grupo-color)
 }
 
-.yuuki-codes-admin-section p{
-margin:0;
-font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,'Quicksand',sans-serif);
+.yuuki-codes-admin-heading:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.5
+}
+
+
+/* ─── TEXTO ─── */
+
+.yuuki-codes-admin-text{
+font:13px/1.7 'Quicksand',sans-serif;
 text-align:justify
 }
 
+
+/* ─── CÓDIGO ─── */
+
 .yuuki-codes-admin-code{
-margin:9px 0;
-padding:8px 11px;
-box-sizing:border-box;
+margin:10px 0;
+padding:10px 12px;
 border-left:2px solid var(--grupo-color);
-background:color-mix(in srgb,var(--grupo-color),transparent 93%);
+background:color-mix(in srgb,var(--grupo-color),transparent 82%);
 font:11px/1.5 monospace;
 overflow-wrap:anywhere
 }
 
-.yuuki-codes-admin-note{
-margin-top:7px;
-font-size:11px;
-line-height:1.6;
-opacity:.7
-}
 
-.yuuki-codes-admin-footer{
+/* ─── CIERRE ─── */
+
+.yuuki-codes-admin-closing{
 display:flex;
 align-items:center;
-gap:9px;
-margin-top:24px;
-color:var(--grupo-color)
+gap:15px;
+margin:30px 0 14px
 }
 
-.yuuki-codes-admin-footer:before,
-.yuuki-codes-admin-footer:after{
+.yuuki-codes-admin-closing:before,
+.yuuki-codes-admin-closing:after{
 content:"";
 height:1px;
 flex:1;
 background:var(--grupo-color);
-opacity:.4
+opacity:.5
 }
 
-.yuuki-codes-admin-footer span{
-font-size:10px
+.yuuki-codes-admin-closing span{
+font-size:10px;
+color:var(--grupo-color)
+}
+
+.yuuki-codes-admin-thanks{
+font:13px/1.7 'Quicksand',sans-serif;
+text-align:center
 }
