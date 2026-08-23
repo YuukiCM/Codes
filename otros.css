@@ -1223,14 +1223,14 @@ opacity:.85
 }
 
 .yuuki-otros-subtitle{
-    margin:20px auto 8px;
+    margin:30px auto 15px;
     font-family:'Quicksand',sans-serif;
-    font-size:7px;
+    font-size:13px;
     font-weight:600;
-    letter-spacing:3px;
-    line-height:1;
+    letter-spacing:4px;
+    line-height:1.2;
     text-transform:uppercase;
     text-align:center;
     color:var(--grupo-color);
-    opacity:.65;
+    opacity:1;
 }
