@@ -4,52 +4,55 @@
 
 
 /* =========================================================
-   INSTAGRAM 001
+   INSTAGRAM
    ========================================================= */
 
+
+/* ─── INSTAGRAM 001 ─── */
+
 .instagram-001{
-width:390px;
-max-width:92%;
-margin:25px auto;
+width:460px;
+max-width:94%;
+margin:30px auto;
 color:inherit;
 font-family:Arial,sans-serif;
-font-size:9px;
-line-height:1.5;
+font-size:10px;
+line-height:1.6;
 text-align:left
 }
 
 .instagram-001-box{
-padding:7px;
+padding:8px;
 border:1px solid var(--grupo-color);
-border-radius:12px;
+border-radius:14px;
 box-sizing:border-box
 }
 
 .instagram-001-inner{
 border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
-border-radius:9px;
+border-radius:11px;
 overflow:hidden;
 box-sizing:border-box
 }
 
 .instagram-001-header{
-padding:24px 22px 18px
+padding:30px 28px 23px
 }
 
 .instagram-001-profile{
 display:flex;
 align-items:center;
-gap:20px
+gap:24px
 }
 
 .instagram-001-avatar{
-width:78px;
-height:78px;
+width:100px;
+height:100px;
 flex-shrink:0;
 object-fit:cover;
 border-radius:50%;
 border:1px solid var(--grupo-color);
-padding:3px;
+padding:4px;
 box-sizing:border-box
 }
 
@@ -59,83 +62,90 @@ flex:1
 
 .instagram-001-username{
 font-family:Georgia,serif;
-font-size:19px;
+font-size:23px;
 font-style:italic;
+line-height:1.1;
 color:var(--grupo-color)
 }
 
 .instagram-001-realname{
-margin-top:5px;
-font-size:7px;
+margin-top:7px;
+font-size:8px;
 opacity:.6
 }
 
 .instagram-001-stats{
 display:flex;
-gap:12px;
-margin-top:11px;
-font-size:7px;
+gap:22px;
+margin-top:15px;
+font-size:8px;
 text-align:center
 }
 
 .instagram-001-stats span{
-display:block
+display:block;
+line-height:1.4
 }
 
 .instagram-001-stats strong{
-font-size:10px
+font-size:12px
 }
 
 .instagram-001-bio{
-margin-top:17px;
-padding:0 3px;
-font-size:8px;
-line-height:1.6;
+margin-top:22px;
+padding:0 4px;
+font-size:9px;
+line-height:1.7;
 text-align:left
+}
+
+.instagram-001-bio strong{
+font-size:9px
 }
 
 .instagram-001-actions{
 display:flex;
-gap:7px;
-margin-top:14px
+gap:8px;
+margin-top:17px
 }
 
 .instagram-001-button{
 flex:1;
-padding:6px 0;
+padding:8px 0;
 border:1px solid var(--grupo-color);
-border-radius:6px;
+border-radius:7px;
 text-align:center;
-font-size:7px;
-letter-spacing:.5px
+font-size:8px;
+letter-spacing:.7px
 }
 
 .instagram-001-button-small{
-width:30px;
-padding:6px 0;
+width:36px;
+padding:8px 0;
 border:1px solid var(--grupo-color);
-border-radius:6px;
+border-radius:7px;
 box-sizing:border-box;
 text-align:center;
-color:var(--grupo-color)
+color:var(--grupo-color);
+font-size:9px
 }
 
 .instagram-001-nav{
 display:flex;
 align-items:center;
 justify-content:space-around;
-padding:11px 0;
+padding:14px 0;
 border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 color:var(--grupo-color);
-font-size:11px
+font-size:13px
 }
 
 .instagram-001-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:4px;
-padding:4px
+gap:5px;
+padding:5px
 }
 
 .instagram-001-grid img{
@@ -143,5 +153,925 @@ display:block;
 width:100%;
 aspect-ratio:1/1;
 object-fit:cover;
-border-radius:7px
+border-radius:8px
+}
+
+
+/* =========================================================
+   TELÉFONOS
+   ========================================================= */
+
+
+/* ─── TELÉFONO 001 ─── */
+
+.telefono-001{
+width:260px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+text-align:center
+}
+
+.telefono-001-box{
+border:1px solid #fff;
+border-radius:25px;
+padding:6px;
+box-sizing:border-box;
+background:#000
+}
+
+.telefono-001-screen{
+height:410px;
+border:1px solid #fff;
+border-radius:20px;
+overflow:hidden;
+box-sizing:border-box;
+background-size:cover;
+background-position:center;
+position:relative
+}
+
+.telefono-001-date{
+padding-top:35px;
+font-size:6px;
+letter-spacing:2px;
+color:#fff;
+opacity:.8
+}
+
+.telefono-001-time{
+margin-top:6px;
+font-family:Georgia,serif;
+font-size:46px;
+font-style:italic;
+line-height:1;
+color:#fff
+}
+
+.telefono-001-bottom{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:22px 16px 15px;
+background:linear-gradient(transparent,rgba(0,0,0,.88))
+}
+
+.telefono-001-socials{
+display:flex;
+justify-content:center;
+gap:9px;
+margin-bottom:15px
+}
+
+.telefono-001-social{
+width:27px;
+height:27px;
+border:1px solid rgba(255,255,255,.75);
+border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:11px;
+text-decoration:none;
+box-sizing:border-box
+}
+
+.telefono-001-social.instagram{
+font-size:12px
+}
+
+.telefono-001-status{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:6px 9px;
+border:1px solid rgba(255,255,255,.7);
+border-radius:15px;
+background:rgba(0,0,0,.65);
+font-size:6px;
+letter-spacing:1px;
+color:#fff;
+opacity:.9
+}
+
+
+/* ─── TELÉFONO 002 ─── */
+
+.telefono-002{
+width:250px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+text-align:center
+}
+
+.telefono-002-box{
+border:1px solid var(--grupo-color);
+padding:5px;
+box-sizing:border-box;
+background:#000
+}
+
+.telefono-002-screen{
+height:405px;
+position:relative;
+overflow:hidden;
+background-size:cover;
+background-position:center
+}
+
+.telefono-002-status{
+position:absolute;
+top:0;
+left:0;
+right:0;
+padding:14px 16px;
+display:flex;
+justify-content:space-between;
+font-size:6px;
+letter-spacing:1.5px;
+color:#fff;
+background:linear-gradient(rgba(0,0,0,.7),transparent)
+}
+
+.telefono-002-content{
+position:absolute;
+left:18px;
+right:18px;
+bottom:18px
+}
+
+.telefono-002-info{
+display:flex;
+align-items:flex-end;
+justify-content:space-between
+}
+
+.telefono-002-timebox{
+text-align:left
+}
+
+.telefono-002-time{
+font-family:'Cormorant Garamond',serif;
+font-size:43px;
+font-style:italic;
+line-height:.9;
+color:#fff
+}
+
+.telefono-002-date{
+margin-top:8px;
+font-size:6px;
+letter-spacing:2px;
+color:#fff;
+opacity:.75
+}
+
+.telefono-002-favorite{
+width:42px;
+height:42px;
+border:1px solid var(--grupo-color);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+color:#fff;
+background:rgba(0,0,0,.55)
+}
+
+.telefono-002-socials{
+display:flex;
+gap:7px;
+margin-top:14px
+}
+
+.telefono-002-social{
+flex:1;
+padding:7px 3px;
+border:1px solid var(--grupo-color);
+color:#fff;
+font-size:8px;
+text-decoration:none;
+background:rgba(0,0,0,.65)
+}
+
+
+/* ─── TELÉFONO 003 ─── */
+
+.telefono-003{
+width:250px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+text-align:center
+}
+
+.telefono-003-box{
+padding:6px;
+border:1px solid var(--grupo-color);
+border-radius:30px;
+background:#000;
+box-sizing:border-box
+}
+
+.telefono-003-screen{
+height:430px;
+position:relative;
+overflow:hidden;
+border:1px solid #fff;
+border-radius:24px;
+box-sizing:border-box;
+background-size:cover;
+background-position:center
+}
+
+.telefono-003-notch{
+position:absolute;
+top:8px;
+left:50%;
+transform:translateX(-50%);
+width:82px;
+height:20px;
+background:#000;
+border-radius:14px;
+z-index:3
+}
+
+.telefono-003-status-left{
+position:absolute;
+top:11px;
+left:14px;
+font-size:6px;
+letter-spacing:.5px;
+color:#fff
+}
+
+.telefono-003-status-right{
+position:absolute;
+top:11px;
+right:14px;
+font-size:6px;
+color:#fff
+}
+
+.telefono-003-clock{
+position:absolute;
+top:65px;
+left:0;
+right:0
+}
+
+.telefono-003-clock-date{
+font-size:7px;
+letter-spacing:2px;
+color:#fff;
+opacity:.8
+}
+
+.telefono-003-clock-time{
+margin-top:4px;
+font-family:Georgia,serif;
+font-size:49px;
+font-weight:normal;
+line-height:1;
+color:#fff
+}
+
+.telefono-003-bottom{
+position:absolute;
+left:18px;
+right:18px;
+bottom:16px
+}
+
+.telefono-003-socials{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:16px
+}
+
+.telefono-003-social{
+width:34px;
+height:34px;
+border-radius:50%;
+background:rgba(0,0,0,.48);
+border:1px solid rgba(255,255,255,.75);
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:11px;
+text-decoration:none
+}
+
+.telefono-003-social.instagram{
+font-size:12px
+}
+
+.telefono-003-swipe{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+font-size:6px;
+color:#fff;
+opacity:.75
+}
+
+.telefono-003-home{
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translateX(-50%);
+width:82px;
+height:3px;
+border-radius:5px;
+background:#fff;
+opacity:.85
+}
+
+
+/* =========================================================
+   MENSAJES
+   ========================================================= */
+
+
+/* ─── MENSAJES 001 ─── */
+
+.mensajes-001{
+width:260px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:8px;
+line-height:1.5;
+text-align:left
+}
+
+.mensajes-001-box{
+border:1px solid #fff;
+border-radius:25px;
+padding:6px;
+box-sizing:border-box;
+background:#000
+}
+
+.mensajes-001-screen{
+border:1px solid #fff;
+border-radius:19px;
+overflow:hidden;
+box-sizing:border-box;
+background-size:cover;
+background-position:center
+}
+
+.mensajes-001-header{
+padding:10px 12px 9px;
+background:rgba(0,0,0,.82);
+border-bottom:1px solid rgba(255,255,255,.6)
+}
+
+.mensajes-001-profile{
+display:flex;
+align-items:center;
+gap:8px
+}
+
+.mensajes-001-avatar{
+width:32px;
+height:32px;
+object-fit:cover;
+border-radius:50%;
+border:1px solid #fff;
+padding:2px;
+box-sizing:border-box
+}
+
+.mensajes-001-name{
+flex:1
+}
+
+.mensajes-001-name strong{
+font-family:Georgia,serif;
+font-size:12px;
+font-style:italic;
+font-weight:normal;
+color:#fff
+}
+
+.mensajes-001-online{
+margin-top:1px;
+font-size:5px;
+letter-spacing:1px;
+color:#fff;
+opacity:.55
+}
+
+.mensajes-001-menu{
+font-size:13px;
+letter-spacing:2px;
+color:#fff;
+opacity:.7
+}
+
+.mensajes-001-conversation{
+padding:17px 11px 20px;
+min-height:275px;
+background:rgba(0,0,0,.58)
+}
+
+.mensajes-001-day{
+text-align:center;
+margin-bottom:14px;
+font-size:5px;
+letter-spacing:2px;
+opacity:.5
+}
+
+.mensajes-001-message{
+display:flex;
+margin-bottom:9px
+}
+
+.mensajes-001-message.left{
+justify-content:flex-start
+}
+
+.mensajes-001-message.right{
+justify-content:flex-end
+}
+
+.mensajes-001-bubble{
+max-width:76%;
+padding:7px 9px
+}
+
+.mensajes-001-message.left .mensajes-001-bubble{
+border:1px solid rgba(255,255,255,.5);
+border-radius:11px 11px 11px 3px;
+background:rgba(255,255,255,.09)
+}
+
+.mensajes-001-message.right .mensajes-001-bubble{
+border:1px solid rgba(255,255,255,.7);
+border-radius:11px 11px 3px 11px;
+background:rgba(255,255,255,.18)
+}
+
+.mensajes-001-time{
+margin-top:3px;
+text-align:right;
+font-size:5px;
+opacity:.5
+}
+
+.mensajes-001-compose{
+display:flex;
+align-items:center;
+gap:6px;
+padding:8px 9px;
+background:rgba(0,0,0,.88);
+border-top:1px solid rgba(255,255,255,.6)
+}
+
+.mensajes-001-plus{
+width:20px;
+height:20px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:11px;
+opacity:.7
+}
+
+.mensajes-001-input{
+flex:1;
+padding:5px 8px;
+border:1px solid rgba(255,255,255,.5);
+border-radius:14px;
+font-size:6px;
+color:#fff;
+opacity:.55
+}
+
+.mensajes-001-send{
+width:22px;
+height:22px;
+border:1px solid #fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:8px
+}
+
+
+/* ─── MENSAJES 002 ─── */
+
+.mensajes-002{
+width:250px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:8px;
+line-height:1.55;
+text-align:left
+}
+
+.mensajes-002-box{
+border:1px solid var(--grupo-color);
+padding:5px;
+box-sizing:border-box;
+background:#000
+}
+
+.mensajes-002-screen{
+overflow:hidden;
+border:1px solid var(--grupo-color);
+background-size:cover;
+background-position:center
+}
+
+.mensajes-002-overlay{
+background:rgba(0,0,0,.72)
+}
+
+.mensajes-002-header{
+padding:12px 14px;
+border-bottom:1px solid var(--grupo-color)
+}
+
+.mensajes-002-profile{
+display:flex;
+align-items:center;
+gap:8px
+}
+
+.mensajes-002-avatar{
+width:34px;
+height:34px;
+object-fit:cover;
+border-radius:4px;
+border:1px solid var(--grupo-color);
+padding:2px;
+box-sizing:border-box
+}
+
+.mensajes-002-name{
+flex:1
+}
+
+.mensajes-002-name strong{
+font-family:Georgia,serif;
+font-size:13px;
+font-style:italic;
+font-weight:normal;
+color:#fff
+}
+
+.mensajes-002-active{
+font-size:5px;
+letter-spacing:1.5px;
+color:#fff;
+opacity:.55
+}
+
+.mensajes-002-menu{
+font-size:10px;
+color:#fff;
+opacity:.7
+}
+
+.mensajes-002-conversation{
+padding:16px 13px 20px;
+min-height:285px;
+background:rgba(0,0,0,.38)
+}
+
+.mensajes-002-day{
+display:flex;
+align-items:center;
+gap:8px;
+margin-bottom:15px
+}
+
+.mensajes-002-day:before,
+.mensajes-002-day:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.5
+}
+
+.mensajes-002-day span{
+font-size:5px;
+letter-spacing:2px;
+color:#fff;
+opacity:.6
+}
+
+.mensajes-002-message{
+display:flex;
+align-items:stretch;
+gap:7px;
+margin-bottom:12px
+}
+
+.mensajes-002-message.left{
+justify-content:flex-start
+}
+
+.mensajes-002-message.right{
+justify-content:flex-end
+}
+
+.mensajes-002-line{
+width:2px;
+flex-shrink:0;
+background:var(--grupo-color)
+}
+
+.mensajes-002-bubble{
+max-width:78%;
+padding:8px 9px
+}
+
+.mensajes-002-message.left .mensajes-002-bubble{
+background:rgba(0,0,0,.82);
+color:#fff;
+border:1px solid rgba(255,255,255,.3)
+}
+
+.mensajes-002-message.right .mensajes-002-bubble{
+background:rgba(255,255,255,.88);
+color:#111;
+border:1px solid var(--grupo-color)
+}
+
+.mensajes-002-time{
+margin-top:3px;
+font-size:5px;
+text-align:right;
+opacity:.5
+}
+
+.mensajes-002-compose{
+padding:9px 11px;
+border-top:1px solid var(--grupo-color);
+display:flex;
+align-items:center;
+gap:7px;
+background:rgba(0,0,0,.9)
+}
+
+.mensajes-002-plus{
+font-size:12px;
+color:#fff
+}
+
+.mensajes-002-input{
+flex:1;
+padding:5px 8px;
+border:1px solid var(--grupo-color);
+font-size:6px;
+color:#fff;
+opacity:.65
+}
+
+.mensajes-002-send{
+font-size:10px;
+color:#fff
+}
+
+
+/* ─── MENSAJES 003 ─── */
+
+.mensajes-003{
+width:250px;
+max-width:88%;
+margin:20px auto;
+color:#fff;
+font-family:Arial,sans-serif;
+font-size:8px;
+line-height:1.5;
+text-align:left
+}
+
+.mensajes-003-box{
+padding:6px;
+border:1px solid var(--grupo-color);
+border-radius:30px;
+background:#000;
+box-sizing:border-box
+}
+
+.mensajes-003-screen{
+height:430px;
+position:relative;
+overflow:hidden;
+border:1px solid #fff;
+border-radius:24px;
+box-sizing:border-box;
+background-size:cover;
+background-position:center
+}
+
+.mensajes-003-notch{
+position:absolute;
+top:8px;
+left:50%;
+transform:translateX(-50%);
+width:82px;
+height:20px;
+background:#000;
+border-radius:14px;
+z-index:3
+}
+
+.mensajes-003-status-left{
+position:absolute;
+top:11px;
+left:14px;
+font-size:6px;
+color:#fff
+}
+
+.mensajes-003-status-right{
+position:absolute;
+top:11px;
+right:14px;
+font-size:6px;
+color:#fff
+}
+
+.mensajes-003-header{
+position:absolute;
+top:37px;
+left:0;
+right:0;
+padding:9px 13px;
+background:rgba(0,0,0,.72);
+border-bottom:1px solid var(--grupo-color)
+}
+
+.mensajes-003-profile{
+display:flex;
+align-items:center;
+gap:8px
+}
+
+.mensajes-003-back{
+font-size:13px;
+color:#fff
+}
+
+.mensajes-003-avatar{
+width:30px;
+height:30px;
+object-fit:cover;
+border-radius:50%;
+border:1px solid var(--grupo-color);
+padding:2px;
+box-sizing:border-box
+}
+
+.mensajes-003-name{
+flex:1;
+text-align:left
+}
+
+.mensajes-003-name strong{
+font-family:Georgia,serif;
+font-size:12px;
+font-style:italic;
+font-weight:normal;
+color:#fff
+}
+
+.mensajes-003-online{
+font-size:5px;
+letter-spacing:1px;
+color:#fff;
+opacity:.55
+}
+
+.mensajes-003-menu{
+font-size:11px;
+color:#fff
+}
+
+.mensajes-003-conversation{
+position:absolute;
+top:93px;
+bottom:44px;
+left:0;
+right:0;
+padding:16px 11px 15px;
+overflow:hidden;
+background:rgba(0,0,0,.28)
+}
+
+.mensajes-003-day{
+text-align:center;
+margin-bottom:14px;
+font-size:5px;
+letter-spacing:1.5px;
+color:#fff;
+opacity:.55
+}
+
+.mensajes-003-message{
+display:flex;
+margin-bottom:9px
+}
+
+.mensajes-003-message.left{
+justify-content:flex-start
+}
+
+.mensajes-003-message.right{
+justify-content:flex-end
+}
+
+.mensajes-003-bubble{
+max-width:76%;
+padding:7px 9px
+}
+
+.mensajes-003-message.left .mensajes-003-bubble{
+border-radius:12px 12px 12px 4px;
+background:rgba(0,0,0,.78);
+border:1px solid rgba(255,255,255,.25);
+color:#fff
+}
+
+.mensajes-003-message.right .mensajes-003-bubble{
+border-radius:12px 12px 4px 12px;
+background:rgba(255,255,255,.9);
+border:1px solid var(--grupo-color);
+color:#111
+}
+
+.mensajes-003-time{
+margin-top:3px;
+text-align:right;
+font-size:5px;
+opacity:.5
+}
+
+.mensajes-003-compose{
+position:absolute;
+left:0;
+right:0;
+bottom:0;
+padding:7px 9px;
+background:rgba(0,0,0,.88);
+border-top:1px solid var(--grupo-color);
+display:flex;
+align-items:center;
+gap:6px
+}
+
+.mensajes-003-plus{
+font-size:12px;
+color:#fff
+}
+
+.mensajes-003-input{
+flex:1;
+padding:5px 9px;
+border:1px solid rgba(255,255,255,.5);
+border-radius:15px;
+color:#fff;
+font-size:6px;
+opacity:.6
+}
+
+.mensajes-003-send{
+font-size:11px;
+color:#fff
+}
+
+.mensajes-003-home{
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translateX(-50%);
+width:82px;
+height:3px;
+border-radius:5px;
+background:#fff;
+opacity:.85
 }
