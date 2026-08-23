@@ -1,10 +1,22 @@
-/* ═══════════════════════════════════════
-   ψuuκï CODES — POST CSS GENERAL
-   ═══════════════════════════════════════ */
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fleur+De+Leah&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
-/* CAMILLE */
+/* =========================================================
+   ψuuκï CODES — BASE GENERAL
+   ========================================================= */
+
+:root{
+--yuuki-post-font:'Quicksand',sans-serif;
+--yuuki-post-size:13px;
+--yuuki-data-size:9px;
+--yuuki-data-spacing:1.5px;
+--yuuki-title-height:48px;
+}
+
+
+/* =========================================================
+   CAMILLE
+   ========================================================= */
 
 .camille{
 width:470px;
@@ -14,19 +26,23 @@ padding:6px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:center
 }
 
 .camille-in{
-padding:22px 25px 24px;
+padding:18px 25px 24px;
 border:1px solid var(--grupo-color);
 box-sizing:border-box
 }
 
 .camille h1{
+height:var(--yuuki-title-height);
 margin:0;
-font:var(--yuuki-title-size,19px)/1.2 var(--yuuki-title,Georgia,serif);
+display:flex;
+align-items:center;
+justify-content:center;
+font:var(--yuuki-title-size,19px)/1.1 var(--yuuki-title,Georgia,serif);
 font-weight:bold;
 letter-spacing:1px;
 color:var(--grupo-color);
@@ -37,9 +53,10 @@ text-transform:uppercase
 display:flex;
 justify-content:center;
 gap:12px;
-margin-top:10px;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.2px;
+margin:2px 0 0;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.75
 }
 
@@ -49,7 +66,7 @@ color:var(--grupo-color)
 
 .camille-text{
 margin:13px 5px 0;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -58,22 +75,28 @@ margin:0 0 8px
 }
 
 
-/* AFTERGLOW */
+/* =========================================================
+   AFTERGLOW
+   ========================================================= */
 
 .afterglow{
 width:470px;
 max-width:94%;
 margin:16px auto;
-padding:24px 27px 18px;
+padding:20px 27px 18px;
 box-sizing:border-box;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:center
 }
 
 .afterglow h1{
+height:var(--yuuki-title-height);
 margin:0;
-font:italic var(--yuuki-title-size,25px)/1.25 var(--yuuki-title,Georgia,serif);
+display:flex;
+align-items:center;
+justify-content:center;
+font:italic var(--yuuki-title-size,25px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
 }
 
@@ -81,8 +104,10 @@ color:var(--grupo-color)
 display:flex;
 justify-content:center;
 gap:14px;
-margin-top:10px;
-font:8px/1.4 'Quicksand',sans-serif;
+margin:1px 0 0;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.75
 }
 
@@ -94,7 +119,7 @@ color:var(--grupo-color)
 display:flex;
 align-items:center;
 gap:9px;
-margin:15px 0 18px
+margin:14px 0 18px
 }
 
 .afterglow-sep div{
@@ -110,7 +135,7 @@ font-size:13px
 
 .afterglow-text{
 padding:0 7px;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -130,7 +155,9 @@ border-top:1px dotted color-mix(in srgb,var(--grupo-color),transparent 35%)
 }
 
 
-/* ASTER */
+/* =========================================================
+   ASTER
+   ========================================================= */
 
 .aster{
 width:470px;
@@ -138,7 +165,7 @@ max-width:94%;
 margin:20px auto;
 box-sizing:border-box;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
@@ -178,28 +205,33 @@ color:var(--grupo-color)
 .aster-number span{
 display:block;
 margin-top:7px;
-font:7px/1 'Quicksand',sans-serif;
+font:500 7px/1 var(--yuuki-post-font);
 letter-spacing:3px;
+text-transform:uppercase;
 opacity:.6
 }
 
 .aster-title{
 flex:1;
-padding:19px 22px;
+padding:17px 22px;
 box-sizing:border-box
 }
 
 .aster-title small{
 display:block;
-font:7px/1 'Quicksand',sans-serif;
+font:500 7px/1 var(--yuuki-post-font);
 letter-spacing:3px;
 color:var(--grupo-color);
+text-transform:uppercase;
 opacity:.8
 }
 
 .aster-title h1{
-margin:6px 0 0;
-font:italic var(--yuuki-title-size,25px)/1.15 var(--yuuki-title,Georgia,serif);
+height:var(--yuuki-title-height);
+margin:2px 0 0;
+display:flex;
+align-items:center;
+font:italic var(--yuuki-title-size,25px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
 }
 
@@ -219,7 +251,7 @@ border-right:1px solid color-mix(in srgb,var(--grupo-color),transparent 70%)
 flex:1;
 padding:22px 22px 27px;
 box-sizing:border-box;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -235,12 +267,14 @@ display:flex;
 align-items:center;
 padding:13px 19px;
 box-sizing:border-box;
-background:color-mix(in srgb,var(--grupo-color),transparent 94%)
+background:color-mix(in srgb,var(--grupo-color),transparent 94%);
+text-transform:uppercase
 }
 
 .aster-info span{
-font:7px/1 'Quicksand',sans-serif;
-letter-spacing:2px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.55
 }
 
@@ -259,19 +293,21 @@ font:italic 13px Georgia,serif
 }
 
 
-/* EVELYN */
+/* =========================================================
+   EVELYN
+   ========================================================= */
 
 .evelyn{
 width:470px;
 max-width:94%;
 margin:20px auto;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
 .evelyn-title{
-padding:10px 20px;
+padding:7px 20px;
 box-sizing:border-box;
 border:2px solid var(--grupo-color);
 background:color-mix(in srgb,var(--grupo-color),transparent 94%);
@@ -299,14 +335,18 @@ font-size:9px
 }
 
 .evelyn-title h1{
+height:var(--yuuki-title-height);
 margin:0;
-font:italic var(--yuuki-title-size,22px)/1.2 var(--yuuki-title,Georgia,serif);
+display:flex;
+align-items:center;
+justify-content:center;
+font:italic var(--yuuki-title-size,22px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color);
 white-space:nowrap
 }
 
 .evelyn-gap{
-height:8px
+height:7px
 }
 
 .evelyn-post{
@@ -338,12 +378,12 @@ min-width:0
 margin-bottom:17px;
 padding:0 0 11px;
 border-bottom:1px dotted color-mix(in srgb,var(--grupo-color),transparent 45%);
-font:italic 11px/1.7 'Quicksand',sans-serif;
+font:italic 11px/1.7 var(--yuuki-post-font);
 opacity:.75
 }
 
 .evelyn-text{
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -354,13 +394,15 @@ border:2px solid var(--grupo-color);
 background:color-mix(in srgb,var(--grupo-color),transparent 94%);
 display:flex;
 align-items:center;
-text-align:center
+text-align:center;
+text-transform:uppercase
 }
 
 .evelyn-data div{
 flex:1;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.5px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.7
 }
 
@@ -376,24 +418,29 @@ opacity:.35
 }
 
 
-/* LUNELLE */
+/* =========================================================
+   LUNELLE
+   ========================================================= */
 
 .lunelle{
 width:470px;
 max-width:94%;
 margin:20px auto 0;
-padding:25px 28px;
+padding:21px 28px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
 .lunelle h1{
-margin:2px 0 0;
-text-align:center;
-font:italic var(--yuuki-title-size,29px)/1.2 var(--yuuki-title,Georgia,serif);
+height:var(--yuuki-title-height);
+margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
+font:italic var(--yuuki-title-size,29px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
 }
 
@@ -401,13 +448,13 @@ color:var(--grupo-color)
 display:flex;
 flex-direction:column;
 align-items:center;
-margin:12px 0 15px
+margin:4px 0 13px
 }
 
 .lunelle-sep:before{
 content:"";
 width:1px;
-height:18px;
+height:16px;
 background:var(--grupo-color);
 opacity:.45
 }
@@ -420,29 +467,31 @@ background:var(--grupo-color)
 }
 
 .lunelle-text{
-padding:18px 18px;
+padding:18px;
 background:color-mix(in srgb,var(--grupo-color),transparent 86%);
 box-sizing:border-box;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
 .lunelle-data{
 width:75%;
-margin:17px auto 0;
+margin:15px auto 0;
 padding:8px;
 box-sizing:border-box;
 border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 display:flex;
 align-items:center;
-text-align:center
+text-align:center;
+text-transform:uppercase
 }
 
 .lunelle-data div{
 flex:1;
-font:7px/1 'Quicksand',sans-serif;
-letter-spacing:1px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.7
 }
 
@@ -454,7 +503,9 @@ opacity:.25
 }
 
 
-/* MARCELINE */
+/* =========================================================
+   MARCELINE
+   ========================================================= */
 
 .marceline{
 width:470px;
@@ -462,7 +513,7 @@ max-width:94%;
 margin:20px auto;
 box-sizing:border-box;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
@@ -485,7 +536,7 @@ min-width:0
 }
 
 .marceline-head{
-padding:21px 28px 20px;
+padding:18px 28px 17px;
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
 }
 
@@ -517,10 +568,12 @@ opacity:.25
 }
 
 .marceline h1{
-display:inline-block;
-margin:11px 0 0;
+height:var(--yuuki-title-height);
+display:flex;
+align-items:center;
+margin:3px 0 0;
 padding:0 16px 3px 0;
-font:italic var(--yuuki-title-size,29px)/1.15 var(--yuuki-title,Georgia,serif);
+font:italic var(--yuuki-title-size,29px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color);
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 65%)
 }
@@ -531,7 +584,7 @@ box-sizing:border-box
 }
 
 .marceline-text{
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -540,14 +593,16 @@ display:flex;
 align-items:center;
 padding:11px 24px;
 background:color-mix(in srgb,var(--grupo-color),transparent 93%);
-border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%)
+border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%);
+text-transform:uppercase
 }
 
 .marceline-data div{
 flex:1;
 text-align:center;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.5px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.65
 }
 
@@ -563,7 +618,9 @@ opacity:.3
 }
 
 
-/* NOCTURNE */
+/* =========================================================
+   NOCTURNE
+   ========================================================= */
 
 .nocturne{
 width:470px;
@@ -573,18 +630,22 @@ padding:5px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:13px/1.65 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.65 var(--yuuki-post-font);
 text-align:left
 }
 
 .nocturne-in{
-padding:19px 25px 14px;
+padding:16px 25px 14px;
 border:1px solid var(--grupo-color);
 box-sizing:border-box
 }
 
 .nocturne h1{
+height:var(--yuuki-title-height);
 margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 font:var(--yuuki-title-size,42px)/1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
@@ -594,7 +655,7 @@ color:var(--grupo-color)
 display:flex;
 align-items:center;
 gap:9px;
-margin:6px 42px 12px;
+margin:0 42px 9px;
 color:var(--grupo-color)
 }
 
@@ -611,9 +672,10 @@ opacity:.45
 display:flex;
 justify-content:center;
 gap:17px;
-margin-bottom:11px;
-font:7px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.3px;
+margin-bottom:10px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.7
 }
 
@@ -630,7 +692,7 @@ opacity:.4
 
 .nocturne-text{
 padding:0 4px;
-font:13px/1.65 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.65 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -650,7 +712,7 @@ padding:7px 10px;
 border:1px solid var(--grupo-color);
 border-radius:11px 11px 3px 11px;
 background:color-mix(in srgb,var(--grupo-color),transparent 88%);
-font:13px/1.5 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.5 var(--yuuki-post-font);
 text-align:left
 }
 
@@ -658,7 +720,7 @@ text-align:left
 display:block;
 margin-top:2px;
 text-align:right;
-font:5px/1 'Quicksand',sans-serif;
+font:5px/1 var(--yuuki-post-font);
 letter-spacing:.5px;
 opacity:.5
 }
@@ -667,7 +729,7 @@ opacity:.5
 display:flex;
 align-items:center;
 gap:9px;
-margin:16px 0 5px;
+margin:15px 0 5px;
 color:var(--grupo-color)
 }
 
@@ -681,41 +743,49 @@ opacity:.45
 }
 
 
-/* OPALINE */
+/* =========================================================
+   OPALINE
+   ========================================================= */
 
 .opaline{
 width:470px;
 max-width:94%;
 margin:16px auto;
-padding:23px 25px 19px;
+padding:20px 25px 18px;
 box-sizing:border-box;
 border:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%);
 border-radius:20px;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
 .opaline-title{
-padding:13px 16px;
+height:var(--yuuki-title-height);
+padding:0 16px;
+display:flex;
+align-items:center;
+box-sizing:border-box;
 border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
 border-radius:10px;
-font:italic var(--yuuki-title-size,25px)/1.2 var(--yuuki-title,Georgia,serif);
+font:italic var(--yuuki-title-size,25px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
 }
 
 .opaline-title span{
-float:right;
+margin-left:auto;
 color:var(--grupo-color);
-font:17px/1 'Quicksand',sans-serif
+font:17px/1 var(--yuuki-post-font)
 }
 
 .opaline-data{
 display:flex;
 justify-content:space-between;
 align-items:center;
-margin:18px 8px 17px;
-font:9px/1.4 'Quicksand',sans-serif;
+margin:10px 8px 15px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.8
 }
 
@@ -727,7 +797,7 @@ color:var(--grupo-color)
 display:flex;
 align-items:center;
 gap:16px;
-margin:0 2px 18px
+margin:0 2px 17px
 }
 
 .opaline-sep div{
@@ -743,7 +813,7 @@ font-size:12px
 
 .opaline-text{
 padding:0 4px;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -753,36 +823,43 @@ padding-top:12px;
 border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%);
 text-align:center;
 color:var(--grupo-color);
-font:11px/1 'Quicksand',sans-serif;
+font:11px/1 var(--yuuki-post-font);
 letter-spacing:8px
 }
 
 
-/* ROSELLE */
+/* =========================================================
+   ROSELLE
+   ========================================================= */
 
 .roselle{
 width:470px;
 max-width:94%;
 margin:20px auto 0;
-padding:25px 28px 3px;
+padding:21px 28px 3px;
 box-sizing:border-box;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
 .roselle h1{
+height:var(--yuuki-title-height);
 margin:0;
-font:normal var(--yuuki-title-size,38px)/1.2 var(--yuuki-title,serif);
+display:flex;
+align-items:center;
+justify-content:center;
+font:normal var(--yuuki-title-size,38px)/1.1 var(--yuuki-title,serif);
 color:var(--grupo-color);
 text-align:center
 }
 
 .roselle-data{
-margin-top:5px;
+margin:1px 0 0;
 text-align:center;
-font:7px/1.4 'Quicksand',sans-serif;
-letter-spacing:3px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.65
 }
 
@@ -790,7 +867,7 @@ opacity:.65
 display:flex;
 align-items:center;
 gap:9px;
-margin:21px 0 23px
+margin:15px 0 19px
 }
 
 .roselle-sep:before{
@@ -808,7 +885,7 @@ font-size:9px
 
 .roselle-text{
 padding:0 9px;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -833,7 +910,9 @@ font-size:9px
 }
 
 
-/* SERAPHINE */
+/* =========================================================
+   SERAPHINE
+   ========================================================= */
 
 .seraphine{
 width:470px;
@@ -843,18 +922,22 @@ padding:5px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:13px/1.6 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.6 var(--yuuki-post-font);
 text-align:left
 }
 
 .seraphine-in{
-padding:14px 23px 9px;
+padding:12px 23px 9px;
 border:1px solid var(--grupo-color);
 box-sizing:border-box
 }
 
 .seraphine h1{
+height:var(--yuuki-title-height);
 margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 font:italic var(--yuuki-title-size,42px)/1 var(--yuuki-title,Georgia,serif);
 font-weight:500;
@@ -865,7 +948,7 @@ color:var(--grupo-color)
 display:flex;
 align-items:center;
 gap:7px;
-margin:2px 46px 5px
+margin:0 46px 5px
 }
 
 .seraphine-sep:before,
@@ -888,8 +971,9 @@ justify-content:space-around;
 align-items:center;
 margin-bottom:6px;
 text-align:center;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.3px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.85
 }
 
@@ -915,7 +999,7 @@ opacity:.4
 
 .seraphine-text{
 padding:0 3px;
-font:13px/1.6 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.6 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -945,7 +1029,9 @@ font-size:10px
 }
 
 
-/* SERAPHINE MESSAGES */
+/* =========================================================
+   SERAPHINE MESSAGES
+   ========================================================= */
 
 .seraphine-messages{
 width:470px;
@@ -955,18 +1041,22 @@ padding:5px;
 box-sizing:border-box;
 border:1px solid var(--grupo-color);
 color:inherit;
-font:13px/1.6 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.6 var(--yuuki-post-font);
 text-align:left
 }
 
 .seraphine-messages-in{
-padding:14px 23px 9px;
+padding:12px 23px 9px;
 border:1px solid var(--grupo-color);
 box-sizing:border-box
 }
 
 .seraphine-messages h1{
+height:var(--yuuki-title-height);
 margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
 font:italic var(--yuuki-title-size,42px)/1 var(--yuuki-title,Georgia,serif);
 font-weight:500;
@@ -977,7 +1067,7 @@ color:var(--grupo-color)
 display:flex;
 align-items:center;
 gap:7px;
-margin:2px 46px 5px
+margin:0 46px 5px
 }
 
 .seraphine-messages-sep:before,
@@ -998,10 +1088,11 @@ font-size:10px
 display:flex;
 justify-content:space-around;
 align-items:center;
-margin-bottom:8px;
+margin-bottom:7px;
 text-align:center;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.3px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.85
 }
 
@@ -1027,7 +1118,7 @@ opacity:.4
 
 .seraphine-messages-text{
 padding:0 3px;
-font:13px/1.6 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.6 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -1047,7 +1138,7 @@ padding:7px 10px;
 border:1px solid var(--grupo-color);
 border-radius:11px 11px 3px 11px;
 background:color-mix(in srgb,var(--grupo-color),transparent 88%);
-font:13px/1.5 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.5 var(--yuuki-post-font);
 text-align:left
 }
 
@@ -1055,7 +1146,7 @@ text-align:left
 display:block;
 margin-top:2px;
 text-align:right;
-font:5px/1 'Quicksand',sans-serif;
+font:5px/1 var(--yuuki-post-font);
 letter-spacing:.5px;
 opacity:.55
 }
@@ -1082,7 +1173,9 @@ font-size:10px
 }
 
 
-/* VELVET */
+/* =========================================================
+   VELVET
+   ========================================================= */
 
 .velvet{
 width:470px;
@@ -1090,7 +1183,7 @@ max-width:94%;
 margin:20px auto;
 box-sizing:border-box;
 color:inherit;
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:left
 }
 
@@ -1113,7 +1206,7 @@ min-width:0
 }
 
 .velvet-head{
-padding:24px 28px 22px;
+padding:20px 28px 18px;
 border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
 }
 
@@ -1145,8 +1238,11 @@ opacity:.25
 }
 
 .velvet h1{
-margin:12px 0 0;
-font:italic var(--yuuki-title-size,30px)/1.15 var(--yuuki-title,Georgia,serif);
+height:var(--yuuki-title-height);
+display:flex;
+align-items:center;
+margin:2px 0 0;
+font:italic var(--yuuki-title-size,30px)/1.1 var(--yuuki-title,Georgia,serif);
 color:var(--grupo-color)
 }
 
@@ -1159,12 +1255,12 @@ box-sizing:border-box
 margin-bottom:18px;
 padding-left:14px;
 border-left:2px solid var(--grupo-color);
-font:italic 12px/1.7 'Quicksand',sans-serif;
+font:italic 12px/1.7 var(--yuuki-post-font);
 opacity:.8
 }
 
 .velvet-text{
-font:13px/1.7 'Quicksand',sans-serif;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
 text-align:justify
 }
 
@@ -1173,14 +1269,16 @@ display:flex;
 align-items:center;
 padding:13px 24px;
 background:color-mix(in srgb,var(--grupo-color),transparent 93%);
-border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%)
+border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%);
+text-transform:uppercase
 }
 
 .velvet-data div{
 flex:1;
 text-align:center;
-font:8px/1.4 'Quicksand',sans-serif;
-letter-spacing:1.5px;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
 opacity:.65
 }
 
@@ -1193,4 +1291,24 @@ width:1px;
 height:21px;
 background:var(--grupo-color);
 opacity:.3
+}
+
+
+/* =========================================================
+   DATOS — REGLA GENERAL
+   ========================================================= */
+
+.camille-data,
+.afterglow-data,
+.aster-info,
+.evelyn-data,
+.lunelle-data,
+.marceline-data,
+.nocturne-data,
+.opaline-data,
+.roselle-data,
+.seraphine-data,
+.seraphine-messages-data,
+.velvet-data{
+text-transform:uppercase
 }
