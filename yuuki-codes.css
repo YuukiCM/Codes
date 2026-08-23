@@ -59,18 +59,3 @@ text-align:justify
 .camille .text p{
 margin:0 0 8px
 }
-
-.camille-author{
-display:block;
-width:500px;
-max-width:94%;
-margin:6px auto 0;
-box-sizing:border-box;
-color:var(--grupo-color);
-font-family:Georgia,serif;
-font-size:7px;
-letter-spacing:1.5px;
-text-decoration:none;
-text-align:center;
-opacity:.65
-}
