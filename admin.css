@@ -1,0 +1,52 @@
+/* =========================================================
+   ψuuκï CODES — ADMIN
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   POST DE ROL
+   --------------------------------------------------------- */
+
+.post-rol-admin{
+width:310px;
+max-width:85%;
+margin:18px auto;
+box-sizing:border-box;
+color:inherit;
+font-family:'Quicksand',sans-serif;
+text-align:center
+}
+
+.post-rol-admin-head{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px
+}
+
+.post-rol-admin-head:before,
+.post-rol-admin-head:after{
+content:"";
+width:32px;
+height:1px;
+background:var(--grupo-color);
+opacity:.6
+}
+
+.post-rol-admin-title{
+padding:7px 18px;
+box-sizing:border-box;
+border:1px solid var(--grupo-color);
+font:italic 11px/1.2 Georgia,serif;
+letter-spacing:3px;
+color:var(--grupo-color);
+text-transform:uppercase
+}
+
+.post-rol-admin-name{
+margin-top:6px;
+font:500 7px/1 'Quicksand',sans-serif;
+letter-spacing:3px;
+text-transform:uppercase;
+opacity:.45
+}
