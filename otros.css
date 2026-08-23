@@ -1075,3 +1075,149 @@ border-radius:5px;
 background:#fff;
 opacity:.85
 }
+
+/* =========================================================
+   CORRECCIÓN · BURBUJAS DE MENSAJES
+   ========================================================= */
+
+.mensajes-001-message,
+.mensajes-002-message,
+.mensajes-003-message{
+    width:100%;
+    min-width:0;
+    box-sizing:border-box;
+}
+
+.mensajes-001-message.left,
+.mensajes-002-message.left,
+.mensajes-003-message.left{
+    justify-content:flex-start;
+}
+
+.mensajes-001-message.right,
+.mensajes-002-message.right,
+.mensajes-003-message.right{
+    justify-content:flex-end;
+}
+
+.mensajes-001-bubble,
+.mensajes-002-bubble,
+.mensajes-003-bubble{
+    width:auto;
+    min-width:0;
+    max-width:76%;
+    box-sizing:border-box;
+    overflow-wrap:break-word;
+    word-break:normal;
+    white-space:normal;
+    flex-shrink:1;
+}
+
+.mensajes-002-message .mensajes-002-bubble{
+    max-width:78%;
+    flex:0 1 auto;
+}
+
+.mensajes-003-message .mensajes-003-bubble{
+    max-width:76%;
+    flex:0 1 auto;
+}
+
+
+/* ─── LÍNEAS LATERALES DE MENSAJES 002 ─── */
+
+.mensajes-002-message .mensajes-002-line{
+    width:2px;
+    min-width:2px;
+    flex:0 0 2px;
+}
+
+.mensajes-002-message{
+    display:flex;
+    align-items:stretch;
+    width:100%;
+    min-width:0;
+}
+
+.mensajes-002-message.left{
+    justify-content:flex-start;
+}
+
+.mensajes-002-message.right{
+    justify-content:flex-end;
+}
+
+.mensajes-002-message.left .mensajes-002-bubble,
+.mensajes-002-message.right .mensajes-002-bubble{
+    width:auto;
+    max-width:78%;
+    min-width:0;
+}
+
+
+/* ─── MENSAJES 001 ─── */
+
+.mensajes-001-message{
+    display:flex;
+    width:100%;
+    min-width:0;
+}
+
+.mensajes-001-message .mensajes-001-bubble{
+    display:block;
+    width:auto;
+    max-width:76%;
+    min-width:0;
+    box-sizing:border-box;
+}
+
+
+/* ─── MENSAJES 003 ─── */
+
+.mensajes-003-message{
+    display:flex;
+    width:100%;
+    min-width:0;
+}
+
+.mensajes-003-message .mensajes-003-bubble{
+    display:block;
+    width:auto;
+    max-width:76%;
+    min-width:0;
+    box-sizing:border-box;
+}
+
+/* =========================================================
+   SCROLL · RESPUESTAS DE MENSAJES
+   ========================================================= */
+
+.mensajes-001-message.right .mensajes-001-bubble,
+.mensajes-002-message.right .mensajes-002-bubble,
+.mensajes-003-message.right .mensajes-003-bubble{
+    max-height:75px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    scrollbar-width:thin;
+    scrollbar-color:var(--grupo-color) transparent;
+}
+
+/* Chrome / Edge / Safari */
+
+.mensajes-001-message.right .mensajes-001-bubble::-webkit-scrollbar,
+.mensajes-002-message.right .mensajes-002-bubble::-webkit-scrollbar,
+.mensajes-003-message.right .mensajes-003-bubble::-webkit-scrollbar{
+    width:3px;
+}
+
+.mensajes-001-message.right .mensajes-001-bubble::-webkit-scrollbar-track,
+.mensajes-002-message.right .mensajes-002-bubble::-webkit-scrollbar-track,
+.mensajes-003-message.right .mensajes-003-bubble::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.mensajes-001-message.right .mensajes-001-bubble::-webkit-scrollbar-thumb,
+.mensajes-002-message.right .mensajes-002-bubble::-webkit-scrollbar-thumb,
+.mensajes-003-message.right .mensajes-003-bubble::-webkit-scrollbar-thumb{
+    background:var(--grupo-color);
+}
