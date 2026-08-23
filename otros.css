@@ -1222,15 +1222,37 @@ opacity:.85
     background:var(--grupo-color);
 }
 
-.yuuki-otros-subtitle{
-    margin:30px auto 15px;
-    font-family:'Quicksand',sans-serif;
-    font-size:13px;
-    font-weight:600;
-    letter-spacing:4px;
-    line-height:1.2;
-    text-transform:uppercase;
-    text-align:center;
+/* =========================================================
+   ψuuκï CODES · TÍTULOS DE OTROS RECURSOS
+   ========================================================= */
+
+.yuuki-otros-title{
+    width:390px;
+    max-width:92%;
+    margin:25px auto 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    box-sizing:border-box;
     color:var(--grupo-color);
-    opacity:1;
+    font-family:Georgia,serif;
+    font-size:32px;
+    font-style:normal;
+    line-height:1;
+    letter-spacing:1px;
+    text-align:center;
+}
+
+.yuuki-otros-title:before,
+.yuuki-otros-title:after{
+    content:"";
+    height:1px;
+    flex:1;
+    background:var(--grupo-color);
+    opacity:.65;
+}
+
+.yuuki-otros-title:after{
+    content:"";
 }
