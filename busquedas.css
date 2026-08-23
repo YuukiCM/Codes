@@ -1,0 +1,980 @@
+/* =========================================================
+   ψuuκï CODES — BÚSQUEDAS
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   BASE
+   --------------------------------------------------------- */
+
+.yuuki-busqueda{
+width:460px;
+max-width:92%;
+margin:25px auto;
+box-sizing:border-box;
+color:inherit;
+font-family:'Quicksand',sans-serif;
+font-size:11px;
+line-height:1.8;
+text-align:left
+}
+
+.yuuki-busqueda-title{
+font-family:Georgia,serif;
+font-style:italic;
+line-height:1.2;
+color:var(--grupo-color)
+}
+
+.yuuki-busqueda-label{
+font-size:8px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.yuuki-busqueda-post{
+text-align:justify
+}
+
+.yuuki-busqueda-trama{
+text-align:justify
+}
+
+
+/* =========================================================
+   BÚSQUEDA 001 — BUSCANDO HISTORIAS
+   ========================================================= */
+
+.busqueda-001{
+padding:30px 32px
+}
+
+.busqueda-001-symbol{
+text-align:center;
+color:var(--grupo-color);
+font-size:13px;
+letter-spacing:5px;
+line-height:1
+}
+
+.busqueda-001-title{
+margin-top:15px;
+text-align:center;
+font-size:27px
+}
+
+.busqueda-001-subtitle{
+margin-top:10px;
+text-align:center
+}
+
+.busqueda-001-divider{
+display:flex;
+align-items:center;
+gap:10px;
+margin:25px 0 28px
+}
+
+.busqueda-001-divider:before,
+.busqueda-001-divider:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-001-divider span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-001-post{
+padding:0 8px
+}
+
+.busqueda-001-item{
+margin-top:35px
+}
+
+.busqueda-001-item-head{
+display:flex;
+align-items:baseline;
+justify-content:space-between;
+gap:15px;
+padding-bottom:5px;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 60%)
+}
+
+.busqueda-001-item-title{
+font-family:Georgia,serif;
+font-size:14px;
+font-style:italic;
+color:var(--grupo-color)
+}
+
+.busqueda-001-item-data{
+font-size:8px;
+letter-spacing:1px;
+white-space:nowrap;
+opacity:.7
+}
+
+.busqueda-001-item-text{
+margin-top:12px;
+padding:0 3px;
+text-align:justify
+}
+
+.busqueda-001-footer{
+display:flex;
+align-items:center;
+gap:10px;
+margin:35px 0 0
+}
+
+.busqueda-001-footer:before,
+.busqueda-001-footer:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-001-footer span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-001-signature{
+margin-top:10px;
+text-align:center;
+color:var(--grupo-color);
+font-size:8px;
+letter-spacing:3px;
+opacity:.7
+}
+
+
+/* =========================================================
+   BÚSQUEDA 002 — BUSCO HISTORIAS
+   ========================================================= */
+
+.busqueda-002{
+padding:30px 34px
+}
+
+.busqueda-002-head{
+display:flex;
+align-items:center;
+gap:14px
+}
+
+.busqueda-002-head:before{
+content:"";
+width:42px;
+height:1px;
+background:var(--grupo-color);
+opacity:.6
+}
+
+.busqueda-002-head span{
+color:var(--grupo-color);
+font-size:9px;
+letter-spacing:3px
+}
+
+.busqueda-002-head:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.25
+}
+
+.busqueda-002-title{
+margin-top:14px;
+font-size:30px;
+line-height:1.15
+}
+
+.busqueda-002-subtitle{
+margin-top:9px
+}
+
+.busqueda-002-post{
+margin:27px 0 32px;
+padding:0 8px
+}
+
+.busqueda-002-item{
+display:flex;
+gap:16px;
+margin-bottom:30px
+}
+
+.busqueda-002-number{
+width:25px;
+flex-shrink:0;
+text-align:center;
+color:var(--grupo-color);
+font-family:Georgia,serif;
+font-size:15px;
+font-style:italic
+}
+
+.busqueda-002-item-content{
+flex:1;
+border-left:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%);
+padding-left:18px
+}
+
+.busqueda-002-item-head{
+display:flex;
+align-items:baseline;
+justify-content:space-between;
+gap:10px
+}
+
+.busqueda-002-item-title{
+font-family:Georgia,serif;
+font-size:16px;
+font-style:italic;
+color:var(--grupo-color)
+}
+
+.busqueda-002-item-data{
+font-size:7px;
+letter-spacing:1px;
+opacity:.6;
+white-space:nowrap
+}
+
+.busqueda-002-item-text{
+margin-top:9px;
+text-align:justify
+}
+
+.busqueda-002-footer{
+margin-top:8px;
+padding-top:16px;
+border-top:1px solid color-mix(in srgb,var(--grupo-color),transparent 60%);
+text-align:center;
+color:var(--grupo-color);
+font-size:8px;
+letter-spacing:4px
+}
+
+
+/* =========================================================
+   BÚSQUEDA 002 — BORDE
+   ========================================================= */
+
+.busqueda-002-border{
+width:460px;
+max-width:92%;
+margin:25px auto;
+padding:8px;
+box-sizing:border-box;
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 35%)
+}
+
+.busqueda-002-border-inner{
+padding:28px 30px 24px;
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 65%);
+box-sizing:border-box
+}
+
+
+/* =========================================================
+   BÚSQUEDA 003 — LOOKING FOR
+   ========================================================= */
+
+.busqueda-003{
+width:470px;
+max-width:92%;
+padding:7px;
+border:2px solid var(--grupo-color)
+}
+
+.busqueda-003-inner{
+padding:30px 32px 25px;
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+box-sizing:border-box
+}
+
+.busqueda-003-symbol{
+text-align:center;
+color:var(--grupo-color);
+font-size:10px;
+letter-spacing:6px
+}
+
+.busqueda-003-title{
+margin-top:12px;
+text-align:center;
+font-size:29px
+}
+
+.busqueda-003-subtitle{
+margin-top:8px;
+text-align:center
+}
+
+.busqueda-003-post{
+margin:25px 15px 30px
+}
+
+.busqueda-003-item{
+margin-bottom:27px
+}
+
+.busqueda-003-item-head{
+display:flex;
+align-items:center;
+gap:12px
+}
+
+.busqueda-003-number{
+color:var(--grupo-color);
+font-family:Georgia,serif;
+font-size:13px
+}
+
+.busqueda-003-item-line{
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-003-item-data{
+font-size:7px;
+letter-spacing:2px;
+opacity:.6
+}
+
+.busqueda-003-item-text{
+margin:10px 5px 0;
+text-align:justify
+}
+
+.busqueda-003-item-title{
+font-family:Georgia,serif;
+font-size:15px;
+font-style:italic;
+color:var(--grupo-color)
+}
+
+.busqueda-003-footer{
+margin-top:32px;
+padding-top:15px;
+border-top:1px solid var(--grupo-color);
+text-align:center;
+color:var(--grupo-color);
+font-size:9px;
+letter-spacing:5px
+}
+
+
+/* =========================================================
+   BÚSQUEDA 004 — BUSCO UNA HISTORIA
+   ========================================================= */
+
+.busqueda-004{
+width:470px;
+max-width:92%;
+padding:30px 32px;
+border:1px solid var(--grupo-color)
+}
+
+.busqueda-004-symbol{
+text-align:center;
+color:var(--grupo-color);
+font-size:11px;
+letter-spacing:5px
+}
+
+.busqueda-004-title{
+margin-top:12px;
+text-align:center;
+font-size:29px
+}
+
+.busqueda-004-subtitle{
+margin-top:8px;
+text-align:center
+}
+
+.busqueda-004-post{
+margin:25px 8px 32px;
+padding:0 5px
+}
+
+.busqueda-004-item{
+margin:0 4px 32px;
+padding:18px 18px 20px;
+background:color-mix(in srgb,var(--grupo-color),transparent 92%)
+}
+
+.busqueda-004-item-head{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:15px
+}
+
+.busqueda-004-item-title{
+font-family:Georgia,serif;
+font-size:18px;
+font-style:italic;
+color:var(--grupo-color)
+}
+
+.busqueda-004-item-number{
+color:var(--grupo-color);
+font-size:11px
+}
+
+.busqueda-004-item-data{
+margin-top:7px;
+font-size:7px;
+letter-spacing:1.5px;
+opacity:.65
+}
+
+.busqueda-004-item-line{
+height:1px;
+margin:15px 0;
+background:var(--grupo-color);
+opacity:.3
+}
+
+.busqueda-004-item-text{
+text-align:justify
+}
+
+.busqueda-004-footer{
+margin-top:5px;
+text-align:center;
+color:var(--grupo-color);
+font-size:10px;
+letter-spacing:5px
+}
+
+
+/* =========================================================
+   PERSONAJES 001
+   ========================================================= */
+
+.busqueda-personajes-001{
+width:470px;
+max-width:92%;
+padding:7px;
+border:1px solid var(--grupo-color)
+}
+
+.busqueda-personajes-001-inner{
+padding:30px 32px 25px;
+border:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%);
+box-sizing:border-box
+}
+
+.busqueda-personajes-001-title{
+text-align:center;
+font-family:Georgia,serif;
+font-size:29px;
+font-style:italic;
+line-height:1.2;
+color:var(--grupo-color)
+}
+
+.busqueda-personajes-001-subtitle{
+margin-top:8px;
+text-align:center;
+font-size:8px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.busqueda-personajes-001-divider{
+display:flex;
+align-items:center;
+gap:10px;
+margin:25px 0 30px
+}
+
+.busqueda-personajes-001-divider:before,
+.busqueda-personajes-001-divider:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-personajes-001-divider span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-personajes-001-post{
+margin:0 5px 32px;
+text-align:justify
+}
+
+.busqueda-personajes-001-item{
+display:flex;
+gap:20px;
+margin:0 4px 32px;
+padding-bottom:28px;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 55%)
+}
+
+.busqueda-personajes-001-item:last-child{
+margin-bottom:0;
+padding-bottom:0;
+border-bottom:0
+}
+
+.busqueda-personajes-001-image{
+width:105px;
+height:135px;
+flex-shrink:0;
+object-fit:cover;
+border:1px solid var(--grupo-color);
+padding:3px;
+box-sizing:border-box
+}
+
+.busqueda-personajes-001-content{
+flex:1;
+padding-top:3px
+}
+
+.busqueda-personajes-001-name{
+font-family:Georgia,serif;
+font-size:20px;
+font-style:italic;
+color:var(--grupo-color);
+line-height:1.2
+}
+
+.busqueda-personajes-001-data{
+margin-top:8px;
+font-size:7px;
+letter-spacing:1.5px;
+opacity:.65
+}
+
+.busqueda-personajes-001-line{
+height:1px;
+margin:13px 0;
+background:var(--grupo-color);
+opacity:.3
+}
+
+.busqueda-personajes-001-text{
+text-align:justify
+}
+
+
+/* =========================================================
+   PERSONAJES 002
+   ========================================================= */
+
+.busqueda-personajes-002{
+width:470px;
+max-width:92%;
+padding:28px 30px;
+border:4px solid var(--grupo-color)
+}
+
+.busqueda-personajes-002-title{
+text-align:center;
+font-family:Georgia,serif;
+font-size:28px;
+font-style:italic;
+line-height:1.2;
+color:var(--grupo-color)
+}
+
+.busqueda-personajes-002-subtitle{
+margin-top:7px;
+text-align:center;
+font-size:8px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.busqueda-personajes-002-divider{
+display:flex;
+align-items:center;
+gap:12px;
+margin:24px 0 28px
+}
+
+.busqueda-personajes-002-divider:before,
+.busqueda-personajes-002-divider:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-personajes-002-divider span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-personajes-002-post{
+margin:0 5px 30px;
+padding:0 4px;
+text-align:justify
+}
+
+.busqueda-personajes-002-item{
+margin:0 3px 35px;
+text-align:center
+}
+
+.busqueda-personajes-002-image{
+display:block;
+width:150px;
+height:190px;
+object-fit:cover;
+margin:0 auto;
+border:1px solid var(--grupo-color);
+padding:4px;
+box-sizing:border-box
+}
+
+.busqueda-personajes-002-name{
+margin-top:17px;
+font-family:Georgia,serif;
+font-size:22px;
+font-style:italic;
+color:var(--grupo-color);
+line-height:1.2
+}
+
+.busqueda-personajes-002-data{
+margin-top:7px;
+font-size:7px;
+letter-spacing:2px;
+opacity:.65
+}
+
+.busqueda-personajes-002-line{
+width:70px;
+height:1px;
+margin:15px auto;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.busqueda-personajes-002-text{
+padding:0 10px;
+text-align:justify
+}
+
+.busqueda-personajes-002-footer{
+margin-top:32px;
+padding-top:17px;
+border-top:1px solid var(--grupo-color);
+text-align:center;
+color:var(--grupo-color);
+font-size:9px;
+letter-spacing:5px
+}
+
+
+/* =========================================================
+   PERSONAJES 003
+   ========================================================= */
+
+.busqueda-personajes-003{
+width:520px;
+max-width:94%;
+padding:7px;
+border:4px solid var(--grupo-color)
+}
+
+.busqueda-personajes-003-inner{
+padding:28px 30px 24px;
+border:1px solid var(--grupo-color);
+box-sizing:border-box
+}
+
+.busqueda-personajes-003-title{
+text-align:center;
+font-family:Georgia,serif;
+font-size:28px;
+font-style:italic;
+line-height:1.2;
+color:var(--grupo-color)
+}
+
+.busqueda-personajes-003-subtitle{
+margin-top:7px;
+text-align:center;
+font-size:8px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.busqueda-personajes-003-divider{
+display:flex;
+align-items:center;
+gap:12px;
+margin:23px 0 27px
+}
+
+.busqueda-personajes-003-divider:before,
+.busqueda-personajes-003-divider:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-personajes-003-divider span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-personajes-003-post{
+margin:0 5px 30px;
+padding:0 4px;
+text-align:justify
+}
+
+.busqueda-personajes-003-list{
+display:flex;
+gap:25px;
+margin:0 2px
+}
+
+.busqueda-personajes-003-item{
+width:50%;
+box-sizing:border-box;
+text-align:center
+}
+
+.busqueda-personajes-003-item:first-child{
+padding-right:12px
+}
+
+.busqueda-personajes-003-item:last-child{
+padding-left:12px
+}
+
+.busqueda-personajes-003-image{
+display:block;
+width:100%;
+height:180px;
+object-fit:cover;
+border:1px solid var(--grupo-color);
+padding:4px;
+box-sizing:border-box
+}
+
+.busqueda-personajes-003-name{
+margin-top:15px;
+font-family:Georgia,serif;
+font-size:20px;
+font-style:italic;
+color:var(--grupo-color);
+line-height:1.2
+}
+
+.busqueda-personajes-003-data{
+margin-top:7px;
+font-size:7px;
+letter-spacing:1.5px;
+opacity:.65
+}
+
+.busqueda-personajes-003-line{
+width:55px;
+height:1px;
+margin:14px auto;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.busqueda-personajes-003-text{
+padding:0 5px;
+text-align:justify
+}
+
+.busqueda-personajes-003-footer{
+margin-top:30px;
+padding-top:17px;
+border-top:1px solid var(--grupo-color);
+text-align:center;
+color:var(--grupo-color);
+font-size:9px;
+letter-spacing:5px
+}
+
+
+/* =========================================================
+   PERSONAJES 004
+   ========================================================= */
+
+.busqueda-personajes-004{
+width:520px;
+max-width:94%;
+padding:7px;
+border:4px solid var(--grupo-color)
+}
+
+.busqueda-personajes-004-inner{
+padding:30px 32px 25px;
+border:1px solid var(--grupo-color);
+box-sizing:border-box
+}
+
+.busqueda-personajes-004-title{
+text-align:center;
+font-family:Georgia,serif;
+font-size:29px;
+font-style:italic;
+line-height:1.2;
+color:var(--grupo-color)
+}
+
+.busqueda-personajes-004-subtitle{
+margin-top:7px;
+text-align:center;
+font-size:8px;
+letter-spacing:3px;
+opacity:.6
+}
+
+.busqueda-personajes-004-divider{
+display:flex;
+align-items:center;
+gap:12px;
+margin:23px 0 27px
+}
+
+.busqueda-personajes-004-divider:before,
+.busqueda-personajes-004-divider:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.busqueda-personajes-004-divider span{
+color:var(--grupo-color);
+font-size:10px
+}
+
+.busqueda-personajes-004-post{
+margin:0 5px 32px;
+padding:0 4px;
+text-align:justify
+}
+
+.busqueda-personajes-004-item{
+display:flex;
+align-items:center;
+gap:25px;
+margin:0 3px 30px;
+padding-bottom:30px;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 45%)
+}
+
+.busqueda-personajes-004-item-reverse{
+flex-direction:row-reverse
+}
+
+.busqueda-personajes-004-image{
+width:43%;
+flex-shrink:0
+}
+
+.busqueda-personajes-004-image img{
+display:block;
+width:100%;
+height:210px;
+object-fit:cover;
+border:1px solid var(--grupo-color);
+padding:4px;
+box-sizing:border-box
+}
+
+.busqueda-personajes-004-content{
+flex:1
+}
+
+.busqueda-personajes-004-number{
+display:flex;
+align-items:center;
+gap:10px
+}
+
+.busqueda-personajes-004-number span{
+padding:3px 7px;
+border:1px solid var(--grupo-color);
+font-family:Georgia,serif;
+font-size:11px;
+color:var(--grupo-color)
+}
+
+.busqueda-personajes-004-number:after{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.busqueda-personajes-004-item-reverse .busqueda-personajes-004-number:after{
+order:-1
+}
+
+.busqueda-personajes-004-name{
+margin-top:12px;
+font-family:Georgia,serif;
+font-size:20px;
+font-style:italic;
+color:var(--grupo-color);
+line-height:1.2
+}
+
+.busqueda-personajes-004-data{
+margin-top:7px;
+font-size:7px;
+letter-spacing:1.5px;
+opacity:.65
+}
+
+.busqueda-personajes-004-line{
+height:1px;
+width:70px;
+margin:14px 0;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.busqueda-personajes-004-text{
+text-align:justify
+}
+
+.busqueda-personajes-004-footer{
+margin-top:32px;
+padding-top:17px;
+border-top:1px solid var(--grupo-color);
+text-align:center;
+color:var(--grupo-color);
+font-size:9px;
+letter-spacing:5px
+}
