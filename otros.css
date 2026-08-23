@@ -1221,3 +1221,16 @@ opacity:.85
 .mensajes-003-message.right .mensajes-003-bubble::-webkit-scrollbar-thumb{
     background:var(--grupo-color);
 }
+
+.yuuki-otros-subtitle{
+    margin:20px auto 8px;
+    font-family:'Quicksand',sans-serif;
+    font-size:7px;
+    font-weight:600;
+    letter-spacing:3px;
+    line-height:1;
+    text-transform:uppercase;
+    text-align:center;
+    color:var(--grupo-color);
+    opacity:.65;
+}
