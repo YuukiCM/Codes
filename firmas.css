@@ -1,0 +1,320 @@
+/* =========================================================
+   ψuuκï CODES — FIRMAS
+   ========================================================= */
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+.yuuki-firma{
+color:inherit;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+text-align:center;
+margin-left:auto;
+margin-right:auto
+}
+
+.yuuki-firma *,
+.yuuki-firma *:before,
+.yuuki-firma *:after{
+box-sizing:border-box
+}
+
+
+/* =========================================================
+   FIRMA 001
+   ========================================================= */
+
+.firma-001{
+width:390px;
+max-width:92%;
+margin-top:15px;
+margin-bottom:15px;
+padding:12px 20px
+}
+
+.firma-001-top,
+.firma-001-bottom{
+display:flex;
+align-items:center;
+gap:12px
+}
+
+.firma-001-top-line,
+.firma-001-bottom-line{
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.firma-001-symbol{
+color:var(--grupo-color);
+font-size:9px
+}
+
+.firma-001-content{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:17px;
+margin-top:14px
+}
+
+.firma-001-image{
+width:68px;
+height:68px;
+flex-shrink:0;
+object-fit:cover;
+border:1px solid var(--grupo-color);
+padding:3px
+}
+
+.firma-001-info{
+text-align:left
+}
+
+.firma-001-dash{
+font-size:7px;
+letter-spacing:3px;
+color:var(--grupo-color);
+opacity:.7
+}
+
+.firma-001-name{
+margin-top:3px;
+font-family:Georgia,serif;
+font-size:26px;
+font-style:italic;
+line-height:1.1;
+color:var(--grupo-color)
+}
+
+.firma-001-phrase{
+margin-top:7px;
+font-family:Georgia,serif;
+font-size:9px;
+font-style:italic;
+line-height:1.5;
+opacity:.6
+}
+
+.firma-001-bottom{
+margin-top:15px
+}
+
+.firma-001-bottom-symbol{
+color:var(--grupo-color);
+font-size:8px
+}
+
+
+/* =========================================================
+   FIRMA 002
+   ========================================================= */
+
+.firma-002{
+width:410px;
+max-width:92%;
+margin-top:20px;
+margin-bottom:20px
+}
+
+.firma-002-images{
+display:flex;
+align-items:flex-end;
+justify-content:center;
+gap:22px;
+height:165px
+}
+
+.firma-002-image-large{
+width:155px;
+height:155px;
+flex-shrink:0
+}
+
+.firma-002-image-small{
+width:110px;
+height:110px;
+flex-shrink:0;
+margin-bottom:5px
+}
+
+.firma-002-image-large img,
+.firma-002-image-small img{
+display:block;
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:50%;
+border:1px solid var(--grupo-color);
+padding:4px
+}
+
+.firma-002-space{
+height:24px
+}
+
+.firma-002-name{
+font-family:'Birthstone',cursive;
+font-size:39px;
+line-height:1;
+color:var(--grupo-color)
+}
+
+.firma-002-divider{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+margin-top:9px
+}
+
+.firma-002-divider-line{
+width:32px;
+height:1px;
+background:var(--grupo-color);
+opacity:.35
+}
+
+.firma-002-divider-symbol{
+color:var(--grupo-color);
+font-size:7px
+}
+
+.firma-002-phrase{
+margin-top:8px;
+font-size:8px;
+letter-spacing:1.5px;
+font-style:italic;
+opacity:.6
+}
+
+
+/* =========================================================
+   FIRMA 003
+   ========================================================= */
+
+.firma-003{
+width:410px;
+max-width:92%;
+margin-top:15px;
+margin-bottom:15px
+}
+
+.firma-003-main{
+position:relative;
+padding-bottom:18px;
+border-bottom:1px solid color-mix(in srgb,var(--grupo-color),transparent 50%)
+}
+
+.firma-003-image{
+display:block;
+width:310px;
+height:125px;
+object-fit:cover;
+margin:0 auto;
+border:1px solid var(--grupo-color);
+padding:4px
+}
+
+.firma-003-name-wrap{
+margin-top:-1px;
+position:relative;
+display:inline-block;
+padding:4px 18px;
+background:var(--grupo-color);
+color:inherit
+}
+
+.firma-003-name{
+font-family:'Cinzel Decorative',serif;
+font-size:15px;
+letter-spacing:1px
+}
+
+.firma-003-phrase{
+margin-top:13px;
+font-size:8px;
+font-style:italic;
+letter-spacing:1px;
+opacity:.6
+}
+
+
+/* =========================================================
+   FIRMA 004
+   ========================================================= */
+
+.firma-004{
+width:430px;
+max-width:94%;
+margin-top:18px;
+margin-bottom:18px;
+text-align:left
+}
+
+.firma-004-content{
+display:flex;
+align-items:center;
+gap:22px
+}
+
+.firma-004-image{
+width:175px;
+height:125px;
+flex-shrink:0
+}
+
+.firma-004-image img{
+display:block;
+width:100%;
+height:100%;
+object-fit:cover;
+border:1px solid var(--grupo-color);
+padding:4px
+}
+
+.firma-004-info{
+flex:1;
+min-width:0;
+padding-right:5px
+}
+
+.firma-004-name{
+font-family:'Italianno',cursive;
+font-size:42px;
+line-height:.95;
+color:var(--grupo-color)
+}
+
+.firma-004-divider{
+display:flex;
+align-items:center;
+gap:7px;
+margin-top:12px
+}
+
+.firma-004-divider-line{
+width:30px;
+height:1px;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.firma-004-divider-symbol{
+color:var(--grupo-color);
+font-size:8px
+}
+
+.firma-004-phrase{
+margin-top:10px;
+font-family:Georgia,serif;
+font-size:8px;
+font-style:italic;
+line-height:1.5;
+opacity:.6
+}
