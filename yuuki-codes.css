@@ -1312,3 +1312,141 @@ opacity:.3
 .velvet-data{
 text-transform:uppercase
 }
+/* =========================================================
+   ψuuκï CODES — TÍTULOS Y DATOS
+   AJUSTE GLOBAL
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   TÍTULOS
+   --------------------------------------------------------- */
+
+.camille h1,
+.afterglow h1,
+.aster-title h1,
+.evelyn-title h1,
+.lunelle h1,
+.marceline h1,
+.nocturne h1,
+.opaline-title,
+.roselle h1,
+.seraphine h1,
+.seraphine-messages h1,
+.velvet h1{
+height:56px;
+margin-top:0;
+margin-bottom:0;
+box-sizing:border-box;
+display:flex;
+align-items:center;
+justify-content:center;
+line-height:normal
+}
+
+
+/* ---------------------------------------------------------
+   CENTRADO ESPECÍFICO
+   --------------------------------------------------------- */
+
+.camille h1,
+.afterglow h1,
+.lunelle h1,
+.nocturne h1,
+.roselle h1,
+.seraphine h1,
+.seraphine-messages h1{
+padding-top:0;
+padding-bottom:0
+}
+
+.aster-title h1{
+padding-top:0;
+padding-bottom:0
+}
+
+.evelyn-title h1{
+padding-top:0;
+padding-bottom:0
+}
+
+.marceline h1{
+padding-top:0;
+padding-bottom:0
+}
+
+.velvet h1{
+padding-top:0;
+padding-bottom:0
+}
+
+
+/* ---------------------------------------------------------
+   OPALINE
+   El título tiene el ✦ a la derecha.
+   --------------------------------------------------------- */
+
+.opaline-title{
+justify-content:flex-start;
+text-align:left
+}
+
+.opaline-title span{
+margin-left:auto;
+flex-shrink:0
+}
+
+
+/* ---------------------------------------------------------
+   DATOS
+   Siempre MAYÚSCULAS y un poco más grandes.
+   --------------------------------------------------------- */
+
+.camille-data,
+.afterglow-data,
+.aster-info,
+.evelyn-data,
+.lunelle-data,
+.marceline-data,
+.nocturne-data,
+.opaline-data,
+.roselle-data,
+.seraphine-data,
+.seraphine-messages-data,
+.velvet-data{
+font-size:9px;
+letter-spacing:1.5px;
+text-transform:uppercase
+}
+
+.aster-info span,
+.evelyn-data div,
+.lunelle-data div,
+.marceline-data div,
+.seraphine-data div,
+.seraphine-messages-data div,
+.velvet-data div{
+font-size:9px;
+letter-spacing:1.5px;
+text-transform:uppercase
+}
+
+
+/* ---------------------------------------------------------
+   LOS DATOS NO SE DEFORMAN POR EL TEXTO ESCRITO
+   --------------------------------------------------------- */
+
+.camille-data span,
+.afterglow-data span,
+.aster-info span,
+.evelyn-data div,
+.lunelle-data div,
+.marceline-data div,
+.nocturne-data span,
+.opaline-data span,
+.roselle-data,
+.seraphine-data div,
+.seraphine-messages-data div,
+.velvet-data div{
+text-transform:uppercase
+}
