@@ -56,15 +56,11 @@ opacity:.45
    ψuuκï CODES — PRESENTACIÓN
    ========================================================= */
 
-
-/* ---------------------------------------------------------
-   ESTRUCTURA GENERAL
-   --------------------------------------------------------- */
-
 .yuuki-codes-admin{
 width:500px;
 max-width:94%;
 margin:35px auto;
+box-sizing:border-box;
 color:inherit;
 font-family:'Quicksand',sans-serif;
 text-align:left;
@@ -121,7 +117,7 @@ opacity:.85
 
 .yuuki-codes-admin-title h1{
 margin:8px 0 0;
-font:italic 38px/1 var(--yuuki-title,'Allura'),cursive;
+font:italic 38px/1 'Allura',cursive;
 font-weight:400
 }
 
@@ -195,14 +191,15 @@ margin-top:10px
 
 
 /* ---------------------------------------------------------
-   BLOQUES DE CÓDIGO
+   BLOQUE DE CÓDIGO
    --------------------------------------------------------- */
 
 .yuuki-codes-admin-code{
 margin:10px 0;
 padding:10px 12px;
+box-sizing:border-box;
 border-left:2px solid var(--grupo-color);
-background:color-mix(in srgb,var(--grupo-color),transparent 82%);
+background:rgba(128,128,128,.12);
 font:11px/1.5 monospace;
 overflow-wrap:anywhere
 }
