@@ -1,241 +1,24 @@
-/* =========================================================
-   ψuuκï CODES — ADMIN
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   POST DE ROL
-   --------------------------------------------------------- */
-
-.post-rol-admin{
-width:310px;
-max-width:85%;
-margin:18px auto;
-box-sizing:border-box;
-color:inherit;
-font-family:'Quicksand',sans-serif;
-text-align:center
-}
-
-.post-rol-admin-head{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px
-}
-
-.post-rol-admin-head:before,
-.post-rol-admin-head:after{
-content:"";
-width:32px;
-height:1px;
-background:var(--grupo-color);
-opacity:.6
-}
-
-.post-rol-admin-title{
-padding:7px 18px;
-box-sizing:border-box;
-border:1px solid var(--grupo-color);
-font:italic 11px/1.2 Georgia,serif;
-letter-spacing:3px;
-color:var(--grupo-color);
-text-transform:uppercase
-}
-
-.post-rol-admin-name{
-margin-top:6px;
-font:500 7px/1 'Quicksand',sans-serif;
-letter-spacing:3px;
-text-transform:uppercase;
-opacity:.45
-}
-
-
-/* =========================================================
-   ψuuκï CODES — PRESENTACIÓN
-   ========================================================= */
-
-
-/* ---------------------------------------------------------
-   ESTRUCTURA GENERAL
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin{
-width:520px;
-max-width:94%;
-margin:30px auto;
-box-sizing:border-box;
-color:inherit;
-font-family:'Quicksand',sans-serif;
-text-align:left;
-position:relative
-}
-
-
-/* ---------------------------------------------------------
-   BANNER
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-banner{
-position:relative;
-margin-bottom:58px
-}
-
-.yuuki-codes-admin-image{
-width:100%;
-height:205px;
-overflow:hidden;
-border:3px solid var(--grupo-color);
-box-sizing:border-box
-}
-
-.yuuki-codes-admin-image img{
-width:100%;
-height:100%;
-display:block;
-object-fit:cover
-}
-
-
-/* ---------------------------------------------------------
-   TÍTULO
-   --------------------------------------------------------- */
-
 .yuuki-codes-admin-title{
 position:absolute;
 left:38px;
 bottom:-43px;
 width:340px;
-padding:18px 25px;
+padding:11px 22px;
 box-sizing:border-box;
 background:var(--grupo-color);
 color:#fff
 }
 
-.yuuki-codes-admin-title-top{
-font:500 7px/1 'Quicksand',sans-serif;
-letter-spacing:3px;
-text-transform:uppercase;
-opacity:.85
-}
-
 .yuuki-codes-admin-title h1{
-margin:9px 0 0;
-font:italic 40px/1 var(--yuuki-title,'Allura'),cursive;
+margin:6px 0 0;
+font:italic 38px/1 var(--yuuki-title,'Allura'),cursive;
 font-weight:400
 }
 
 .yuuki-codes-admin-title-bottom{
-margin-top:9px;
+margin-top:6px;
 font:500 7px/1 'Quicksand',sans-serif;
 letter-spacing:2px;
 text-transform:uppercase;
 opacity:.75
-}
-
-
-/* ---------------------------------------------------------
-   CONTENIDO
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-content{
-padding:0 28px;
-box-sizing:border-box
-}
-
-.yuuki-codes-admin-section{
-margin-top:25px
-}
-
-.yuuki-codes-admin-section:first-child{
-margin-top:0
-}
-
-
-/* ---------------------------------------------------------
-   ENCABEZADOS
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-heading{
-display:flex;
-align-items:center;
-gap:16px;
-margin-bottom:11px
-}
-
-.yuuki-codes-admin-heading span{
-font:600 11px/1 'Quicksand',sans-serif;
-letter-spacing:3px;
-text-transform:uppercase;
-color:var(--grupo-color);
-white-space:nowrap
-}
-
-.yuuki-codes-admin-heading:after{
-content:"";
-height:1px;
-flex:1;
-background:var(--grupo-color);
-opacity:.55
-}
-
-
-/* ---------------------------------------------------------
-   TEXTO
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-text{
-font:13px/1.7 'Quicksand',sans-serif;
-text-align:justify
-}
-
-.yuuki-codes-admin-space{
-margin-top:10px
-}
-
-
-/* ---------------------------------------------------------
-   BLOQUE DE CÓDIGO
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-code{
-margin:10px 0;
-padding:10px 12px;
-box-sizing:border-box;
-border-left:2px solid var(--grupo-color);
-background:rgba(128,128,128,.12);
-font:11px/1.5 monospace;
-overflow-wrap:anywhere
-}
-
-
-/* ---------------------------------------------------------
-   CIERRE
-   --------------------------------------------------------- */
-
-.yuuki-codes-admin-closing{
-display:flex;
-align-items:center;
-gap:15px;
-margin:28px 0 14px
-}
-
-.yuuki-codes-admin-closing:before,
-.yuuki-codes-admin-closing:after{
-content:"";
-height:1px;
-flex:1;
-background:var(--grupo-color);
-opacity:.55
-}
-
-.yuuki-codes-admin-closing span{
-font-size:10px;
-color:var(--grupo-color)
-}
-
-.yuuki-codes-admin-thanks{
-font:13px/1.7 'Quicksand',sans-serif;
-text-align:center
 }
