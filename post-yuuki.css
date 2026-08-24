@@ -1,12 +1,13 @@
-/* POST DE ROL 001 — GOLDEN FRAMES */
+/* 001 — GOLDEN FRAMES */
+
 .yuuki-rol {
     width: 560px;
     max-width: 94%;
     margin: 30px auto;
-    padding: 55px 48px 50px;
+    padding: 38px 48px 42px;
     position: relative;
     box-sizing: border-box;
-    color: #d8d0bd;
+    color: inherit;
     font-family: Arial, sans-serif;
     font-size: 11px;
     line-height: 1.7;
@@ -21,19 +22,28 @@
 }
 
 .yuuki-rol-frame-1 {
-    inset: 22px 25px 24px 30px;
+    top: 22px;
+    left: 30px;
+    right: 25px;
+    bottom: 24px;
     opacity: 1;
     transform: rotate(.3deg);
 }
 
 .yuuki-rol-frame-2 {
-    inset: 29px 34px 17px 23px;
+    top: 29px;
+    left: 23px;
+    right: 34px;
+    bottom: 17px;
     opacity: .72;
     transform: rotate(-.9deg);
 }
 
 .yuuki-rol-frame-3 {
-    inset: 15px 18px 31px 39px;
+    top: 15px;
+    left: 39px;
+    right: 18px;
+    bottom: 31px;
     opacity: .5;
     transform: rotate(1.1deg);
 }
@@ -111,7 +121,7 @@
 
 .yuuki-rol-text {
     margin-top: 20px;
-    color: #d8d0bd;
+    color: inherit;
     text-align: justify;
 }
 
