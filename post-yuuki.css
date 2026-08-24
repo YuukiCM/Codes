@@ -1,152 +1,163 @@
 /* 001 — GOLDEN FRAMES */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap');
+
 .yuuki-rol {
-    width: 560px;
-    max-width: 94%;
-    margin: 30px auto;
-    padding: 38px 48px 42px;
-    position: relative;
-    box-sizing: border-box;
-    color: inherit;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    line-height: 1.7;
-    text-align: left;
+    width:560px;
+    max-width:94%;
+    margin:30px auto;
+    padding:38px 48px 42px;
+    position:relative;
+    box-sizing:border-box;
+    color:inherit;
+    font-family:'Quicksand',sans-serif;
+    font-size:11px;
+    line-height:1.7;
+    text-align:left;
 }
 
 .yuuki-rol-frame {
-    position: absolute;
-    pointer-events: none;
-    box-sizing: border-box;
-    border: 1px solid var(--yuuki-gold);
+    position:absolute;
+    pointer-events:none;
+    box-sizing:border-box;
+    border:1px solid var(--yuuki-color);
 }
 
 .yuuki-rol-frame-1 {
-    top: 22px;
-    left: 30px;
-    right: 25px;
-    bottom: 24px;
-    opacity: 1;
-    transform: rotate(.3deg);
+    top:22px;
+    left:30px;
+    right:25px;
+    bottom:24px;
+    opacity:1;
+    transform:rotate(.3deg);
 }
 
 .yuuki-rol-frame-2 {
-    top: 29px;
-    left: 23px;
-    right: 34px;
-    bottom: 17px;
-    opacity: .72;
-    transform: rotate(-.9deg);
+    top:29px;
+    left:23px;
+    right:34px;
+    bottom:17px;
+    opacity:.72;
+    transform:rotate(-.9deg);
 }
 
 .yuuki-rol-frame-3 {
-    top: 15px;
-    left: 39px;
-    right: 18px;
-    bottom: 31px;
-    opacity: .5;
-    transform: rotate(1.1deg);
+    top:15px;
+    left:39px;
+    right:18px;
+    bottom:31px;
+    opacity:.5;
+    transform:rotate(1.1deg);
 }
 
 .yuuki-rol-content {
-    position: relative;
-    z-index: 2;
-    width: 440px;
-    max-width: 100%;
-    margin: 0 auto;
+    position:relative;
+    z-index:2;
+    width:440px;
+    max-width:100%;
+    margin:0 auto;
 }
 
 .yuuki-rol-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: var(--yuuki-gold);
-    font-size: 7px;
-    letter-spacing: 3px;
-    opacity: .9;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--yuuki-color);
+    font-family:'Quicksand',sans-serif;
+    font-size:7px;
+    font-weight:600;
+    letter-spacing:3px;
+    opacity:.9;
 }
 
 .yuuki-rol-number {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-style: italic;
-    letter-spacing: 0;
-    color: var(--yuuki-gold);
+    font-family:Georgia,serif;
+    font-size:18px;
+    font-style:italic;
+    font-weight:normal;
+    letter-spacing:0;
+    color:var(--yuuki-color);
 }
 
 .yuuki-rol-header-line {
-    width: 42px;
-    height: 1px;
-    background: var(--yuuki-gold);
-    opacity: .65;
+    width:42px;
+    height:1px;
+    background:var(--yuuki-color);
+    opacity:.65;
 }
 
 .yuuki-rol-title {
-    margin-top: 45px;
+    margin-top:45px;
 }
 
 .yuuki-rol-title h1 {
-    margin: 0;
-    font-family: Georgia, serif;
-    font-size: 30px;
-    font-weight: normal;
-    font-style: italic;
-    line-height: 1.1;
-    color: var(--yuuki-gold);
+    margin:0;
+    font-family:var(--yuuki-title,'Cormorant Garamond'),serif;
+    font-size:30px;
+    font-weight:500;
+    font-style:italic;
+    line-height:1.1;
+    color:var(--yuuki-color);
 }
 
 .yuuki-rol-title-line {
-    width: 55px;
-    height: 1px;
-    margin-top: 13px;
-    background: var(--yuuki-gold);
-    opacity: .7;
+    width:55px;
+    height:1px;
+    margin-top:13px;
+    background:var(--yuuki-color);
+    opacity:.7;
 }
 
 .yuuki-rol-data {
-    margin-top: 10px;
-    color: var(--yuuki-gold);
-    font-size: 7px;
-    letter-spacing: 2px;
-    opacity: .75;
+    margin-top:10px;
+    color:var(--yuuki-color);
+    font-family:'Quicksand',sans-serif;
+    font-size:7px;
+    font-weight:600;
+    letter-spacing:2px;
+    opacity:.75;
 }
 
 .yuuki-rol-divider {
-    width: 100%;
-    height: 1px;
-    margin-top: 20px;
-    background: var(--yuuki-gold);
-    opacity: .5;
+    width:100%;
+    height:1px;
+    margin-top:20px;
+    background:var(--yuuki-color);
+    opacity:.5;
 }
 
 .yuuki-rol-text {
-    margin-top: 20px;
-    color: inherit;
-    text-align: justify;
+    margin-top:20px;
+    color:inherit;
+    font-family:'Quicksand',sans-serif;
+    font-size:11px;
+    line-height:1.7;
+    text-align:justify;
 }
 
 .yuuki-rol-text p {
-    margin: 0 0 18px;
+    margin:0 0 18px;
 }
 
 .yuuki-rol-text p:last-child {
-    margin-bottom: 0;
+    margin-bottom:0;
 }
 
 .yuuki-rol-signature {
-    display: block;
-    width: 560px;
-    max-width: 94%;
-    margin: -18px auto 25px;
-    color: var(--yuuki-gold);
-    font-family: Georgia, serif;
-    font-size: 7px;
-    letter-spacing: 2px;
-    text-align: center;
-    text-decoration: none;
-    opacity: .65;
+    display:block;
+    width:560px;
+    max-width:94%;
+    margin:-18px auto 25px;
+    color:var(--yuuki-color);
+    font-family:'Quicksand',sans-serif;
+    font-size:8px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-align:center;
+    text-decoration:none;
+    opacity:.7;
 }
 
 .yuuki-rol-signature:hover {
-    opacity: 1;
+    opacity:1;
 }
