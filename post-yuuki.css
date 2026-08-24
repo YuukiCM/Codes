@@ -161,3 +161,152 @@
 .yuuki-rol-signature:hover {
     opacity:1;
 }
+
+
+/* =========================================
+   ψuuκï CODES
+   002 — SAKURA
+   ========================================= */
+
+.yuuki-sakura-002{
+    width:430px;
+    max-width:92%;
+    height:548px;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+    box-sizing:border-box;
+    color:inherit;
+    font-family:Quicksand,Arial,sans-serif;
+    font-size:10px;
+    line-height:1.7;
+    text-align:left;
+    background:transparent;
+}
+
+/* FONDO */
+
+.yuuki-sakura-002-bg{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    background-image:var(--yuuki-bg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    opacity:.42;
+}
+
+/* CONTENIDO */
+
+.yuuki-sakura-002-content{
+    position:relative;
+    z-index:2;
+    width:310px;
+    max-width:76%;
+    margin:0 auto;
+    padding-top:82px;
+    box-sizing:border-box;
+}
+
+/* TITULO */
+
+.yuuki-sakura-002-title{
+    margin:0;
+    text-align:center;
+    font-family:var(--yuuki-title,Georgia,serif);
+    font-size:32px;
+    font-weight:500;
+    font-style:normal;
+    line-height:1.05;
+    color:var(--yuuki-color);
+}
+
+/* DECORACION DEL TITULO */
+
+.yuuki-sakura-002-title-decoration{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    margin-top:14px;
+}
+
+.yuuki-sakura-002-title-decoration span{
+    width:38px;
+    height:1px;
+    background:var(--yuuki-color);
+    opacity:.65;
+}
+
+.yuuki-sakura-002-title-decoration i{
+    font-size:8px;
+    font-style:normal;
+    color:var(--yuuki-color);
+}
+
+/* DATOS */
+
+.yuuki-sakura-002-data{
+    margin-top:9px;
+    font-size:6px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:var(--yuuki-color);
+    opacity:.8;
+    text-align:center;
+}
+
+/* SEPARADOR */
+
+.yuuki-sakura-002-divider{
+    width:100%;
+    height:1px;
+    margin-top:30px;
+    background:var(--yuuki-color);
+    opacity:.45;
+}
+
+/* TEXTO */
+
+.yuuki-sakura-002-text{
+    margin-top:20px;
+    color:inherit;
+    font-family:Quicksand,Arial,sans-serif;
+    font-size:10px;
+    line-height:1.75;
+    text-align:justify;
+}
+
+.yuuki-sakura-002-text p{
+    margin:0 0 17px;
+    color:inherit;
+}
+
+.yuuki-sakura-002-text p:last-child{
+    margin-bottom:0;
+}
+
+/* FIRMA PERSONAL */
+
+.yuuki-sakura-002-signature{
+    display:block;
+    width:430px;
+    max-width:92%;
+    margin:8px auto 25px;
+    color:var(--yuuki-color);
+    font-family:Quicksand,Arial,sans-serif;
+    font-size:8px;
+    font-weight:600;
+    letter-spacing:2px;
+    text-align:center;
+    text-decoration:none;
+    opacity:.75;
+    transition:opacity .2s ease;
+}
+
+.yuuki-sakura-002-signature:hover{
+    opacity:1;
+}
+
+
