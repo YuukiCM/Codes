@@ -1,0 +1,361 @@
+/* =========================================================
+   ψuuκï CODES
+   FIRMAS · BUTTERFLY 001
+   ========================================================= */
+
+.butterfly{
+    width:300px;
+    height:120px;
+    margin:20px auto;
+    position:relative;
+    box-sizing:border-box;
+    overflow:hidden;
+    font-family:'Quicksand',sans-serif;
+    color:inherit;
+}
+
+/* =========================================================
+   LINEAS
+   ========================================================= */
+
+.butterfly::before,
+.butterfly::after{
+    content:"";
+    position:absolute;
+    left:8px;
+    right:8px;
+    height:1px;
+    background:var(--accent);
+    opacity:.5;
+}
+
+.butterfly::before{
+    top:9px;
+}
+
+.butterfly::after{
+    bottom:9px;
+}
+
+
+/* =========================================================
+   DETALLES
+   ========================================================= */
+
+.butterfly-spark{
+    position:absolute;
+    color:var(--accent);
+    line-height:1;
+}
+
+
+/* =========================================================
+   MARCO CIRCULAR
+   ========================================================= */
+
+.butterfly-photo{
+    position:absolute;
+    left:32px;
+    top:23px;
+    width:76px;
+    height:76px;
+    border:1px solid var(--accent);
+    border-radius:50%;
+    box-sizing:border-box;
+    background-image:var(--photo);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    z-index:3;
+}
+
+.butterfly-photo::before{
+    content:"";
+    position:absolute;
+    inset:4px;
+    border:1px solid var(--accent);
+    border-radius:50%;
+    opacity:.65;
+}
+
+.butterfly-photo::after{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border:1px solid var(--accent);
+    border-radius:50%;
+    opacity:.35;
+}
+
+
+/* =========================================================
+   RAMA SUPERIOR
+   ========================================================= */
+
+.butterfly-photo .branch-top{
+    position:absolute;
+    width:1px;
+    height:25px;
+    left:42px;
+    top:-17px;
+    background:var(--accent);
+    transform:rotate(34deg);
+    transform-origin:bottom;
+    opacity:.75;
+}
+
+
+/* =========================================================
+   RAMAS / HOJAS
+   ========================================================= */
+
+.butterfly-leaf{
+    position:absolute;
+    width:10px;
+    height:17px;
+    border:1px solid var(--accent);
+    box-sizing:border-box;
+    opacity:.85;
+}
+
+.butterfly-leaf.one{
+    left:92px;
+    top:25px;
+    border-radius:100% 0 100% 0;
+    transform:rotate(38deg);
+}
+
+.butterfly-leaf.two{
+    left:23px;
+    top:78px;
+    border-radius:0 100% 0 100%;
+    transform:rotate(48deg);
+}
+
+.butterfly-leaf.three{
+    left:82px;
+    top:84px;
+    border-radius:100% 0 100% 0;
+    transform:rotate(-28deg);
+}
+
+
+/* =========================================================
+   FLORES
+   ========================================================= */
+
+.butterfly-flower{
+    position:absolute;
+    width:28px;
+    height:28px;
+    z-index:6;
+}
+
+.butterfly-flower::before,
+.butterfly-flower::after{
+    content:"";
+    position:absolute;
+    width:11px;
+    height:17px;
+    border:1px solid var(--accent);
+    box-sizing:border-box;
+}
+
+.butterfly-flower::before{
+    left:3px;
+    top:4px;
+    border-radius:80% 20% 70% 30%;
+    transform:rotate(-35deg);
+}
+
+.butterfly-flower::after{
+    left:13px;
+    top:4px;
+    border-radius:20% 80% 30% 70%;
+    transform:rotate(35deg);
+}
+
+.butterfly-flower.one{
+    left:3px;
+    top:13px;
+    transform:rotate(-12deg);
+}
+
+.butterfly-flower.two{
+    left:79px;
+    top:72px;
+    transform:rotate(24deg);
+}
+
+.butterfly-flower.one i,
+.butterfly-flower.two i{
+    position:absolute;
+    left:11px;
+    top:10px;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:var(--accent);
+}
+
+
+/* =========================================================
+   MARIPOSA
+   ========================================================= */
+
+.butterfly-wing{
+    position:absolute;
+    left:42px;
+    top:13px;
+    width:30px;
+    height:25px;
+    z-index:8;
+    transform:rotate(-14deg);
+}
+
+.butterfly-wing::before,
+.butterfly-wing::after{
+    content:"";
+    position:absolute;
+    top:3px;
+    width:13px;
+    height:20px;
+    background:var(--accent);
+    opacity:.8;
+}
+
+.butterfly-wing::before{
+    left:1px;
+    border-radius:90% 20% 70% 30%;
+    transform:rotate(-25deg);
+}
+
+.butterfly-wing::after{
+    right:1px;
+    border-radius:20% 90% 30% 70%;
+    transform:rotate(25deg);
+}
+
+.butterfly-wing i{
+    position:absolute;
+    left:13px;
+    top:5px;
+    width:4px;
+    height:16px;
+    background:var(--accent);
+    border-radius:50%;
+    z-index:2;
+}
+
+
+/* =========================================================
+   INFORMACION
+   ========================================================= */
+
+.butterfly-info{
+    position:absolute;
+    left:122px;
+    top:35px;
+    width:168px;
+    text-align:center;
+    z-index:10;
+}
+
+.butterfly-name{
+    display:block;
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-size:20px;
+    font-weight:500;
+    letter-spacing:4px;
+    line-height:1;
+    color:var(--accent);
+    text-transform:uppercase;
+}
+
+.butterfly-surname{
+    display:block;
+    margin-top:2px;
+    font-family:'Allura',cursive;
+    font-size:30px;
+    font-weight:400;
+    line-height:.95;
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   SEPARADOR DEL NOMBRE
+   ========================================================= */
+
+.butterfly-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    margin-top:9px;
+}
+
+.butterfly-divider span{
+    display:block;
+    width:30px;
+    height:1px;
+    background:var(--accent);
+    opacity:.6;
+}
+
+.butterfly-divider i{
+    font-family:Georgia,serif;
+    font-size:6px;
+    font-style:normal;
+    color:var(--accent);
+}
+
+
+/* =========================================================
+   DETALLES DECORATIVOS
+   ========================================================= */
+
+.butterfly-detail{
+    position:absolute;
+    color:var(--accent);
+    line-height:1;
+    z-index:12;
+}
+
+.butterfly-detail.one{
+    left:12px;
+    top:18px;
+    font-size:6px;
+}
+
+.butterfly-detail.two{
+    right:13px;
+    top:28px;
+    font-size:5px;
+}
+
+.butterfly-detail.three{
+    right:10px;
+    bottom:20px;
+    font-size:6px;
+}
+
+.butterfly-detail.four{
+    left:104px;
+    bottom:20px;
+    font-size:4px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:340px){
+
+    .butterfly{
+        transform:scale(.92);
+        transform-origin:center;
+    }
+
+}
