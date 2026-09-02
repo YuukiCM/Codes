@@ -313,7 +313,7 @@
 width:430px;
 box-sizing:border-box;
 padding:2px;
-border:10px solid color-mix(in srgb,var(--grupo-color),transparent 85%);
+border:10px solid rgba(255,255,255,.08);
 border-radius:8px
 }
 
@@ -323,7 +323,7 @@ border:1px solid var(--grupo-color);
 border-radius:6px;
 box-sizing:border-box;
 color:inherit;
-font:var(--yuuki-post-size)/1.7 Quicksand,sans-serif;
+font:12px/1.7 Quicksand,sans-serif;
 text-align:justify
 }
 
