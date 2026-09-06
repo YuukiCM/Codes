@@ -1,4 +1,4 @@
-.spencer{
+.search{
 width:430px;
 box-sizing:border-box;
 padding:2px;
@@ -6,7 +6,7 @@ border:10px solid rgba(255,255,255,.08);
 border-radius:8px
 }
 
-.spencer-head{
+.search-box{
 padding:28px 32px;
 border:1px solid var(--grupo-color);
 border-radius:6px;
@@ -16,20 +16,20 @@ font:14px/1.7 Quicksand,sans-serif;
 text-align:justify
 }
 
-.spencer-top{
+.search-top{
 display:flex;
 align-items:flex-start;
 justify-content:space-between;
 gap:25px
 }
 
-.spencer h1{
+.search h1{
 margin:0 0 8px;
 font:30px/1 Oregano,cursive;
 color:var(--grupo-color)
 }
 
-.spencer-data{
+.search-data{
 font:8px/2 Quicksand,sans-serif;
 letter-spacing:2px;
 color:var(--grupo-color);
@@ -37,14 +37,14 @@ text-transform:uppercase;
 opacity:.8
 }
 
-.spencer-icon{
+.search-icon{
 padding-top:3px;
 color:var(--grupo-color);
 font-size:22px;
 line-height:1
 }
 
-.spencer-line{
+.search-line{
 width:35px;
 height:1px;
 background:var(--grupo-color);
@@ -52,7 +52,7 @@ opacity:.6;
 margin:25px auto
 }
 
-.spencer-text{
+.search-text{
 color:inherit;
 font:14px/1.7 Quicksand,sans-serif;
 text-align:justify
