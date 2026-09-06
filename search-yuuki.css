@@ -61,7 +61,7 @@
     align-items:center;
     gap:12px;
     color:var(--yuuki-color);
-    font-size:7px;
+    font-size:8px;
     font-weight:600;
     letter-spacing:3px;
     opacity:.9;
@@ -105,12 +105,12 @@
 }
 
 .yuuki-search-data{
-    margin-top:9px;
+    margin-top:10px;
     color:var(--yuuki-color);
-    font-size:7px;
+    font-size:9px;
     font-weight:600;
     letter-spacing:2px;
-    opacity:.75;
+    opacity:.85;
 }
 
 .yuuki-search-divider{
@@ -170,21 +170,21 @@
 }
 
 .yuuki-search-position-head span{
-    font-size:10px;
+    font-size:11px;
     font-weight:600;
     letter-spacing:1.5px;
 }
 
 .yuuki-search-position-head small{
-    font-size:6px;
+    font-size:8px;
     font-weight:600;
     letter-spacing:1.5px;
-    opacity:.7;
+    opacity:.8;
 }
 
 .yuuki-search-position-content p{
     margin:0;
-    font-size:9px;
+    font-size:10px;
     line-height:1.7;
     text-align:justify;
 }
