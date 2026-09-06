@@ -1,208 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap');
-
-.yuuki-search-obsidian{
-    width:620px;
-    max-width:94%;
-    margin:30px auto;
-    padding:42px 55px 45px;
-    position:relative;
-    box-sizing:border-box;
-    color:inherit;
-    font-family:'Quicksand',sans-serif;
-    font-size:13px;
-    line-height:1.7;
-    text-align:left;
+.spencer{
+width:430px;
+box-sizing:border-box;
+padding:2px;
+border:10px solid rgba(255,255,255,.08);
+border-radius:8px
 }
 
-.yuuki-search-frame{
-    position:absolute;
-    pointer-events:none;
-    box-sizing:border-box;
-    border:1px solid var(--yuuki-color);
+.spencer-head{
+padding:28px 32px;
+border:1px solid var(--grupo-color);
+border-radius:6px;
+box-sizing:border-box;
+color:inherit;
+font:14px/1.7 Quicksand,sans-serif;
+text-align:justify
 }
 
-.yuuki-search-frame-1{
-    top:22px;
-    left:30px;
-    right:25px;
-    bottom:24px;
-    opacity:1;
-    transform:rotate(.3deg);
+.spencer-top{
+display:flex;
+align-items:flex-start;
+justify-content:space-between;
+gap:25px
 }
 
-.yuuki-search-frame-2{
-    top:29px;
-    left:23px;
-    right:34px;
-    bottom:17px;
-    opacity:.72;
-    transform:rotate(-.9deg);
+.spencer h1{
+margin:0 0 8px;
+font:30px/1 Oregano,cursive;
+color:var(--grupo-color)
 }
 
-.yuuki-search-frame-3{
-    top:15px;
-    left:39px;
-    right:18px;
-    bottom:31px;
-    opacity:.5;
-    transform:rotate(1.1deg);
+.spencer-data{
+font:8px/2 Quicksand,sans-serif;
+letter-spacing:2px;
+color:var(--grupo-color);
+text-transform:uppercase;
+opacity:.8
 }
 
-.yuuki-search-content{
-    position:relative;
-    z-index:2;
-    width:480px;
-    max-width:100%;
-    margin:0 auto;
+.spencer-icon{
+padding-top:3px;
+color:var(--grupo-color);
+font-size:22px;
+line-height:1
 }
 
-.yuuki-search-header{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:var(--yuuki-color);
-    font-size:8px;
-    font-weight:600;
-    letter-spacing:3px;
-    opacity:.9;
+.spencer-line{
+width:35px;
+height:1px;
+background:var(--grupo-color);
+opacity:.6;
+margin:25px auto
 }
 
-.yuuki-search-number{
-    font-family:Georgia,serif;
-    font-size:18px;
-    font-style:italic;
-    font-weight:normal;
-    letter-spacing:0;
-}
-
-.yuuki-search-header-line{
-    width:42px;
-    height:1px;
-    background:var(--yuuki-color);
-    opacity:.65;
-}
-
-.yuuki-search-title{
-    margin-top:38px;
-}
-
-.yuuki-search-title h1{
-    margin:0;
-    font-family:'Cormorant Garamond',serif;
-    font-size:38px;
-    font-weight:500;
-    font-style:italic;
-    line-height:1;
-    color:var(--yuuki-color);
-}
-
-.yuuki-search-title-line{
-    width:55px;
-    height:1px;
-    margin-top:13px;
-    background:var(--yuuki-color);
-    opacity:.7;
-}
-
-.yuuki-search-data{
-    margin-top:10px;
-    color:var(--yuuki-color);
-    font-size:9px;
-    font-weight:600;
-    letter-spacing:2px;
-    opacity:.85;
-}
-
-.yuuki-search-divider{
-    width:100%;
-    height:1px;
-    margin-top:22px;
-    background:var(--yuuki-color);
-    opacity:.5;
-}
-
-.yuuki-search-intro{
-    margin-top:20px;
-    font-size:10px;
-    line-height:1.75;
-    text-align:justify;
-}
-
-.yuuki-search-intro p{
-    margin:0 0 15px;
-}
-
-.yuuki-search-intro p:last-child{
-    margin-bottom:0;
-}
-
-.yuuki-search-positions{
-    margin-top:20px;
-}
-
-.yuuki-search-position{
-    display:flex;
-    gap:16px;
-    padding:18px 0;
-    border-bottom:1px solid var(--yuuki-color);
-}
-
-.yuuki-search-position-number{
-    width:30px;
-    flex:none;
-    font-family:Georgia,serif;
-    font-size:14px;
-    font-style:italic;
-    color:var(--yuuki-color);
-}
-
-.yuuki-search-position-content{
-    flex:1;
-}
-
-.yuuki-search-position-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    gap:15px;
-    margin-bottom:7px;
-    color:var(--yuuki-color);
-}
-
-.yuuki-search-position-head span{
-    font-size:11px;
-    font-weight:600;
-    letter-spacing:1.5px;
-}
-
-.yuuki-search-position-head small{
-    font-size:8px;
-    font-weight:600;
-    letter-spacing:1.5px;
-    opacity:.8;
-}
-
-.yuuki-search-position-content p{
-    margin:0;
-    font-size:10px;
-    line-height:1.7;
-    text-align:justify;
-}
-
-.yuuki-search-conditions{
-    margin-top:20px;
-    font-size:8px;
-    line-height:1.8;
-}
-
-.yuuki-search-conditions-title{
-    margin-bottom:10px;
-    color:var(--yuuki-color);
-    font-size:7px;
-    font-weight:600;
-    letter-spacing:2px;
-}
-
-.yuuki-search-conditions p{
-    margin:0;
+.spencer-text{
+color:inherit;
+font:14px/1.7 Quicksand,sans-serif;
+text-align:justify
 }
