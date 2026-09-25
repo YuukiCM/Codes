@@ -368,3 +368,62 @@ color:inherit;
 font:var(--yuuki-post-size)/1.7 Quicksand,sans-serif;
 text-align:justify
 }
+
+
+.soo-ah{
+width:430px;
+box-sizing:border-box;
+padding:2px;
+border:1px solid rgba(217,130,130,.35);
+border-radius:8px
+}
+
+.soo-ah-box{
+padding:30px 32px;
+border:1px solid #D98282;
+border-radius:6px;
+box-sizing:border-box;
+color:inherit
+}
+
+.soo-ah-title{
+font:48px/1 Grey Qo,cursive;
+color:#D98282;
+text-align:center;
+margin-bottom:8px
+}
+
+.soo-ah-heart{
+font:16px/1 Quicksand,sans-serif;
+color:#D98282;
+text-align:center;
+margin-bottom:12px
+}
+
+.soo-ah-data{
+font:8px/2 Quicksand,sans-serif;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#D98282;
+text-align:center;
+opacity:.8
+}
+
+.soo-ah-line{
+width:45px;
+height:1px;
+background:#D98282;
+opacity:.6;
+margin:25px auto
+}
+
+.soo-ah-text{
+font:12px/1.7 Quicksand,sans-serif;
+color:inherit;
+text-align:justify
+}
+
+.soo-ah-text b,
+.soo-ah-text strong{
+color:#D98282
+}
