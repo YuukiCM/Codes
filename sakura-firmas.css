@@ -243,151 +243,105 @@
   letter-spacing: 2px;
 }
 
+
 /* =========================================================
-   SAKURA FIRMAS - MODELOS CON DOBLE IMAGEN
+   SAKURA FIRMAS - CREATIVAS & ÚNICAS
    ========================================================= */
 
-/* --- MODELO 6: DUAL COLLAGE (Dos imágenes verticales lado a lado + Nombre) --- */
-.sfirma-dual {
+/* --- MODELO 6: STAMP (Estilo Sello Postal / Estampa) --- */
+.sfirma-stamp {
   width: 420px;
   max-width: 95%;
   margin: 15px auto;
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 15px;
-  background: rgba(0, 0, 0, 0.15);
-  border: 1px solid var(--grupo-color, #e0a3b8);
+  background: rgba(0, 0, 0, 0.2);
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 4px;
+  position: relative;
+  border: 2px dashed var(--grupo-color, #e0a3b8);
 }
 
-.sfirma-dual .sf-photos {
-  display: flex;
-  gap: 8px;
+.sfirma-stamp .sf-img-wrap {
+  position: relative;
   flex-shrink: 0;
 }
 
-.sfirma-dual .sf-photo {
-  width: 65px;
-  height: 90px;
+.sfirma-stamp .sf-avatar {
+  width: 75px;
+  height: 95px;
   object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid var(--grupo-color, #e0a3b8);
+  border-radius: 2px;
+  display: block;
 }
 
-.sfirma-dual .sf-name {
-  font: var(--yuuki-title-size, 19px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+.sfirma-stamp .sf-stamp-border {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  pointer-events: none;
+}
+
+.sfirma-stamp .sf-name {
+  font: var(--yuuki-title-size, 20px)/1.1 var(--yuuki-title, 'Playfair Display', serif);
   color: var(--grupo-color, #e0a3b8);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-align: left;
-  flex-grow: 1;
 }
 
 
-/* --- MODELO 7: OVERLAP / SOLAPADAS (Imagen principal + Avatar circular superpuesto) --- */
-.sfirma-overlap {
+/* --- MODELO 7: GIANT INITIAL (Inicial Gigante Transparente) --- */
+.sfirma-initial {
   width: 400px;
   max-width: 95%;
   margin: 15px auto;
   box-sizing: border-box;
-  text-align: center;
-}
-
-.sfirma-overlap .sf-container {
+  display: flex;
+  align-items: center;
+  gap: 18px;
   position: relative;
-  width: 100%;
-  height: 110px;
-  margin-bottom: 12px;
+  padding: 15px 10px;
+  overflow: hidden;
 }
 
-.sfirma-overlap .sf-bg-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--grupo-color, #e0a3b8);
-}
-
-.sfirma-overlap .sf-circle-img {
+.sfirma-initial .sf-bg-letter {
   position: absolute;
-  bottom: -15px;
-  left: 20px;
-  width: 65px;
-  height: 65px;
+  right: -10px;
+  bottom: -20px;
+  font: bold 110px/1 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8);
+  opacity: 0.15;
+  user-select: none;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.sfirma-initial .sf-avatar {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #1a1a1a; /* Borde oscuro para separarlo del fondo */
-  outline: 1px solid var(--grupo-color, #e0a3b8);
+  border: 2px solid var(--grupo-color, #e0a3b8);
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.sfirma-overlap .sf-name-wrap {
-  text-align: right;
-  padding-right: 10px;
-}
-
-.sfirma-overlap .sf-name {
-  font: var(--yuuki-title-size, 18px)/1 var(--yuuki-title, 'Playfair Display', serif);
+.sfirma-initial .sf-name {
+  position: relative;
+  z-index: 2;
+  font: var(--yuuki-title-size, 19px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
   color: var(--grupo-color, #e0a3b8);
   text-transform: uppercase;
   letter-spacing: 3px;
+  text-align: left;
 }
 
 
-/* --- MODELO 8: SIDE-BY-SIDE SPLIT (Dos banners horizontales divididos) --- */
-.sfirma-split {
-  width: 440px;
-  max-width: 95%;
-  margin: 15px auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.sfirma-split .sf-grid {
-  display: flex;
-  gap: 10px;
-  width: 100%;
-}
-
-.sfirma-split .sf-banner {
-  width: 50%;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid var(--grupo-color, #e0a3b8);
-}
-
-.sfirma-split .sf-name-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-}
-
-.sfirma-split .sf-line {
-  flex-grow: 1;
-  height: 1px;
-  background: var(--grupo-color, #e0a3b8);
-  opacity: 0.5;
-}
-
-.sfirma-split .sf-name {
-  font: var(--yuuki-title-size, 17px)/1 var(--yuuki-title, 'Playfair Display', serif);
-  color: var(--grupo-color, #e0a3b8);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  white-space: nowrap;
-}
-
-
-/* --- MODELO 9: POLAROID STACK (Efecto de dos fotos tipo Polaroid inclinadas) --- */
-.sfirma-polaroid {
+/* --- MODELO 8: ASYMMETRIC (Cuadro Desplazado / Offset) --- */
+.sfirma-asymm {
   width: 400px;
   max-width: 95%;
   margin: 15px auto;
@@ -399,43 +353,115 @@
   padding: 10px;
 }
 
-.sfirma-polaroid .sf-stack {
+.sfirma-asymm .sf-box-img {
   position: relative;
-  width: 100px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   flex-shrink: 0;
 }
 
-.sfirma-polaroid .sf-img1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 65px;
-  height: 75px;
+.sfirma-asymm .sf-avatar {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 4px;
-  border: 1px solid var(--grupo-color, #e0a3b8);
-  transform: rotate(-6deg);
-  z-index: 1;
-}
-
-.sfirma-polaroid .sf-img2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 65px;
-  height: 75px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid var(--grupo-color, #e0a3b8);
-  transform: rotate(6deg);
+  position: relative;
   z-index: 2;
 }
 
+/* Cuadro decorativo desplazado */
+.sfirma-asymm .sf-box-img::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -6px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--grupo-color, #e0a3b8);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.sfirma-asymm .sf-name {
+  font: var(--yuuki-title-size, 18px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--grupo-color, #e0a3b8);
+  padding-bottom: 4px;
+}
+
+
+/* --- MODELO 9: POLAROID TILT (Estilo Foto Polaroid Inclinada) --- */
+.sfirma-polaroid {
+  width: 380px;
+  max-width: 95%;
+  margin: 15px auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.sfirma-polaroid .sf-frame {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  padding: 6px 6px 16px 6px;
+  border-radius: 4px;
+  transform: rotate(-3deg); /* Ligera inclinación coqueta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.sfirma-polaroid .sf-avatar {
+  width: 65px;
+  height: 75px;
+  object-fit: cover;
+  display: block;
+}
+
 .sfirma-polaroid .sf-name {
-  font: var(--yuuki-title-size, 19px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  font: var(--yuuki-title-size, 20px)/1.1 var(--yuuki-title, 'Playfair Display', serif);
   color: var(--grupo-color, #e0a3b8);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
+}
+
+
+/* --- MODELO 10: MINIMAL VERTICAL (Línea Vertical Chic) --- */
+.sfirma-vline {
+  width: 420px;
+  max-width: 95%;
+  margin: 15px auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 8px;
+}
+
+.sfirma-vline .sf-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.sfirma-vline .sf-divider {
+  width: 2px;
+  height: 40px;
+  background: var(--grupo-color, #e0a3b8);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.sfirma-vline .sf-name {
+  font: var(--yuuki-title-size, 18px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8);
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
