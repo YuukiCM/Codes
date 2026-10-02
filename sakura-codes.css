@@ -46,32 +46,26 @@
 .blossom-text p{margin:0 0 10px}
 
 /* =========================================================
-   NIVEL AVANZADO - SAKURA CODES
+   NIVEL AVANZADO COMPATIBLE CON phpBB3
    ========================================================= */
 
-/* --- MODELO 6: LUMINA (Editorial con Avatar Lateral y Scrollbar) --- */
-.lumina{width:500px;max-width:95%;margin:25px auto;padding:16px;box-sizing:border-box;border:1px solid var(--grupo-color,#888);display:flex;flex-direction:column;gap:14px;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
-.lumina-top{display:flex;gap:16px;align-items:center;padding-bottom:12px;border-bottom:1px dashed var(--grupo-color,#888)}
-.lumina-img{width:90px;height:90px;flex-shrink:0;border-radius:50%;padding:3px;border:1px solid var(--grupo-color,#888);box-sizing:border-box}
-.lumina-img img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
-.lumina-head-info{flex-grow:1;display:flex;flex-direction:column;justify-content:center}
-.lumina-title{font:bold var(--yuuki-title-size,18px)/1.2 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
-.lumina-stats{display:grid;grid-template-columns:1fr 1fr;gap:4px 10px;font:500 9px/1.4 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1px;opacity:.8}
-.lumina-stats span b{color:var(--grupo-color,#888);font-weight:600}
-.lumina-text{text-align:justify;max-height:350px;overflow-y:auto;padding-right:8px}
-.lumina-text::-webkit-scrollbar{width:3px}
-.lumina-text::-webkit-scrollbar-track{background:transparent}
-.lumina-text::-webkit-scrollbar-thumb{background:var(--grupo-color,#888);border-radius:3px}
-.lumina-text p{margin:0 0 10px}
+/* --- MODELO 8: CHERRY (Avatar flotante y marco con pestaña) --- */
+.cherry{width:480px;max-width:95%;margin:20px auto;border:1px solid var(--grupo-color,#888);padding:18px;box-sizing:border-box;text-align:left;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit;position:relative}
+.cherry-head{border-bottom:1px dashed var(--grupo-color,#888);padding-bottom:12px;margin-bottom:14px;overflow:hidden}
+.cherry-avatar{float:left;width:80px;height:80px;margin-right:15px;border:1px solid var(--grupo-color,#888);padding:3px;box-sizing:border-box;border-radius:50%}
+.cherry-avatar img{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
+.cherry-info{overflow:hidden}
+.cherry-title{font:bold var(--yuuki-title-size,17px)/1.2 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);text-transform:uppercase;letter-spacing:1px;margin:5px 0 6px 0}
+.cherry-meta{font:500 10px/1.4 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1px;opacity:.8}
+.cherry-meta span{display:inline-block;margin-right:8px}
+.cherry-text{text-align:justify;clear:both}
+.cherry-text p{margin:0 0 10px}
 
-/* --- MODELO 7: PETAL (Estructura Modular / Citas & Notas) --- */
-.petal{width:490px;max-width:95%;margin:25px auto;display:flex;flex-direction:column;gap:12px;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
-.petal-main{padding:22px 25px;border:1px solid var(--grupo-color,#888);box-sizing:border-box;position:relative}
-.petal-main::before{content:'';position:absolute;top:4px;left:4px;right:4px;bottom:4px;border:1px solid var(--grupo-color,#888);opacity:.3;pointer-events:none}
-.petal-title{text-align:center;font:italic var(--yuuki-title-size,22px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--grupo-color,#888)}
-.petal-text{text-align:justify}
-.petal-text p{margin:0 0 10px}
-.petal-quote{padding:10px 16px;border-left:2px solid var(--grupo-color,#888);font-style:italic;opacity:.85;margin:12px 0;font-size:calc(var(--yuuki-post-size,13px) - 1px)}
-.petal-bottom{display:flex;gap:10px}
-.petal-box{flex:1;padding:8px 12px;border:1px solid var(--grupo-color,#888);font:300 9px/1.3 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1.5px;text-align:center;opacity:.8}
-.petal-box b{color:var(--grupo-color,#888);display:block;margin-bottom:2px}
+/* --- MODELO 9: MIYUKI (Doble marco con bloques separados) --- */
+.miyuki{width:480px;max-width:95%;margin:20px auto;border:1px solid var(--grupo-color,#888);padding:6px;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
+.miyuki-in{border:1px solid var(--grupo-color,#888);padding:20px;box-sizing:border-box;text-align:center}
+.miyuki-title{font:italic var(--yuuki-title-size,22px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);margin-bottom:8px}
+.miyuki-quote{border-top:1px solid var(--grupo-color,#888);border-bottom:1px solid var(--grupo-color,#888);padding:6px 10px;margin:10px 0 16px 0;font-style:italic;opacity:.8;font-size:calc(var(--yuuki-post-size,13px) - 1px)}
+.miyuki-text{text-align:justify}
+.miyuki-text p{margin:0 0 10px}
+.miyuki-footer{margin-top:14px;padding-top:10px;border-top:1px dashed var(--grupo-color,#888);font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.75}
