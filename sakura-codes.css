@@ -399,46 +399,35 @@
 }
 
 /* =========================================================
-   MODELO 19: SAKURA_FRAME (Scroll Invisible & Caja Segura)
+   MODELO 19: SAKURA_FRAME (Esquinas Superior e Inferior)
    ========================================================= */
 
 .sakuraframe {
   width: 500px;
   max-width: 95%;
-  height: 480px;
   margin: 25px auto;
   box-sizing: border-box;
   font: var(--yuuki-post-size, 13px)/1.7 var(--yuuki-post-font, sans-serif);
   color: inherit;
   position: relative;
-  padding: 30px 10px;
+  padding: 0;
 }
 
-/* Capa de fondo del marco PNG */
-.sf-bg-frame {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Imagen superior (Esquina/Decoración Arriba) */
+.sf-top-img {
   width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.sf-bg-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
   display: block;
 }
 
-/* Contenido sobre el marco */
+.sf-top-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contenido Central (Totalmente libre) */
 .sakuraframe-in {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  padding: 10px 25px;
   box-sizing: border-box;
 }
 
@@ -446,7 +435,6 @@
 .sf-tag-wrap {
   text-align: center;
   margin-bottom: 8px;
-  flex-shrink: 0;
 }
 
 .sf-tag {
@@ -460,18 +448,9 @@
   text-transform: uppercase;
 }
 
-/* CAJA REDUCIDA Y CENTRADA PARA EL ENCABEZADO Y TEXTO */
-.sf-inner-content {
-  width: 75%; /* Ancho compacto para mantenerse 100% alejado del marco */
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
+/* Encabezado */
 .sf-header {
   text-align: center;
-  flex-shrink: 0;
   margin-bottom: 10px;
 }
 
@@ -498,26 +477,37 @@
   margin: 10px 0;
 }
 
-/* ZONA DE LECTURA CON SCROLL INVISIBLE */
+/* Área de Texto (Con scrollbar invisible opcional si quieres fijar altura, o libre) */
 .sf-scroll-box {
-  flex-grow: 1;
+  max-height: 400px; /* Puedes quitar esta línea si prefieres que la ficha crezca sola */
   overflow-y: auto;
   text-align: justify;
 
-  /* Ocultar scrollbar en todos los navegadores */
-  -ms-overflow-style: none;  /* IE y Edge */
-  scrollbar-width: none;  /* Firefox */
+  /* Ocultar scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .sf-scroll-box::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
-/* Formato de texto y diálogos */
 .sf-text p {
   margin: 0 0 12px;
 }
 
 .sf-text b {
   color: var(--grupo-color, #e0a3b8);
+}
+
+/* Imagen inferior (Esquina/Decoración Abajo) */
+.sf-bottom-img {
+  width: 100%;
+  display: block;
+}
+
+.sf-bottom-img img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
