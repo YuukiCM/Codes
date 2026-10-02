@@ -1,0 +1,68 @@
+/* =========================================================
+   SAKURA FIRMAS - MODELO 1 (Otoño / Halloween)
+   ========================================================= */
+
+.sfirma-autumn {
+  width: 450px;
+  max-width: 95%;
+  margin: 15px auto;
+  box-sizing: border-box;
+  font: var(--yuuki-sig-size, 12px)/1.6 var(--yuuki-sig-font, sans-serif);
+  color: inherit;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2); /* Fondo sutil oscuro opcional */
+  border: 1px solid var(--grupo-color, #d96b27);
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Avatar o Imagen de la Firma */
+.sfirma-img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--grupo-color, #d96b27);
+}
+
+.sfirma-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido de la Firma */
+.sfirma-content {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.sfirma-title {
+  font: var(--yuuki-sig-title-size, 15px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.sfirma-sub {
+  font: bold 8px var(--yuuki-sig-font, sans-serif);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #d96b27);
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.sfirma-text {
+  text-align: justify;
+}
+
+.sfirma-text b {
+  color: var(--grupo-color, #d96b27);
+}
