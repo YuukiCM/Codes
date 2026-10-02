@@ -399,7 +399,7 @@
 }
 
 /* =========================================================
-   MODELO 19: SAKURA_FRAME (Marco de Imagen Contenido - phpBB3)
+   MODELO 19: SAKURA_FRAME (Margen Seguro Corregido - phpBB3)
    ========================================================= */
 
 .sakuraframe {
@@ -410,10 +410,11 @@
   font: var(--yuuki-post-size, 13px)/1.7 var(--yuuki-post-font, sans-serif);
   color: inherit;
   position: relative;
-  padding: 30px 40px; /* Ajuste para que el texto quede SIEMPRE dentro del marco */
+  /* Espaciado de seguridad generoso para evitar que el texto toque los bordes/ilustraciones */
+  padding: 45px 55px; 
 }
 
-/* Capa de la imagen de marco PNG */
+/* Capa de la imagen PNG */
 .sf-bg-frame {
   position: absolute;
   top: 0;
@@ -431,11 +432,10 @@
   display: block;
 }
 
-/* Contenido sobre el marco */
+/* Contenido del post totalmente protegido dentro del área limpia */
 .sakuraframe-in {
   position: relative;
   z-index: 2;
-  padding: 10px 15px;
   box-sizing: border-box;
 }
 
