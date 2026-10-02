@@ -148,3 +148,118 @@
 .violet-top-info{font:bold 10px var(--yuuki-post-font,sans-serif);letter-spacing:1.5px;text-transform:uppercase;color:var(--grupo-color,#888);margin-bottom:12px;padding-bottom:6px;border-bottom:1px dashed var(--grupo-color,#888)}
 .violet-body p{margin:0 0 12px}
 .violet-body b{color:var(--grupo-color,#888)}
+
+/* =========================================================
+   MODELO 17: SAKURA_FEST (Estilo Marco Ilustrado Floral - phpBB3)
+   ========================================================= */
+
+.sakurafest {
+  width: 500px;
+  max-width: 95%;
+  margin: 25px auto;
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  padding: 6px;
+  box-sizing: border-box;
+  font: var(--yuuki-post-size, 13px)/1.7 var(--yuuki-post-font, sans-serif);
+  color: inherit;
+  position: relative;
+}
+
+.sakurafest-in {
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  padding: 22px 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Ilustraciones decorativas en las esquinas */
+.sf-corner-tl {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+.sf-corner-tr {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+.sf-corner-br {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* Pestaña superior estilo banner */
+.sf-tag-wrap {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.sf-tag {
+  display: inline-block;
+  background: var(--grupo-color, #e0a3b8);
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 12px;
+  font: bold 9px var(--yuuki-post-font, sans-serif);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Título central entre líneas divisorias */
+.sf-title-wrap {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.sf-line {
+  border: 0;
+  border-top: 1px solid var(--grupo-color, #e0a3b8);
+  opacity: 0.5;
+  margin: 8px 0;
+}
+
+.sf-title {
+  font: var(--yuuki-title-size, 20px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 8px 0;
+}
+
+.sf-sparkle {
+  font-size: 11px;
+  color: var(--grupo-color, #e0a3b8);
+  display: block;
+  margin: 4px 0;
+}
+
+/* Cuerpo de texto y diálogos */
+.sf-text {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.sf-text p {
+  margin: 0 0 12px;
+}
+
+.sf-text b {
+  color: var(--grupo-color, #e0a3b8);
+}
+
+.sf-footer-line {
+  border: 0;
+  border-top: 1px solid var(--grupo-color, #e0a3b8);
+  opacity: 0.4;
+  margin-top: 20px;
+}
