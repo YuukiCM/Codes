@@ -399,22 +399,22 @@
 }
 
 /* =========================================================
-   MODELO 19: SAKURA_FRAME (Marco Fijo con Scrollbar - phpBB3)
+   MODELO 19: SAKURA_FRAME (Scroll Invisible & Caja Segura)
    ========================================================= */
 
 .sakuraframe {
   width: 500px;
   max-width: 95%;
-  height: 480px; /* Altura fija para mantener la proporción del marco */
+  height: 480px;
   margin: 25px auto;
   box-sizing: border-box;
   font: var(--yuuki-post-size, 13px)/1.7 var(--yuuki-post-font, sans-serif);
   color: inherit;
   position: relative;
-  padding: 40px 50px; /* Margen de seguridad amplio contra los bordes */
+  padding: 30px 10px;
 }
 
-/* Capa de la imagen de marco PNG */
+/* Capa de fondo del marco PNG */
 .sf-bg-frame {
   position: absolute;
   top: 0;
@@ -428,7 +428,7 @@
 .sf-bg-frame img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Garantiza que el marco mantenga sus proporciones sin deformarse */
+  object-fit: fill;
   display: block;
 }
 
@@ -460,7 +460,15 @@
   text-transform: uppercase;
 }
 
-/* Encabezado fijo */
+/* CAJA REDUCIDA Y CENTRADA PARA EL ENCABEZADO Y TEXTO */
+.sf-inner-content {
+  width: 75%; /* Ancho compacto para mantenerse 100% alejado del marco */
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .sf-header {
   text-align: center;
   flex-shrink: 0;
@@ -490,30 +498,22 @@
   margin: 10px 0;
 }
 
-/* CAJA CON SCROLLBAR INTERNA */
+/* ZONA DE LECTURA CON SCROLL INVISIBLE */
 .sf-scroll-box {
   flex-grow: 1;
   overflow-y: auto;
-  padding-right: 12px; /* Margen para despegar el texto de la barra */
   text-align: justify;
+
+  /* Ocultar scrollbar en todos los navegadores */
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-/* Personalización estética de la barra de desplazamiento */
 .sf-scroll-box::-webkit-scrollbar {
-  width: 4px;
+  display: none; /* Chrome, Safari, Opera */
 }
 
-.sf-scroll-box::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-
-.sf-scroll-box::-webkit-scrollbar-thumb {
-  background: var(--grupo-color, #e0a3b8);
-  border-radius: 4px;
-}
-
-/* Formato del texto y diálogos */
+/* Formato de texto y diálogos */
 .sf-text p {
   margin: 0 0 12px;
 }
