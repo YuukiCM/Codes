@@ -104,3 +104,34 @@
 .kameko-foot-cell{width:33.33%;text-align:center;font:300 9px/1.3 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1px;padding:6px 4px;border-right:1px dashed var(--grupo-color,#888);opacity:.8}
 .kameko-foot-cell:last-child{border-right:none}
 .kameko-foot-cell b{color:var(--grupo-color,#888);display:block;margin-bottom:2px}
+
+/* =========================================================
+   DISEÑOS NO LINEALES / EDITORIAL VANGUARDISTA (phpBB3)
+   ========================================================= */
+
+/* --- MODELO 12: BELLADONNA (Asimétrico con Watermark y Scrapbook) --- */
+.belladonna{width:490px;max-width:95%;margin:25px auto;border:1px solid var(--grupo-color,#888);padding:18px;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit;position:relative}
+.belladonna-bg-text{position:absolute;top:5px;right:15px;font:italic bold 45px/1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);opacity:.08;pointer-events:none;user-select:none;text-transform:uppercase}
+.belladonna-table{width:100%;border-collapse:collapse;margin-bottom:12px}
+.belladonna-pic-cell{width:110px;vertical-align:middle;padding-right:15px}
+.belladonna-frame{width:100px;height:120px;border:1px solid var(--grupo-color,#888);padding:4px;box-sizing:border-box;transform:rotate(-2deg);border-radius:4px 18px 4px 18px}
+.belladonna-frame img{width:100%;height:100%;object-fit:cover;display:block;border-radius:2px 14px 2px 14px}
+.belladonna-head-cell{vertical-align:middle;text-align:left}
+.belladonna-seal{display:inline-block;border:1px dashed var(--grupo-color,#888);border-radius:50%;padding:4px 10px;font:300 8px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.8;margin-bottom:8px}
+.belladonna-title{font:bold var(--yuuki-title-size,20px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);letter-spacing:1px;margin-bottom:8px}
+.belladonna-meta{font:500 9px var(--yuuki-post-font,sans-serif);letter-spacing:1.5px;text-transform:uppercase;opacity:.75}
+.belladonna-meta b{color:var(--grupo-color,#888)}
+.belladonna-text{text-align:justify;border-top:1px dashed var(--grupo-color,#888);padding-top:14px;margin-top:6px}
+.belladonna-text p{margin:0 0 10px}
+
+/* --- MODELO 13: IRIS (Foto Desfasada en Esquina & Cajas Offset) --- */
+.iris{width:480px;max-width:95%;margin:35px auto 20px;border:1px solid var(--grupo-color,#888);padding:30px 20px 20px;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit;position:relative}
+.iris-avatar-wrap{position:absolute;top:-28px;left:20px;width:75px;height:75px;border-radius:50%;border:1px solid var(--grupo-color,#888);padding:3px;box-sizing:border-box;background:transparent}
+.iris-avatar-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.iris-top-bar{text-align:right;margin-bottom:15px;padding-bottom:8px;border-bottom:1px solid var(--grupo-color,#888)}
+.iris-title{font:italic var(--yuuki-title-size,21px)/1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);display:inline-block}
+.iris-tags-table{width:100%;border-collapse:collapse;margin-bottom:15px}
+.iris-tag-cell{padding:4px 8px;border:1px solid var(--grupo-color,#888);font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:1.5px;text-transform:uppercase;text-align:center;opacity:.85}
+.iris-tag-cell b{color:var(--grupo-color,#888);display:block}
+.iris-text{text-align:justify}
+.iris-text p{margin:0 0 10px}
