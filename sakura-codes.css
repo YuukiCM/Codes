@@ -69,3 +69,38 @@
 .miyuki-text{text-align:justify}
 .miyuki-text p{margin:0 0 10px}
 .miyuki-footer{margin-top:14px;padding-top:10px;border-top:1px dashed var(--grupo-color,#888);font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.75}
+
+/* =========================================================
+   ALTA COMPLEJIDAD COMPATIBLE CON phpBB3
+   ========================================================= */
+
+/* --- MODELO 10: DAHLIA (Mosaico de Fotos y Scrollbar) --- */
+.dahlia{width:500px;max-width:95%;margin:20px auto;border:1px solid var(--grupo-color,#888);padding:18px;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
+.dahlia-top-table{width:100%;border-collapse:collapse;margin-bottom:15px;border-bottom:1px dashed var(--grupo-color,#888);padding-bottom:12px}
+.dahlia-pics{width:110px;vertical-align:top;padding-right:15px}
+.dahlia-img-main{width:100px;height:100px;border:1px solid var(--grupo-color,#888);padding:2px;box-sizing:border-box;margin-bottom:6px}
+.dahlia-img-main img{width:100%;height:100%;object-fit:cover;display:block}
+.dahlia-head-info{vertical-align:top;text-align:left}
+.dahlia-tag{display:inline-block;font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.75;border-bottom:1px solid var(--grupo-color,#888);padding-bottom:2px;margin-bottom:6px}
+.dahlia-title{font:bold var(--yuuki-title-size,19px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.dahlia-stats-box{border:1px solid var(--grupo-color,#888);padding:8px 10px;font:500 10px/1.5 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1px;opacity:.85}
+.dahlia-stats-box span b{color:var(--grupo-color,#888)}
+.dahlia-text{text-align:justify;max-height:300px;overflow-y:auto;padding-right:8px}
+.dahlia-text::-webkit-scrollbar{width:3px}
+.dahlia-text::-webkit-scrollbar-track{background:transparent}
+.dahlia-text::-webkit-scrollbar-thumb{background:var(--grupo-color,#888)}
+.dahlia-text p{margin:0 0 10px}
+
+/* --- MODELO 11: KAMEKO (Header Panorámico y Bloques Triples) --- */
+.kameko{width:490px;max-width:95%;margin:20px auto;border:1px solid var(--grupo-color,#888);padding:10px;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
+.kameko-in{border:1px solid var(--grupo-color,#888);padding:15px;box-sizing:border-box}
+.kameko-banner{width:100%;height:120px;border:1px solid var(--grupo-color,#888);margin-bottom:15px;box-sizing:border-box;overflow:hidden}
+.kameko-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.kameko-title{text-align:center;font:italic var(--yuuki-title-size,22px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);margin-bottom:6px}
+.kameko-quote{text-align:center;font:300 10px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.7;margin-bottom:15px;padding-bottom:10px;border-bottom:1px dashed var(--grupo-color,#888)}
+.kameko-text{text-align:justify}
+.kameko-text p{margin:0 0 10px}
+.kameko-footer-table{width:100%;border-collapse:collapse;margin-top:15px;border-top:1px solid var(--grupo-color,#888);padding-top:10px}
+.kameko-foot-cell{width:33.33%;text-align:center;font:300 9px/1.3 var(--yuuki-post-font,sans-serif);text-transform:uppercase;letter-spacing:1px;padding:6px 4px;border-right:1px dashed var(--grupo-color,#888);opacity:.8}
+.kameko-foot-cell:last-child{border-right:none}
+.kameko-foot-cell b{color:var(--grupo-color,#888);display:block;margin-bottom:2px}
