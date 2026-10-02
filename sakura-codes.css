@@ -26,3 +26,21 @@
 .valentina-info{display:inline-block;font:10px var(--yuuki-post-font,sans-serif);letter-spacing:2px;text-transform:uppercase;opacity:.7;padding:2px 10px;border-top:1px solid var(--grupo-color,#888);border-bottom:1px solid var(--grupo-color,#888)}
 .valentina-text{text-align:justify;margin-top:15px}
 .valentina-text p{margin:0 0 10px}
+
+/* --- MODELO 4: ROSE (Femenina con bordes redondeados y sello central) --- */
+.rose{width:470px;max-width:95%;margin:20px auto;padding:20px 24px;box-sizing:border-box;border:1px solid var(--grupo-color,#888);border-radius:18px;position:relative;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
+.rose-header{text-align:center;margin-bottom:12px}
+.rose-title{font:italic 400 var(--yuuki-title-size,22px)/1.1 var(--yuuki-title,'Playfair Display',serif);color:var(--grupo-color,#888);letter-spacing:0.5px}
+.rose-subtitle{font:300 9px/1.2 var(--yuuki-post-font,sans-serif);letter-spacing:3px;text-transform:uppercase;opacity:.65;margin-top:4px}
+.rose-divider{width:40px;height:1px;background:var(--grupo-color,#888);margin:10px auto 14px;opacity:.5}
+.rose-text{text-align:justify}
+.rose-text p{margin:0 0 10px}
+
+/* --- MODELO 5: BLOSSOM (Minimalista romántica con marco arqueado suave) --- */
+.blossom{width:470px;max-width:95%;margin:20px auto;padding:12px;box-sizing:border-box;border:1px solid var(--grupo-color,#888);border-radius:120px 120px 12px 12px;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit}
+.blossom-inner{border:1px dashed var(--grupo-color,#888);border-radius:110px 110px 8px 8px;padding:28px 22px 20px;box-sizing:border-box}
+.blossom-top{text-align:center;margin-bottom:15px}
+.blossom-tag{display:inline-block;font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:2.5px;text-transform:uppercase;opacity:.7;margin-bottom:6px}
+.blossom-title{font:var(--yuuki-title-size,20px)/1.2 var(--yuuki-title,'Playfair Display',serif);font-style:italic;color:var(--grupo-color,#888)}
+.blossom-text{text-align:justify;margin-top:12px}
+.blossom-text p{margin:0 0 10px}
