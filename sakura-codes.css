@@ -135,3 +135,17 @@
 .iris-tag-cell b{color:var(--grupo-color,#888);display:block}
 .iris-text{text-align:justify}
 .iris-text p{margin:0 0 10px}
+
+/* =========================================================
+   MODELO 14: OPAL (Bloques Sólidos Superior e Inferior - phpBB3)
+   ========================================================= */
+
+.opal{width:480px;max-width:95%;margin:20px auto;border:1px solid var(--grupo-color,#888);padding:0;box-sizing:border-box;font:var(--yuuki-post-size,13px)/1.7 var(--yuuki-post-font,sans-serif);color:inherit;background:transparent}
+.opal-header{background:var(--grupo-color,#888);padding:10px 15px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-sizing:border-box}
+.opal-header-title{font:bold var(--yuuki-title-size,14px) var(--yuuki-title,'Playfair Display',serif);text-transform:uppercase;letter-spacing:2px;color:#fff;margin:0}
+.opal-header-tag{font:300 9px var(--yuuki-post-font,sans-serif);letter-spacing:1px;text-transform:uppercase;opacity:.85}
+.opal-body{padding:25px 22px;box-sizing:border-box;text-align:justify}
+.opal-body p{margin:0 0 12px}
+.opal-body b{color:var(--grupo-color,#888)}
+.opal-footer{background:var(--grupo-color,#888);padding:8px 15px;color:#fff;font:500 9px var(--yuuki-post-font,sans-serif);letter-spacing:1.5px;text-transform:uppercase;text-align:center;box-sizing:border-box;opacity:.95}
+.opal-footer span{margin:0 6px;opacity:.7}
