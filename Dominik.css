@@ -1,127 +1,186 @@
 /* =========================================================
-   MODELO: DOMINIK (Post de Rol - Compatible Claro/Oscuro)
+   SAKURA CODES - COLECCIÓN DOMINIK
    ========================================================= */
 
-.dominik-post {
+/* ---------------------------------------------------------
+   OPCIÓN 1: EDITORIAL / REVISTA DE LUJO (Aesthetic)
+   --------------------------------------------------------- */
+.dom-editorial {
   width: 520px;
   max-width: 95%;
   margin: 25px auto;
   box-sizing: border-box;
-  font: var(--yuuki-post-size, 13px)/1.75 'Quicksand', sans-serif;
-  color: #e2e8f0 !important; /* Texto claro siempre legible */
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: #e2e8f0 !important;
+  background: #11141a !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 35px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
   position: relative;
-  /* Fondo oscuro SÓLIDO (o casi sólido) para que no dependa del modo claro/oscuro del foro */
-  background: #12161f !important; 
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
-/* Detalle superior con el color del grupo */
-.dominik-post::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 40px;
-  right: 40px;
-  height: 3px;
-  background: var(--grupo-color, #305c77);
-  border-radius: 0 0 4px 4px;
-}
-
-/* Etiqueta superior opcional */
-.dom-tag-wrap {
+.dom-editorial .de-header {
   text-align: center;
-  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 18px;
+  margin-bottom: 22px;
 }
 
-.dom-tag {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--grupo-color, #305c77) !important;
-  border: 1px solid var(--grupo-color, #305c77);
-  padding: 4px 16px;
-  border-radius: 20px;
-  font: 700 9px 'Quicksand', sans-serif;
+.dom-editorial .de-title {
+  font: 24px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: #ffffff !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.dom-editorial .de-info {
+  font: bold 9px 'Quicksand', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: var(--grupo-color, #708090) !important;
 }
 
-/* Encabezado Principal */
-.dom-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Título */
-.dom-title {
-  font: var(--yuuki-title-size, 22px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+.dom-editorial .de-info a,
+.dom-editorial .de-info a:visited {
   color: #ffffff !important;
-  text-transform: none; /* Respetará lo que se escriba en el HTML */
-  letter-spacing: 1.5px;
-  margin: 8px 0;
-}
-
-/* Barra de Info & LINKS DE ETIQUETAS (@Clementine, etc.) */
-.dom-info-bar {
-  font: 700 10px 'Quicksand', sans-serif;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: #94a3b8 !important;
-}
-
-/* FORZAMOS EL COLOR DE LOS LINKS DENTRO DE LA BARRA DE INFO */
-.dom-info-bar a,
-.dom-info-bar a:visited {
-  color: var(--grupo-color, #305c77) !important;
   text-decoration: none !important;
-  font-weight: bold;
 }
 
-.dom-info-bar a:hover {
-  color: #ffffff !important;
-  text-decoration: underline !important;
-}
-
-/* Divisor central */
-.dom-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin: 18px 0;
-}
-
-.dom-divider-line {
-  flex-grow: 1;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--grupo-color, #305c77), transparent);
-  opacity: 0.6;
-}
-
-.dom-divider-icon {
-  font-size: 8px;
-  color: var(--grupo-color, #305c77);
-}
-
-/* Cuerpo de Texto con Quicksand */
-.dom-text {
-  font-family: 'Quicksand', sans-serif;
+.dom-editorial .de-text {
   text-align: justify;
-  color: #e2e8f0 !important;
 }
 
-.dom-text p {
+.dom-editorial .de-text p {
   margin: 0 0 14px;
 }
 
-.dom-text p:last-child {
-  margin-bottom: 0;
+.dom-editorial .de-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #708090) !important;
 }
 
-/* Diálogos en negrita */
-.dom-text b {
+
+/* ---------------------------------------------------------
+   OPCIÓN 2: DARK ACADEMIA / MANUSCRITO (Doble Marco)
+   --------------------------------------------------------- */
+.dom-academia {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: #d1d5db !important;
+  background: #0f1117 !important;
+  border: 1px solid var(--grupo-color, #708090);
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.dom-academia .da-inner {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 25px;
+}
+
+.dom-academia .da-title {
+  text-align: center;
+  font: italic 23px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: #ffffff !important;
+  text-transform: none;
+  margin-bottom: 6px;
+}
+
+.dom-academia .da-divider {
+  text-align: center;
+  color: var(--grupo-color, #708090);
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.dom-academia .da-text {
+  text-align: justify;
+}
+
+.dom-academia .da-text p {
+  margin: 0 0 14px;
+}
+
+.dom-academia .da-text b {
   font-weight: 700;
-  color: var(--grupo-color, #305c77) !important;
+  color: var(--grupo-color, #708090) !important;
+}
+
+.dom-academia .da-footer {
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  text-align: right;
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #708090) !important;
+}
+
+.dom-academia .da-footer a,
+.dom-academia .da-footer a:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPCIÓN 3: MODERN ASYMMETRIC (Barra Lateral Accentuada)
+   --------------------------------------------------------- */
+.dom-asymm {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: #e2e8f0 !important;
+  background: #131722 !important;
+  border-radius: 0 12px 12px 0;
+  border-left: 4px solid var(--grupo-color, #708090);
+  padding: 28px 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
+
+.dom-asymm .das-header {
+  margin-bottom: 18px;
+}
+
+.dom-asymm .das-title {
+  font: 22px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: #ffffff !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.dom-asymm .das-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #708090) !important;
+  opacity: 0.9;
+}
+
+.dom-asymm .das-info a,
+.dom-asymm .das-info a:visited {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.dom-asymm .das-text {
+  text-align: justify;
+}
+
+.dom-asymm .das-text p {
+  margin: 0 0 14px;
+}
+
+.dom-asymm .das-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #708090) !important;
 }
