@@ -1,5 +1,5 @@
 /* =========================================================
-   MODELO: DOMINIK (Post de Rol Elegante - Quicksand)
+   MODELO: DOMINIK (Post de Rol - Corregido & Legible)
    ========================================================= */
 
 .dominik-post {
@@ -7,14 +7,14 @@
   max-width: 95%;
   margin: 25px auto;
   box-sizing: border-box;
-  font: var(--yuuki-post-size, 13px)/1.75 'Quicksand', sans-serif; /* Quicksand fijada para el cuerpo */
-  color: inherit;
+  font: var(--yuuki-post-size, 13px)/1.75 'Quicksand', sans-serif;
+  color: #e2e8f0; /* Texto principal con excelente contraste */
   position: relative;
-  background: rgba(18, 19, 24, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(20, 24, 33, 0.85); /* Fondo oscuro transparente con buen contraste */
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Detalle superior con el color del grupo */
@@ -25,11 +25,11 @@
   left: 40px;
   right: 40px;
   height: 3px;
-  background: var(--grupo-color, #708090);
+  background: var(--grupo-color, #305c77);
   border-radius: 0 0 4px 4px;
 }
 
-/* Etiqueta superior */
+/* Etiqueta superior opcional */
 .dom-tag-wrap {
   text-align: center;
   margin-bottom: 12px;
@@ -37,12 +37,12 @@
 
 .dom-tag {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--grupo-color, #708090);
-  border: 1px solid var(--grupo-color, #708090);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--grupo-color, #305c77);
+  border: 1px solid var(--grupo-color, #305c77);
   padding: 4px 16px;
   border-radius: 20px;
-  font: bold 9px 'Quicksand', sans-serif;
+  font: 700 9px 'Quicksand', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -53,20 +53,22 @@
   margin-bottom: 20px;
 }
 
+/* Título respetando minúsculas/mayúsculas originales */
 .dom-title {
   font: var(--yuuki-title-size, 22px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
   color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
+  text-transform: none; /* NUNCA fuerza mayúsculas */
+  letter-spacing: 1.5px;
   margin: 8px 0;
 }
 
+/* Subtítulo / Info bar corregida con mayor contraste */
 .dom-info-bar {
-  font: 600 9px 'Quicksand', sans-serif;
+  font: 700 10px 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--grupo-color, #708090);
-  opacity: 0.9;
+  color: #cbd5e1; /* Color claro para garantizar legibilidad */
+  opacity: 1;
 }
 
 .dom-divider {
@@ -80,13 +82,13 @@
 .dom-divider-line {
   flex-grow: 1;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--grupo-color, #708090), transparent);
-  opacity: 0.4;
+  background: linear-gradient(90deg, transparent, var(--grupo-color, #305c77), transparent);
+  opacity: 0.6;
 }
 
 .dom-divider-icon {
   font-size: 8px;
-  color: var(--grupo-color, #708090);
+  color: var(--grupo-color, #305c77);
 }
 
 /* Cuerpo de Texto con Quicksand */
@@ -103,8 +105,8 @@
   margin-bottom: 0;
 }
 
-/* Diálogos en negrita */
+/* Diálogos en negrita con contraste vibrante */
 .dom-text b {
   font-weight: 700;
-  color: var(--grupo-color, #708090);
+  color: var(--grupo-color, #305c77);
 }
