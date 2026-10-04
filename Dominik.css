@@ -1,5 +1,5 @@
 /* =========================================================
-   MODELO: DOMINIK (Post de Rol Elegante)
+   MODELO: DOMINIK (Post de Rol Elegante - Quicksand)
    ========================================================= */
 
 .dominik-post {
@@ -7,10 +7,10 @@
   max-width: 95%;
   margin: 25px auto;
   box-sizing: border-box;
-  font: var(--yuuki-post-size, 13px)/1.75 var(--yuuki-post-font, 'Inter', 'Segoe UI', sans-serif);
+  font: var(--yuuki-post-size, 13px)/1.75 'Quicksand', sans-serif; /* Quicksand fijada para el cuerpo */
   color: inherit;
   position: relative;
-  background: rgba(18, 19, 24, 0.4); /* Fondo sutil oscuro */
+  background: rgba(18, 19, 24, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 30px;
@@ -42,7 +42,7 @@
   border: 1px solid var(--grupo-color, #708090);
   padding: 4px 16px;
   border-radius: 20px;
-  font: bold 9px var(--yuuki-post-font, sans-serif);
+  font: bold 9px 'Quicksand', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -62,7 +62,7 @@
 }
 
 .dom-info-bar {
-  font: 600 9px var(--yuuki-post-font, sans-serif);
+  font: 600 9px 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: var(--grupo-color, #708090);
@@ -89,8 +89,9 @@
   color: var(--grupo-color, #708090);
 }
 
-/* Cuerpo de Texto */
+/* Cuerpo de Texto con Quicksand */
 .dom-text {
+  font-family: 'Quicksand', sans-serif;
   text-align: justify;
 }
 
