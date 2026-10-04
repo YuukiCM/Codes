@@ -236,3 +236,247 @@
   font-weight: 700;
   color: var(--grupo-color, #e0a3b8) !important;
 }
+/* =========================================================
+   SAKURA CODES - GIRLY & CHIC COLLECTION
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   OPCIÓN 1: PRINCESS AURA (Resplandor Pastel + Marco Suave)
+   --------------------------------------------------------- */
+.sg-princess-aura {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border-radius: 24px;
+  border: 1.5px solid var(--grupo-color, #f2a6c1);
+  box-shadow: 0 0 15px var(--grupo-color, #f2a6c1), inset 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.sg-princess-aura .spa-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.sg-princess-aura .spa-badge {
+  display: inline-block;
+  background: transparent;
+  color: var(--grupo-color, #f2a6c1) !important;
+  border: 1px solid var(--grupo-color, #f2a6c1);
+  padding: 3px 14px;
+  border-radius: 15px;
+  font: 700 8.5px 'Quicksand', sans-serif;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.sg-princess-aura .spa-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  text-shadow: 0 0 8px var(--grupo-color, #f2a6c1);
+}
+
+.sg-princess-aura .spa-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sg-princess-aura .spa-info a,
+.sg-princess-aura .spa-info a:visited {
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.sg-princess-aura .spa-text {
+  text-align: justify;
+}
+
+.sg-princess-aura .spa-text p {
+  margin: 0 0 14px;
+}
+
+.sg-princess-aura .spa-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #f2a6c1) !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPCIÓN 2: COQUETTE BOW (Detalles de Lazo + Borde Punteado)
+   --------------------------------------------------------- */
+.sg-coquette-bow {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 32px 22px;
+  border: 1.5px dotted var(--grupo-color, #f2a6c1);
+  border-radius: 18px;
+}
+
+/* Lazo flotante superior */
+.sg-coquette-bow::before {
+  content: '୨୧';
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 0 10px;
+  font-size: 18px;
+  color: var(--grupo-color, #f2a6c1);
+  filter: drop-shadow(0 0 4px var(--grupo-color, #f2a6c1));
+}
+
+.sg-coquette-bow .scb-header {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.sg-coquette-bow .scb-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-transform: none;
+  letter-spacing: 1.2px;
+  margin-bottom: 6px;
+}
+
+.sg-coquette-bow .scb-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sg-coquette-bow .scb-info a,
+.sg-coquette-bow .scb-info a:visited {
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.sg-coquette-bow .scb-divider {
+  text-align: center;
+  color: var(--grupo-color, #f2a6c1);
+  font-size: 11px;
+  letter-spacing: 6px;
+  margin: 14px 0;
+  opacity: 0.75;
+}
+
+.sg-coquette-bow .scb-text {
+  text-align: justify;
+}
+
+.sg-coquette-bow .scb-text p {
+  margin: 0 0 14px;
+}
+
+.sg-coquette-bow .scb-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #f2a6c1) !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPCIÓN 3: SPARKLE FRAME (Bordes Dobles Desplazados Chic)
+   --------------------------------------------------------- */
+.sg-sparkle-frame {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 20px;
+  border: 1px solid var(--grupo-color, #f2a6c1);
+}
+
+/* Marco exterior con destellos */
+.sg-sparkle-frame::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 1px solid var(--grupo-color, #f2a6c1);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.sg-sparkle-frame .ssf-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sg-sparkle-frame .ssf-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.sg-sparkle-frame .ssf-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sg-sparkle-frame .ssf-info a,
+.sg-sparkle-frame .ssf-info a:visited {
+  color: var(--grupo-color, #f2a6c1) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.sg-sparkle-frame .ssf-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 14px 0;
+  color: var(--grupo-color, #f2a6c1);
+  font-size: 10px;
+}
+
+.sg-sparkle-frame .ssf-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #f2a6c1);
+  opacity: 0.35;
+}
+
+.sg-sparkle-frame .ssf-text {
+  text-align: justify;
+}
+
+.sg-sparkle-frame .ssf-text p {
+  margin: 0 0 14px;
+}
+
+.sg-sparkle-frame .ssf-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #f2a6c1) !important;
+}
