@@ -1,0 +1,766 @@
+/* =========================================================
+   SAKURA CODES - ARIKEL COLLECTION (10 MODELOS CON ICOFONT)
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   MODELO 1: AK-LEAF-BORDER (Borde Doble + Ícono Flotante)
+   --------------------------------------------------------- */
+.ak-leaf-border {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 24px 28px;
+  border: 2px solid var(--grupo-color, #a88365);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.ak-leaf-border::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 1px dashed var(--grupo-color, #a88365);
+  border-radius: 20px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.ak-leaf-border .ak1-icon-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: var(--grupo-color, #a88365);
+  padding: 0 12px;
+  line-height: 1;
+  filter: drop-shadow(0 0 4px var(--grupo-color, #a88365));
+}
+
+.ak-leaf-border .ak1-header {
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 22px;
+}
+
+.ak-leaf-border .ak1-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.ak-leaf-border .ak1-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-leaf-border .ak1-info a,
+.ak-leaf-border .ak1-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-leaf-border .ak1-text {
+  text-align: justify;
+}
+
+.ak-leaf-border .ak1-text p {
+  margin: 0 0 14px;
+}
+
+.ak-leaf-border .ak1-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 2: AK-CORNER-BRACKETS (Esquinas L Asimétricas)
+   --------------------------------------------------------- */
+.ak-corner-brackets {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border: 1px solid var(--grupo-color, #a88365);
+}
+
+.ak-corner-brackets::before,
+.ak-corner-brackets::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+
+.ak-corner-brackets::before {
+  top: -5px;
+  left: -5px;
+  border-top: 3px solid var(--grupo-color, #a88365);
+  border-left: 3px solid var(--grupo-color, #a88365);
+}
+
+.ak-corner-brackets::after {
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 3px solid var(--grupo-color, #a88365);
+  border-right: 3px solid var(--grupo-color, #a88365);
+}
+
+.ak-corner-brackets .ak2-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ak-corner-brackets .ak2-icon {
+  font-size: 16px;
+  color: var(--grupo-color, #a88365);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.ak-corner-brackets .ak2-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.ak-corner-brackets .ak2-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-corner-brackets .ak2-info a,
+.ak-corner-brackets .ak2-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-corner-brackets .ak2-text {
+  text-align: justify;
+}
+
+.ak-corner-brackets .ak2-text p {
+  margin: 0 0 14px;
+}
+
+.ak-corner-brackets .ak2-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 3: AK-MINIMAL-SIDEBAR (Caja de Título Lateral)
+   --------------------------------------------------------- */
+.ak-minimal-sidebar {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  border-left: 4px solid var(--grupo-color, #a88365);
+  border-right: 1px solid var(--grupo-color, #a88365);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 22px;
+}
+
+.ak-minimal-sidebar .ak3-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px dashed var(--grupo-color, #a88365);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.ak-minimal-sidebar .ak3-icon {
+  font-size: 22px;
+  color: var(--grupo-color, #a88365);
+  flex-shrink: 0;
+}
+
+.ak-minimal-sidebar .ak3-meta {
+  flex-grow: 1;
+}
+
+.ak-minimal-sidebar .ak3-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.ak-minimal-sidebar .ak3-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-minimal-sidebar .ak3-info a,
+.ak-minimal-sidebar .ak3-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-minimal-sidebar .ak3-text {
+  text-align: justify;
+}
+
+.ak-minimal-sidebar .ak3-text p {
+  margin: 0 0 14px;
+}
+
+.ak-minimal-sidebar .ak3-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 4: AK-FLOATING-PUNCH (Marco Recortado en Octágono)
+   --------------------------------------------------------- */
+.ak-floating-punch {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  clip-path: polygon(
+    15px 0, calc(100% - 15px) 0, 100% 15px, 
+    100% calc(100% - 15px), calc(100% - 15px) 100%, 
+    15px 100%, 0 calc(100% - 15px), 0 15px
+  );
+}
+
+.ak-floating-punch .ak4-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ak-floating-punch .ak4-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--grupo-color, #a88365);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.ak-floating-punch .ak4-badge i {
+  font-size: 13px;
+  color: var(--grupo-color, #a88365);
+}
+
+.ak-floating-punch .ak4-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 6px;
+}
+
+.ak-floating-punch .ak4-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-floating-punch .ak4-info a,
+.ak-floating-punch .ak4-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-floating-punch .ak4-text {
+  text-align: justify;
+}
+
+.ak-floating-punch .ak4-text p {
+  margin: 0 0 14px;
+}
+
+.ak-floating-punch .ak4-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 5: AK-DOSSIER-TAB (Ficha con Pestaña de Ícono)
+   --------------------------------------------------------- */
+.ak-dossier-tab {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+}
+
+.ak-dossier-tab .ak5-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  padding: 6px 18px;
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #a88365) !important;
+  margin-left: 20px;
+}
+
+.ak-dossier-tab .ak5-body {
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-radius: 0 16px 16px 16px;
+  padding: 30px 24px;
+  margin-top: -1px;
+}
+
+.ak-dossier-tab .ak5-header {
+  border-bottom: 1px solid var(--grupo-color, #a88365);
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+}
+
+.ak-dossier-tab .ak5-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.ak-dossier-tab .ak5-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-dossier-tab .ak5-info a,
+.ak-dossier-tab .ak5-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-dossier-tab .ak5-text {
+  text-align: justify;
+}
+
+.ak-dossier-tab .ak5-text p {
+  margin: 0 0 14px;
+}
+
+.ak-dossier-tab .ak5-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 6: AK-DUAL-PULSE (Resplandor Doble + Líneas de Ícono)
+   --------------------------------------------------------- */
+.ak-dual-pulse {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 32px 22px;
+  border-radius: 20px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  box-shadow: 0 0 18px var(--grupo-color, #a88365);
+}
+
+.ak-dual-pulse .ak6-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ak-dual-pulse .ak6-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.ak-dual-pulse .ak6-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-dual-pulse .ak6-info a,
+.ak-dual-pulse .ak6-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-dual-pulse .ak6-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 16px 0;
+}
+
+.ak-dual-pulse .ak6-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #a88365);
+  opacity: 0.4;
+}
+
+.ak-dual-pulse .ak6-icon {
+  font-size: 14px;
+  color: var(--grupo-color, #a88365);
+}
+
+.ak-dual-pulse .ak6-text {
+  text-align: justify;
+}
+
+.ak-dual-pulse .ak6-text p {
+  margin: 0 0 14px;
+}
+
+.ak-dual-pulse .ak6-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 7: AK-DIAGONAL-STRIP (Bordes Diagonales Invertidos)
+   --------------------------------------------------------- */
+.ak-diagonal-strip {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border-top: 3px solid var(--grupo-color, #a88365);
+  border-bottom: 3px solid var(--grupo-color, #a88365);
+  border-left: 1px solid var(--grupo-color, #a88365);
+  border-right: 1px solid var(--grupo-color, #a88365);
+  border-radius: 30px 4px 30px 4px;
+}
+
+.ak-diagonal-strip .ak7-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ak-diagonal-strip .ak7-icon {
+  font-size: 20px;
+  color: var(--grupo-color, #a88365);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.ak-diagonal-strip .ak7-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 6px;
+}
+
+.ak-diagonal-strip .ak7-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-diagonal-strip .ak7-info a,
+.ak-diagonal-strip .ak7-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-diagonal-strip .ak7-text {
+  text-align: justify;
+}
+
+.ak-diagonal-strip .ak7-text p {
+  margin: 0 0 14px;
+}
+
+.ak-diagonal-strip .ak7-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 8: AK-STAMP-SEAL (Encabezado con Sello de Ícono)
+   --------------------------------------------------------- */
+.ak-stamp-seal {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 22px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-radius: 12px;
+}
+
+.ak-stamp-seal .ak8-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px dashed var(--grupo-color, #a88365);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.ak-stamp-seal .ak8-seal {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--grupo-color, #a88365);
+  flex-shrink: 0;
+}
+
+.ak-stamp-seal .ak8-header-text {
+  flex-grow: 1;
+}
+
+.ak-stamp-seal .ak8-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.ak-stamp-seal .ak8-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-stamp-seal .ak8-info a,
+.ak-stamp-seal .ak8-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-stamp-seal .ak8-text {
+  text-align: justify;
+}
+
+.ak-stamp-seal .ak8-text p {
+  margin: 0 0 14px;
+}
+
+.ak-stamp-seal .ak8-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 9: AK-OVERLAP-STACK (Caja de Título Desplazada)
+   --------------------------------------------------------- */
+.ak-overlap-stack {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+}
+
+.ak-overlap-stack .ak9-header-box {
+  width: 85%;
+  margin: 0 auto -18px auto;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-radius: 10px;
+  padding: 16px 14px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: transparent !important;
+}
+
+.ak-overlap-stack .ak9-title {
+  font: 23px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.ak-overlap-stack .ak9-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-overlap-stack .ak9-info a,
+.ak-overlap-stack .ak9-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-overlap-stack .ak9-text-box {
+  border: 1px dashed var(--grupo-color, #a88365);
+  border-radius: 14px;
+  padding: 38px 22px 25px 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.ak-overlap-stack .ak9-text {
+  text-align: justify;
+}
+
+.ak-overlap-stack .ak9-text p {
+  margin: 0 0 14px;
+}
+
+.ak-overlap-stack .ak9-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 10: AK-ROYAL-CREST (Íconos Duales en Esquinas)
+   --------------------------------------------------------- */
+.ak-royal-crest {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-radius: 18px;
+}
+
+.ak-royal-crest .ak10-corner-top {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  font-size: 15px;
+  color: var(--grupo-color, #a88365);
+  line-height: 1;
+}
+
+.ak-royal-crest .ak10-corner-bottom {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  font-size: 15px;
+  color: var(--grupo-color, #a88365);
+  line-height: 1;
+}
+
+.ak-royal-crest .ak10-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.ak-royal-crest .ak10-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.ak-royal-crest .ak10-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.ak-royal-crest .ak10-info a,
+.ak-royal-crest .ak10-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.ak-royal-crest .ak10-text {
+  text-align: justify;
+}
+
+.ak-royal-crest .ak10-text p {
+  margin: 0 0 14px;
+}
+
+.ak-royal-crest .ak10-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
