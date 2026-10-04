@@ -1426,3 +1426,178 @@
   font-weight: 700;
   color: var(--grupo-color, #6b7a8d) !important;
 }
+/* ==========================================================
+   SAKURA CODES - NUEVOS MODELOS RAROS CON IMAGEN
+   ========================================================== */
+
+/* 19. SC-NEON-GLOW (Doble marco punteado + Resplandor/Neón) */
+.sc-neon-glow {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 2px dashed var(--grupo-color, #c0a080);
+  outline: 4px solid rgba(255, 255, 255, 0.08);
+  outline-offset: 4px;
+  border-radius: 16px;
+  padding: 22px;
+  box-sizing: border-box;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.05);
+  font-family: 'Quicksand', sans-serif;
+  color: #d1d1d1;
+  text-align: left;
+}
+.sng-img-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.sng-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--grupo-color, #c0a080);
+  box-shadow: 0 0 12px var(--grupo-color, #c0a080);
+}
+.sng-header {
+  margin-bottom: 15px;
+}
+.sng-title {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+  text-shadow: 0 0 8px var(--grupo-color, #c0a080);
+}
+.sng-info {
+  font-size: 11px;
+  color: var(--grupo-color, #c0a080);
+  margin-top: 4px;
+  letter-spacing: 0.5px;
+}
+.sng-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.sng-text p {
+  margin: 0 0 10px 0;
+}
+.sng-text b {
+  color: var(--grupo-color, #c0a080);
+}
+
+/* 20. SC-OFFSET-FRAME (Imagen flotante desfasada + Doble borde grueso transparente) */
+.sc-offset-frame {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  border-left: 6px solid var(--grupo-color, #c0a080);
+  border-radius: 4px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #d1d1d1;
+  text-align: left;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.sof-header-grid {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.sof-image {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--grupo-color, #c0a080);
+  outline: 2px dashed rgba(255, 255, 255, 0.2);
+  outline-offset: 4px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+}
+.sof-header-text {
+  flex: 1;
+}
+.sof-title {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+}
+.sof-info {
+  font-size: 11px;
+  color: var(--grupo-color, #c0a080);
+  margin-top: 4px;
+}
+.sof-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+}
+.sof-text p {
+  margin: 0 0 10px 0;
+}
+.sof-text b {
+  color: var(--grupo-color, #c0a080);
+}
+
+/* 21. SC-POLAROID-SHADOW (Efecto Tarjeta/Polaroid + Borde punteado interno + Sombra proyectada) */
+.sc-polaroid-shadow {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 3px solid var(--grupo-color, #c0a080);
+  border-radius: 8px;
+  padding: 18px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  color: #d1d1d1;
+  text-align: left;
+}
+.sps-card {
+  border: 1px dashed var(--grupo-color, #c0a080);
+  padding: 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.15);
+}
+.sps-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: grayscale(20%) contrast(105%);
+}
+.sps-header {
+  margin: 14px 0 10px 0;
+  text-align: center;
+}
+.sps-title {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: none;
+}
+.sps-info {
+  font-size: 11px;
+  color: var(--grupo-color, #c0a080);
+  margin-top: 3px;
+}
+.sps-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+.sps-text p {
+  margin: 0 0 10px 0;
+}
+.sps-text b {
+  color: var(--grupo-color, #c0a080);
+}
