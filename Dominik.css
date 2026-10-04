@@ -1,9 +1,9 @@
 /* =========================================================
-   SAKURA CODES - COLECCIÓN DOMINIK
+   SAKURA CODES - COLECCIÓN DOMINIK (Fondo Transparente)
    ========================================================= */
 
 /* ---------------------------------------------------------
-   OPCIÓN 1: EDITORIAL / REVISTA DE LUJO (Aesthetic)
+   OPCIÓN 1: EDITORIAL / REVISTA DE LUJO (Transparente)
    --------------------------------------------------------- */
 .dom-editorial {
   width: 520px;
@@ -11,24 +11,24 @@
   margin: 25px auto;
   box-sizing: border-box;
   font: 13px/1.8 'Quicksand', sans-serif;
-  color: #e2e8f0 !important;
-  background: #11141a !important;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 35px 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  color: inherit;
+  background: transparent !important;
+  border-top: 1px solid var(--grupo-color, #708090);
+  border-bottom: 1px solid var(--grupo-color, #708090);
+  padding: 30px 10px;
   position: relative;
 }
 
 .dom-editorial .de-header {
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  padding-bottom: 16px;
   margin-bottom: 22px;
 }
 
 .dom-editorial .de-title {
   font: 24px/1.2 var(--yuuki-title, 'Playfair Display', serif);
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-transform: none;
   letter-spacing: 1px;
   margin-bottom: 8px;
@@ -38,13 +38,15 @@
   font: bold 9px 'Quicksand', sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--grupo-color, #708090) !important;
+  color: inherit;
+  opacity: 0.8;
 }
 
 .dom-editorial .de-info a,
 .dom-editorial .de-info a:visited {
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-decoration: none !important;
+  font-weight: bold;
 }
 
 .dom-editorial .de-text {
@@ -62,7 +64,7 @@
 
 
 /* ---------------------------------------------------------
-   OPCIÓN 2: DARK ACADEMIA / MANUSCRITO (Doble Marco)
+   OPCIÓN 2: DARK ACADEMIA / MANUSCRITO (Doble Marco Transparente)
    --------------------------------------------------------- */
 .dom-academia {
   width: 520px;
@@ -70,22 +72,22 @@
   margin: 25px auto;
   box-sizing: border-box;
   font: 13px/1.8 'Quicksand', sans-serif;
-  color: #d1d5db !important;
-  background: #0f1117 !important;
+  color: inherit;
+  background: transparent !important;
   border: 1px solid var(--grupo-color, #708090);
-  padding: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  padding: 8px;
 }
 
 .dom-academia .da-inner {
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 30px 25px;
+  border: 1px solid var(--grupo-color, #708090);
+  padding: 28px 22px;
+  opacity: 0.9;
 }
 
 .dom-academia .da-title {
   text-align: center;
   font: italic 23px/1.2 var(--yuuki-title, 'Playfair Display', serif);
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-transform: none;
   margin-bottom: 6px;
 }
@@ -115,23 +117,24 @@
 .dom-academia .da-footer {
   margin-top: 22px;
   padding-top: 12px;
-  border-top: 1px dashed rgba(255, 255, 255, 0.12);
+  border-top: 1px dashed var(--grupo-color, #708090);
   text-align: right;
   font: 700 9px 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--grupo-color, #708090) !important;
+  color: inherit;
+  opacity: 0.85;
 }
 
 .dom-academia .da-footer a,
 .dom-academia .da-footer a:visited {
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-decoration: none !important;
 }
 
 
 /* ---------------------------------------------------------
-   OPCIÓN 3: MODERN ASYMMETRIC (Barra Lateral Accentuada)
+   OPCIÓN 3: MODERN ASYMMETRIC (Barra Lateral Transparente)
    --------------------------------------------------------- */
 .dom-asymm {
   width: 520px;
@@ -139,12 +142,10 @@
   margin: 25px auto;
   box-sizing: border-box;
   font: 13px/1.8 'Quicksand', sans-serif;
-  color: #e2e8f0 !important;
-  background: #131722 !important;
-  border-radius: 0 12px 12px 0;
-  border-left: 4px solid var(--grupo-color, #708090);
-  padding: 28px 25px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  color: inherit;
+  background: transparent !important;
+  border-left: 3px solid var(--grupo-color, #708090);
+  padding: 10px 0 10px 22px;
 }
 
 .dom-asymm .das-header {
@@ -153,7 +154,7 @@
 
 .dom-asymm .das-title {
   font: 22px/1.2 var(--yuuki-title, 'Playfair Display', serif);
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-transform: none;
   margin-bottom: 4px;
 }
@@ -162,13 +163,13 @@
   font: 700 9px 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: var(--grupo-color, #708090) !important;
-  opacity: 0.9;
+  color: inherit;
+  opacity: 0.8;
 }
 
 .dom-asymm .das-info a,
 .dom-asymm .das-info a:visited {
-  color: #ffffff !important;
+  color: var(--grupo-color, #708090) !important;
   text-decoration: none !important;
 }
 
