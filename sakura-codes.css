@@ -1,0 +1,1204 @@
+/* =========================================================
+   SAKURA CODES - ARCHIVO MAESTRO UNIFICADO (100% ICOFONT)
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   MODELO 1: SC-EXECUTIVE (Esquinas Vectoriales & Sombra)
+   --------------------------------------------------------- */
+.sc-executive {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px;
+  border: 1px solid var(--grupo-color, #8c7d70);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.sc-executive .sce-corner-top {
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  font-size: 15px;
+  color: var(--grupo-color, #8c7d70);
+  line-height: 1;
+}
+
+.sc-executive .sce-corner-bottom {
+  position: absolute;
+  bottom: -11px;
+  right: 20px;
+  font-size: 15px;
+  color: var(--grupo-color, #8c7d70);
+  line-height: 1;
+}
+
+.sc-executive .sce-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.sc-executive .sce-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #8c7d70) !important;
+  text-transform: none;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.sc-executive .sce-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-executive .sce-info a,
+.sc-executive .sce-info a:visited {
+  color: var(--grupo-color, #8c7d70) !important;
+  text-decoration: none !important;
+}
+
+.sc-executive .sce-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 16px 0;
+}
+
+.sc-executive .sce-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #8c7d70);
+  opacity: 0.4;
+}
+
+.sc-executive .sce-icon {
+  font-size: 11px;
+  color: var(--grupo-color, #8c7d70);
+}
+
+.sc-executive .sce-text {
+  text-align: justify;
+}
+
+.sc-executive .sce-text p {
+  margin: 0 0 14px;
+}
+
+.sc-executive .sce-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #8c7d70) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 2: SC-CUT-CORNER (Bordes Cortados Diagonales)
+   --------------------------------------------------------- */
+.sc-cut-corner {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 22px;
+  border: 1.5px solid var(--grupo-color, #6b7a8d);
+  clip-path: polygon(
+    20px 0%, 100% 0%, 100% calc(100% - 20px), 
+    calc(100% - 20px) 100%, 0% 100%, 0% 20px
+  );
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.sc-cut-corner .scc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed var(--grupo-color, #6b7a8d);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.sc-cut-corner .scc-title {
+  font: 24px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #6b7a8d) !important;
+  text-transform: none;
+}
+
+.sc-cut-corner .scc-badge {
+  font-size: 14px;
+  color: var(--grupo-color, #6b7a8d) !important;
+  border: 1px solid var(--grupo-color, #6b7a8d);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.sc-cut-corner .scc-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+  margin-bottom: 18px;
+}
+
+.sc-cut-corner .scc-info a,
+.sc-cut-corner .scc-info a:visited {
+  color: var(--grupo-color, #6b7a8d) !important;
+  text-decoration: none !important;
+}
+
+.sc-cut-corner .scc-text {
+  text-align: justify;
+}
+
+.sc-cut-corner .scc-text p {
+  margin: 0 0 14px;
+}
+
+.sc-cut-corner .scc-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #6b7a8d) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 3: SC-DOSSIER-TAB (Pestaña Superior de Archivo)
+   --------------------------------------------------------- */
+.sc-dossier-tab {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+}
+
+.sc-dossier-tab .sdt-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid var(--grupo-color, #5c7080);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding: 6px 18px;
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #5c7080) !important;
+  margin-left: 15px;
+}
+
+.sc-dossier-tab .sdt-body {
+  border: 1.5px solid var(--grupo-color, #5c7080);
+  border-radius: 0 14px 14px 14px;
+  padding: 28px 22px;
+  margin-top: -1px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.sc-dossier-tab .sdt-header {
+  border-bottom: 1px solid var(--grupo-color, #5c7080);
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.sc-dossier-tab .sdt-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #5c7080) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.sc-dossier-tab .sdt-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-dossier-tab .sdt-info a,
+.sc-dossier-tab .sdt-info a:visited {
+  color: var(--grupo-color, #5c7080) !important;
+  text-decoration: none !important;
+}
+
+.sc-dossier-tab .sdt-text {
+  text-align: justify;
+}
+
+.sc-dossier-tab .sdt-text p {
+  margin: 0 0 14px;
+}
+
+.sc-dossier-tab .sdt-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #5c7080) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 4: SC-OVERLAP-STACK (Caja de Encabezado Superpuesta)
+   --------------------------------------------------------- */
+.sc-overlap-stack {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+}
+
+.sc-overlap-stack .sos-header-box {
+  width: 85%;
+  margin: 0 auto -20px auto;
+  border: 1.5px solid var(--grupo-color, #5c7080);
+  border-radius: 8px;
+  padding: 18px 15px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: transparent !important;
+}
+
+.sc-overlap-stack .sos-title {
+  font: 23px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #5c7080) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.sc-overlap-stack .sos-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-overlap-stack .sos-info a,
+.sc-overlap-stack .sos-info a:visited {
+  color: var(--grupo-color, #5c7080) !important;
+  text-decoration: none !important;
+}
+
+.sc-overlap-stack .sos-text-box {
+  border: 1px dashed var(--grupo-color, #5c7080);
+  border-radius: 12px;
+  padding: 40px 22px 25px 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.sc-overlap-stack .sos-text {
+  text-align: justify;
+}
+
+.sc-overlap-stack .sos-text p {
+  margin: 0 0 14px;
+}
+
+.sc-overlap-stack .sos-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #5c7080) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 5: SC-AURA-GLOW (Borde Redondeado con Resplandor)
+   --------------------------------------------------------- */
+.sc-aura-glow {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  box-shadow: 0 0 15px var(--grupo-color, #e0a3b8);
+}
+
+.sc-aura-glow .sag-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sc-aura-glow .sag-badge {
+  font-size: 16px;
+  color: var(--grupo-color, #e0a3b8);
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+.sc-aura-glow .sag-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 4px 0 6px;
+}
+
+.sc-aura-glow .sag-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-aura-glow .sag-info a,
+.sc-aura-glow .sag-info a:visited {
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-decoration: none !important;
+}
+
+.sc-aura-glow .sag-text {
+  text-align: justify;
+}
+
+.sc-aura-glow .sag-text p {
+  margin: 0 0 14px;
+}
+
+.sc-aura-glow .sag-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #e0a3b8) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 6: SC-SIDEBAR-ASYMM (Barra Lateral Gruesa Minimalista)
+   --------------------------------------------------------- */
+.sc-sidebar-asymm {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  border-left: 4px solid var(--grupo-color, #708090);
+  padding: 10px 0 10px 22px;
+}
+
+.sc-sidebar-asymm .ssa-header {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sc-sidebar-asymm .ssa-icon {
+  font-size: 20px;
+  color: var(--grupo-color, #708090);
+}
+
+.sc-sidebar-asymm .ssa-title {
+  font: 23px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #708090) !important;
+  text-transform: none;
+  margin-bottom: 2px;
+}
+
+.sc-sidebar-asymm .ssa-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.sc-sidebar-asymm .ssa-info a,
+.sc-sidebar-asymm .ssa-info a:visited {
+  color: var(--grupo-color, #708090) !important;
+  text-decoration: none !important;
+}
+
+.sc-sidebar-asymm .ssa-text {
+  text-align: justify;
+}
+
+.sc-sidebar-asymm .ssa-text p {
+  margin: 0 0 14px;
+}
+
+.sc-sidebar-asymm .ssa-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #708090) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 7: SC-STAMP-SEAL (Sello Circular de Ícono)
+   --------------------------------------------------------- */
+.sc-stamp-seal {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 22px;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  border-radius: 12px;
+}
+
+.sc-stamp-seal .sss-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px dashed var(--grupo-color, #a88365);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.sc-stamp-seal .sss-seal {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--grupo-color, #a88365);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--grupo-color, #a88365);
+  flex-shrink: 0;
+}
+
+.sc-stamp-seal .sss-header-text {
+  flex-grow: 1;
+}
+
+.sc-stamp-seal .sss-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #a88365) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.sc-stamp-seal .sss-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-stamp-seal .sss-info a,
+.sc-stamp-seal .sss-info a:visited {
+  color: var(--grupo-color, #a88365) !important;
+  text-decoration: none !important;
+}
+
+.sc-stamp-seal .sss-text {
+  text-align: justify;
+}
+
+.sc-stamp-seal .sss-text p {
+  margin: 0 0 14px;
+}
+
+.sc-stamp-seal .sss-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #a88365) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 8: SC-FEST-TAG (Pestaña Superior Flotante + Marco)
+   --------------------------------------------------------- */
+.sc-fest-tag {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 20px 10px;
+}
+
+.sc-fest-tag .sft-tag-wrap {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.sc-fest-tag .sft-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--grupo-color, #d96b27);
+  color: #ffffff !important;
+  padding: 4px 18px;
+  border-radius: 12px;
+  font: bold 9px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sc-fest-tag .sft-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.sc-fest-tag .sft-title {
+  font: 24px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin: 6px 0;
+}
+
+.sc-fest-tag .sft-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+  margin-top: 6px;
+}
+
+.sc-fest-tag .sft-info a,
+.sc-fest-tag .sft-info a:visited {
+  color: var(--grupo-color, #d96b27) !important;
+  text-decoration: none !important;
+}
+
+.sc-fest-tag .sft-line {
+  border: 0;
+  border-top: 1px solid var(--grupo-color, #d96b27);
+  opacity: 0.5;
+  margin: 14px 0;
+}
+
+.sc-fest-tag .sft-text {
+  text-align: justify;
+}
+
+.sc-fest-tag .sft-text p {
+  margin: 0 0 14px;
+}
+
+.sc-fest-tag .sft-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #d96b27) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 9: SC-HALLOWEEN (Especial Spooky / Esquinas IcoFont)
+   --------------------------------------------------------- */
+.sc-halloween {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 20px;
+  border: 1px solid var(--grupo-color, #d96b27);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sc-halloween .sh-corner-top {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  font-size: 14px;
+  color: var(--grupo-color, #d96b27);
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.sc-halloween .sh-corner-bottom {
+  position: absolute;
+  bottom: -12px;
+  right: 15px;
+  font-size: 14px;
+  color: var(--grupo-color, #d96b27);
+  opacity: 0.85;
+  line-height: 1;
+}
+
+.sc-halloween .sh-tag-wrap {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sc-halloween .sh-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  color: var(--grupo-color, #d96b27) !important;
+  border: 1px solid var(--grupo-color, #d96b27);
+  padding: 3px 16px;
+  border-radius: 20px;
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sc-halloween .sh-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sc-halloween .sh-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 8px 0 4px;
+}
+
+.sc-halloween .sh-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-halloween .sh-info a,
+.sc-halloween .sh-info a:visited {
+  color: var(--grupo-color, #d96b27) !important;
+  text-decoration: none !important;
+}
+
+.sc-halloween .sh-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.sc-halloween .sh-divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #d96b27);
+  opacity: 0.4;
+}
+
+.sc-halloween .sh-divider-icon {
+  font-size: 12px;
+  color: var(--grupo-color, #d96b27);
+}
+
+.sc-halloween .sh-text {
+  text-align: justify;
+}
+
+.sc-halloween .sh-text p {
+  margin: 0 0 14px;
+}
+
+.sc-halloween .sh-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #d96b27) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 10: SC-WITCHY-GLOW (Resplandor Neón Spooky)
+   --------------------------------------------------------- */
+.sc-witchy-glow {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 22px;
+  border-radius: 16px;
+  border: 1.5px solid var(--grupo-color, #d96b27);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5), 0 0 12px var(--grupo-color, #d96b27);
+}
+
+.sc-witchy-glow .swg-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sc-witchy-glow .swg-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin: 6px 0;
+  text-shadow: 0 0 8px rgba(0,0,0,0.8), 0 0 10px var(--grupo-color, #d96b27);
+}
+
+.sc-witchy-glow .swg-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.9;
+}
+
+.sc-witchy-glow .swg-info a,
+.sc-witchy-glow .swg-info a:visited {
+  color: var(--grupo-color, #d96b27) !important;
+  text-decoration: none !important;
+}
+
+.sc-witchy-glow .swg-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 16px 0;
+}
+
+.sc-witchy-glow .swg-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #d96b27);
+  box-shadow: 0 0 6px var(--grupo-color, #d96b27);
+  opacity: 0.6;
+}
+
+.sc-witchy-glow .swg-icon {
+  font-size: 13px;
+  color: var(--grupo-color, #d96b27);
+  filter: drop-shadow(0 0 4px var(--grupo-color, #d96b27));
+}
+
+.sc-witchy-glow .swg-text {
+  text-align: justify;
+}
+
+.sc-witchy-glow .swg-text p {
+  margin: 0 0 14px;
+}
+
+.sc-witchy-glow .swg-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #d96b27) !important;
+  text-shadow: 0 0 2px var(--grupo-color, #d96b27);
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 11: SC-CANDLE-ARCH (Arco Gótico con Sombra de Vela)
+   --------------------------------------------------------- */
+.sc-candle-arch {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 25px 25px;
+  border-radius: 120px 120px 12px 12px;
+  border: 1px solid var(--grupo-color, #d96b27);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5), inset 0 0 25px rgba(0,0,0,0.3);
+}
+
+.sc-candle-arch .sca-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.sc-candle-arch .sca-icon-top {
+  font-size: 20px;
+  color: var(--grupo-color, #d96b27);
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 6px var(--grupo-color, #d96b27));
+  display: inline-block;
+}
+
+.sc-candle-arch .sca-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.sc-candle-arch .sca-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-candle-arch .sca-info a,
+.sc-candle-arch .sca-info a:visited {
+  color: var(--grupo-color, #d96b27) !important;
+  text-decoration: none !important;
+}
+
+.sc-candle-arch .sca-text {
+  text-align: justify;
+}
+
+.sc-candle-arch .sca-text p {
+  margin: 0 0 14px;
+}
+
+.sc-candle-arch .sca-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #d96b27) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 12: SC-PHANTOM-CORNERS (Bordes Desplazados Mystical)
+   --------------------------------------------------------- */
+.sc-phantom-corners {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 20px;
+  border: 1px dashed var(--grupo-color, #d96b27);
+}
+
+.sc-phantom-corners::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border: 1px solid var(--grupo-color, #d96b27);
+  pointer-events: none;
+  opacity: 0.6;
+  box-shadow: 0 0 10px var(--grupo-color, #d96b27);
+}
+
+.sc-phantom-corners .spc-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sc-phantom-corners .spc-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #d96b27) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.sc-phantom-corners .spc-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-phantom-corners .spc-info a,
+.sc-phantom-corners .spc-info a:visited {
+  color: var(--grupo-color, #d96b27) !important;
+  text-decoration: none !important;
+}
+
+.sc-phantom-corners .spc-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--grupo-color, #d96b27);
+  font-size: 14px;
+  margin: 12px 0 18px;
+  filter: drop-shadow(0 0 4px var(--grupo-color, #d96b27));
+}
+
+.sc-phantom-corners .spc-text {
+  text-align: justify;
+}
+
+.sc-phantom-corners .spc-text p {
+  margin: 0 0 14px;
+}
+
+.sc-phantom-corners .spc-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #d96b27) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 13: SC-HEAVY-FRAME (Borde Doble Grueso & Flotante)
+   --------------------------------------------------------- */
+.sc-heavy-frame {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 22px;
+  border: 4px double var(--grupo-color, #7ca982);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+.sc-heavy-frame::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border: 1.5px dashed var(--grupo-color, #7ca982);
+  border-radius: 26px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.sc-heavy-frame .shf-corner-top {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 0 10px;
+  font-size: 16px;
+  color: var(--grupo-color, #7ca982);
+  line-height: 1;
+  filter: drop-shadow(0 0 4px var(--grupo-color, #7ca982));
+}
+
+.sc-heavy-frame .shf-header {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 22px;
+}
+
+.sc-heavy-frame .shf-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #7ca982) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.sc-heavy-frame .shf-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-heavy-frame .shf-info a,
+.sc-heavy-frame .shf-info a:visited {
+  color: var(--grupo-color, #7ca982) !important;
+  text-decoration: none !important;
+}
+
+.sc-heavy-frame .shf-text {
+  text-align: justify;
+}
+
+.sc-heavy-frame .shf-text p {
+  margin: 0 0 14px;
+}
+
+.sc-heavy-frame .shf-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #7ca982) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 14: SC-ASYMMETRIC-BOX (Bordes Asimétricos Gruesos)
+   --------------------------------------------------------- */
+.sc-asymmetric-box {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 32px 24px;
+  border-top: 5px solid var(--grupo-color, #7ca982);
+  border-left: 5px solid var(--grupo-color, #7ca982);
+  border-bottom: 1px solid var(--grupo-color, #7ca982);
+  border-right: 1px solid var(--grupo-color, #7ca982);
+  border-radius: 4px 24px 4px 24px;
+}
+
+.sc-asymmetric-box .sab-header-grid {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px dashed var(--grupo-color, #7ca982);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.sc-asymmetric-box .sab-stamp {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid var(--grupo-color, #7ca982);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--grupo-color, #7ca982);
+  flex-shrink: 0;
+}
+
+.sc-asymmetric-box .sab-header-text {
+  flex-grow: 1;
+}
+
+.sc-asymmetric-box .sab-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #7ca982) !important;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+
+.sc-asymmetric-box .sab-info {
+  font: 700 9px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-asymmetric-box .sab-info a,
+.sc-asymmetric-box .sab-info a:visited {
+  color: var(--grupo-color, #7ca982) !important;
+  text-decoration: none !important;
+}
+
+.sc-asymmetric-box .sab-text {
+  text-align: justify;
+}
+
+.sc-asymmetric-box .sab-text p {
+  margin: 0 0 14px;
+}
+
+.sc-asymmetric-box .sab-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #7ca982) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MODELO 15: SC-TRIPLE-BRACKETS (Esquinas L Flotantes)
+   --------------------------------------------------------- */
+.sc-triple-brackets {
+  width: 520px;
+  max-width: 95%;
+  margin: 35px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 35px 22px;
+  border: 1px solid var(--grupo-color, #7ca982);
+}
+
+.sc-triple-brackets::before,
+.sc-triple-brackets::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  pointer-events: none;
+}
+
+.sc-triple-brackets::before {
+  top: -6px;
+  left: -6px;
+  border-top: 4px solid var(--grupo-color, #7ca982);
+  border-left: 4px solid var(--grupo-color, #7ca982);
+}
+
+.sc-triple-brackets::after {
+  bottom: -6px;
+  right: -6px;
+  border-bottom: 4px solid var(--grupo-color, #7ca982);
+  border-right: 4px solid var(--grupo-color, #7ca982);
+}
+
+.sc-triple-brackets .stb-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sc-triple-brackets .stb-badge {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--grupo-color, #7ca982);
+  margin-bottom: 6px;
+  filter: drop-shadow(0 0 4px var(--grupo-color, #7ca982));
+}
+
+.sc-triple-brackets .stb-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #7ca982) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.sc-triple-brackets .stb-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sc-triple-brackets .stb-info a,
+.sc-triple-brackets .stb-info a:visited {
+  color: var(--grupo-color, #7ca982) !important;
+  text-decoration: none !important;
+}
+
+.sc-triple-brackets .stb-text {
+  text-align: justify;
+}
+
+.sc-triple-brackets .stb-text p {
+  margin: 0 0 14px;
+}
+
+.sc-triple-brackets .stb-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #7ca982) !important;
+}
