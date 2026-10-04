@@ -1,5 +1,5 @@
 /* =========================================================
-   MODELO: DOMINIK (Post de Rol - Corregido & Legible)
+   MODELO: DOMINIK (Post de Rol - Compatible Claro/Oscuro)
    ========================================================= */
 
 .dominik-post {
@@ -8,13 +8,14 @@
   margin: 25px auto;
   box-sizing: border-box;
   font: var(--yuuki-post-size, 13px)/1.75 'Quicksand', sans-serif;
-  color: #e2e8f0; /* Texto principal con excelente contraste */
+  color: #e2e8f0 !important; /* Texto claro siempre legible */
   position: relative;
-  background: rgba(20, 24, 33, 0.85); /* Fondo oscuro transparente con buen contraste */
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Fondo oscuro SÓLIDO (o casi sólido) para que no dependa del modo claro/oscuro del foro */
+  background: #12161f !important; 
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 /* Detalle superior con el color del grupo */
@@ -38,7 +39,7 @@
 .dom-tag {
   display: inline-block;
   background: rgba(255, 255, 255, 0.08);
-  color: var(--grupo-color, #305c77);
+  color: var(--grupo-color, #305c77) !important;
   border: 1px solid var(--grupo-color, #305c77);
   padding: 4px 16px;
   border-radius: 20px;
@@ -53,24 +54,37 @@
   margin-bottom: 20px;
 }
 
-/* Título respetando minúsculas/mayúsculas originales */
+/* Título */
 .dom-title {
   font: var(--yuuki-title-size, 22px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
-  color: #ffffff;
-  text-transform: none; /* NUNCA fuerza mayúsculas */
+  color: #ffffff !important;
+  text-transform: none; /* Respetará lo que se escriba en el HTML */
   letter-spacing: 1.5px;
   margin: 8px 0;
 }
 
-/* Subtítulo / Info bar corregida con mayor contraste */
+/* Barra de Info & LINKS DE ETIQUETAS (@Clementine, etc.) */
 .dom-info-bar {
   font: 700 10px 'Quicksand', sans-serif;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #cbd5e1; /* Color claro para garantizar legibilidad */
-  opacity: 1;
+  color: #94a3b8 !important;
 }
 
+/* FORZAMOS EL COLOR DE LOS LINKS DENTRO DE LA BARRA DE INFO */
+.dom-info-bar a,
+.dom-info-bar a:visited {
+  color: var(--grupo-color, #305c77) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.dom-info-bar a:hover {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+/* Divisor central */
 .dom-divider {
   display: flex;
   align-items: center;
@@ -95,6 +109,7 @@
 .dom-text {
   font-family: 'Quicksand', sans-serif;
   text-align: justify;
+  color: #e2e8f0 !important;
 }
 
 .dom-text p {
@@ -105,8 +120,8 @@
   margin-bottom: 0;
 }
 
-/* Diálogos en negrita con contraste vibrante */
+/* Diálogos en negrita */
 .dom-text b {
   font-weight: 700;
-  color: var(--grupo-color, #305c77);
+  color: var(--grupo-color, #305c77) !important;
 }
