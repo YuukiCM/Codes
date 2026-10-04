@@ -1,0 +1,238 @@
+/* =========================================================
+   SAKURA CODES - SOFT & ROMANTIC COLLECTION
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   OPCIÓN 1: SOFT HEART & GLOW (Bordes Redondos + Corazón Flotante)
+   --------------------------------------------------------- */
+.sr-soft-glow {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 32px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  /* Resplandor suave estilo aura */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05), 0 0 12px var(--grupo-color, #e0a3b8);
+}
+
+.sr-soft-glow .srg-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sr-soft-glow .srg-icon {
+  font-size: 14px;
+  color: var(--grupo-color, #e0a3b8);
+  margin-bottom: 4px;
+  filter: drop-shadow(0 0 5px var(--grupo-color, #e0a3b8));
+}
+
+.sr-soft-glow .srg-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-transform: none;
+  letter-spacing: 1px;
+  margin: 4px 0 6px;
+  text-shadow: 0 0 8px var(--grupo-color, #e0a3b8);
+}
+
+.sr-soft-glow .srg-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sr-soft-glow .srg-info a,
+.sr-soft-glow .srg-info a:visited {
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.sr-soft-glow .srg-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.sr-soft-glow .srg-line {
+  flex-grow: 1;
+  height: 1px;
+  background: var(--grupo-color, #e0a3b8);
+  opacity: 0.35;
+}
+
+.sr-soft-glow .srg-sparkle {
+  font-size: 10px;
+  color: var(--grupo-color, #e0a3b8);
+}
+
+.sr-soft-glow .srg-text {
+  text-align: justify;
+}
+
+.sr-soft-glow .srg-text p {
+  margin: 0 0 14px;
+}
+
+.sr-soft-glow .srg-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #e0a3b8) !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPCIÓN 2: ROMANTIC RIBBON / Lazo Eleganza (Marco Doble Fino)
+   --------------------------------------------------------- */
+.sr-ribbon {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 20px;
+  border: 1px dashed var(--grupo-color, #e0a3b8);
+  border-radius: 12px;
+}
+
+/* Marco interior desfasado muy fino */
+.sr-ribbon::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 1px solid var(--grupo-color, #e0a3b8);
+  border-radius: 16px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.sr-ribbon .srr-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sr-ribbon .srr-title {
+  font: 25px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.sr-ribbon .srr-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.85;
+}
+
+.sr-ribbon .srr-info a,
+.sr-ribbon .srr-info a:visited {
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.sr-ribbon .srr-divider {
+  text-align: center;
+  color: var(--grupo-color, #e0a3b8);
+  font-size: 11px;
+  margin: 14px 0;
+  letter-spacing: 8px;
+  opacity: 0.8;
+}
+
+.sr-ribbon .srr-text {
+  text-align: justify;
+}
+
+.sr-ribbon .srr-text p {
+  margin: 0 0 14px;
+}
+
+.sr-ribbon .srr-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #e0a3b8) !important;
+}
+
+
+/* ---------------------------------------------------------
+   OPCIÓN 3: LOVERS LETTER (Estilo Carta Romántica Cuidada)
+   --------------------------------------------------------- */
+.sr-lovers-letter {
+  width: 520px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-sizing: border-box;
+  font: 13px/1.8 'Quicksand', sans-serif;
+  color: inherit;
+  background: transparent !important;
+  position: relative;
+  padding: 30px 15px;
+  border-top: 2px solid var(--grupo-color, #e0a3b8);
+  border-bottom: 2px solid var(--grupo-color, #e0a3b8);
+}
+
+.sr-lovers-letter .srl-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.sr-lovers-letter .srl-tag {
+  display: inline-block;
+  font: 700 8.5px 'Quicksand', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #e0a3b8) !important;
+  border-bottom: 1px solid var(--grupo-color, #e0a3b8);
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
+.sr-lovers-letter .srl-title {
+  font: 26px/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-transform: none;
+  margin-bottom: 6px;
+}
+
+.sr-lovers-letter .srl-info {
+  font: 700 9.5px 'Quicksand', sans-serif;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.sr-lovers-letter .srl-info a,
+.sr-lovers-letter .srl-info a:visited {
+  color: var(--grupo-color, #e0a3b8) !important;
+  text-decoration: none !important;
+}
+
+.sr-lovers-letter .srl-text {
+  text-align: justify;
+}
+
+.sr-lovers-letter .srl-text p {
+  margin: 0 0 14px;
+}
+
+.sr-lovers-letter .srl-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #e0a3b8) !important;
+}
