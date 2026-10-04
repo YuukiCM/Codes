@@ -1,0 +1,109 @@
+/* =========================================================
+   MODELO: DOMINIK (Post de Rol Elegante)
+   ========================================================= */
+
+.dominik-post {
+  width: 520px;
+  max-width: 95%;
+  margin: 25px auto;
+  box-sizing: border-box;
+  font: var(--yuuki-post-size, 13px)/1.75 var(--yuuki-post-font, 'Inter', 'Segoe UI', sans-serif);
+  color: inherit;
+  position: relative;
+  background: rgba(18, 19, 24, 0.4); /* Fondo sutil oscuro */
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Detalle superior con el color del grupo */
+.dominik-post::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 40px;
+  right: 40px;
+  height: 3px;
+  background: var(--grupo-color, #708090);
+  border-radius: 0 0 4px 4px;
+}
+
+/* Etiqueta superior */
+.dom-tag-wrap {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.dom-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--grupo-color, #708090);
+  border: 1px solid var(--grupo-color, #708090);
+  padding: 4px 16px;
+  border-radius: 20px;
+  font: bold 9px var(--yuuki-post-font, sans-serif);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Encabezado Principal */
+.dom-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dom-title {
+  font: var(--yuuki-title-size, 22px)/1.2 var(--yuuki-title, 'Playfair Display', serif);
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 8px 0;
+}
+
+.dom-info-bar {
+  font: 600 9px var(--yuuki-post-font, sans-serif);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #708090);
+  opacity: 0.9;
+}
+
+.dom-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 18px 0;
+}
+
+.dom-divider-line {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--grupo-color, #708090), transparent);
+  opacity: 0.4;
+}
+
+.dom-divider-icon {
+  font-size: 8px;
+  color: var(--grupo-color, #708090);
+}
+
+/* Cuerpo de Texto */
+.dom-text {
+  text-align: justify;
+}
+
+.dom-text p {
+  margin: 0 0 14px;
+}
+
+.dom-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Diálogos en negrita */
+.dom-text b {
+  font-weight: 700;
+  color: var(--grupo-color, #708090);
+}
