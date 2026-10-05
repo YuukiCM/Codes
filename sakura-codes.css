@@ -1599,3 +1599,127 @@
 .sps-text b {
   color: var(--grupo-color, #d96b27);
 }
+
+/* ==========================================================
+   SISTEMA DE PLANTILLAS DE ROL - YUUKICM CSS EXTERNO
+   Tipografía base: Quicksand
+   ========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/icofont/1.0.1/css/icofont.min.css');
+
+/* Contenedor general compartido */
+.post-rol-base {
+    width: 100%;
+    max-width: 500px;
+    font-family: 'Quicksand', sans-serif;
+    color: inherit;
+    box-sizing: border-box;
+    text-align: left;
+    background: transparent !important;
+    position: relative;
+    margin: 15px auto;
+}
+
+/* 1. El Portal Fluido */
+.post-portal-fluido {
+    max-width: 500px;
+    border: 2px solid var(--grupo-color, #e0a3b8);
+    border-radius: 30px 100px 30px 80px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.post-portal-fluido .pr-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--grupo-color, #e0a3b8);
+    margin-bottom: 4px;
+}
+.post-portal-fluido .pr-info {
+    font-size: 11px;
+    color: var(--grupo-color, #e0a3b8);
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+.post-portal-fluido .pr-line {
+    width: 60%;
+    height: 2px;
+    background: var(--grupo-color, #e0a3b8);
+    border-radius: 2px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+/* 2. Silueta Arquitectónica */
+.post-silueta-arq {
+    max-width: 500px;
+    border-top: 1px solid rgba(150,150,150,0.3);
+    border-right: 1px solid rgba(150,150,150,0.3);
+    border-bottom: 4px solid var(--grupo-color, #7ca982);
+    border-left: 4px solid var(--grupo-color, #7ca982);
+    border-radius: 20px 0px 20px 0px;
+    padding: 25px;
+}
+.post-silueta-arq .pr-title {
+    font-size: 23px;
+    font-weight: bold;
+    color: var(--grupo-color, #7ca982);
+}
+.post-silueta-arq .pr-info {
+    font-size: 11px;
+    color: var(--grupo-color, #7ca982);
+    margin: 4px 0 15px 0;
+    opacity: 0.9;
+}
+
+/* 3. Cerezos (Estructura base, manteniendo emojis e imágenes en HTML) */
+.post-cerezos {
+    max-width: 480px;
+    border: 1px solid #b85d72;
+    padding: 8px;
+    text-align: center;
+}
+.post-cerezos-inner {
+    border: 1px solid #b85d72;
+    padding: 25px 20px 20px 20px;
+    position: relative;
+    overflow: hidden;
+}
+.post-cerezos .pr-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #b85d72;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.post-cerezos .pr-info-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #b85d72;
+    border-top: 1px dashed #b85d72;
+    border-bottom: 1px dashed #b85d72;
+    padding: 10px 0;
+    margin: 15px 0 20px 0;
+}
+.post-cerezos .pr-cuerpo {
+    border: 1px solid #b85d72;
+    padding: 20px;
+    font-size: 13.5px;
+    line-height: 1.7;
+    text-align: justify;
+    color: inherit;
+    position: relative;
+}
+
+/* Textos generales de los posts y diálogos */
+.post-rol-base p {
+    margin: 0 0 12px 0;
+}
+.post-rol-base b {
+    color: var(--grupo-color, inherit);
+}
