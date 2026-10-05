@@ -746,3 +746,173 @@
   font-weight: 700;
   color: var(--grupo-color, #7ca982) !important;
 }
+
+/* ===================================================
+   TEMPORADAS.CSS - ESTILOS DE TEMPORADAS PARA ROLES
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Quicksand:wght@300..700&display=swap');
+
+/* --- PRIMAVERA (Sakura / Rosados) --- */
+.temp-primavera {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 2px solid #e0a3b8;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+}
+.temp-primavera .temp-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #e0a3b8;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.temp-primavera .temp-cuerpo {
+  font-size: 13.5px;
+  line-height: 1.7;
+  border-top: 1px dashed #e0a3b8;
+  border-bottom: 1px dashed #e0a3b8;
+  padding: 15px 0;
+  margin-bottom: 12px;
+}
+.temp-primavera p { margin: 0 0 10px 0; }
+.temp-primavera b { color: #e0a3b8; }
+.temp-primavera .temp-foot {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #e0a3b8;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* --- VERANO (Solsticio / Cálidos Dorados) --- */
+.temp-verano {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 2px solid #d99b27;
+  border-radius: 4px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+}
+.temp-verano .temp-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #d99b27;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.temp-verano .temp-cuerpo {
+  font-size: 13.5px;
+  line-height: 1.7;
+  border-top: 1px solid #d99b27;
+  border-bottom: 1px solid #d99b27;
+  padding: 15px 0;
+  margin-bottom: 12px;
+}
+.temp-verano p { margin: 0 0 10px 0; }
+.temp-verano b { color: #d99b27; }
+.temp-verano .temp-foot {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #d99b27;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* --- OTOÑO (Hoja Seca / Cobre y Terracota) --- */
+.temp-otono {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 2px solid #b8623b;
+  border-radius: 12px 0px 12px 0px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+}
+.temp-otono .temp-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #b8623b;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.temp-otono .temp-cuerpo {
+  font-size: 13.5px;
+  line-height: 1.7;
+  border-top: 1px dashed #b8623b;
+  border-bottom: 1px dashed #b8623b;
+  padding: 15px 0;
+  margin-bottom: 12px;
+}
+.temp-otono p { margin: 0 0 10px 0; }
+.temp-otono b { color: #b8623b; }
+.temp-otono .temp-foot {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #b8623b;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* --- INVIERNO (Escarcha / Azulados Fríos) --- */
+.temp-invierno {
+  width: 100%;
+  max-width: 500px;
+  background: transparent !important;
+  border: 2px solid #5b82a6;
+  border-radius: 0px 20px 0px 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+}
+.temp-invierno .temp-head {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #5b82a6;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.temp-invierno .temp-cuerpo {
+  font-size: 13.5px;
+  line-height: 1.7;
+  border-top: 1px solid #5b82a6;
+  border-bottom: 1px solid #5b82a6;
+  padding: 15px 0;
+  margin-bottom: 12px;
+}
+.temp-invierno p { margin: 0 0 10px 0; }
+.temp-invierno b { color: #5b82a6; }
+.temp-invierno .temp-foot {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #5b82a6;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
