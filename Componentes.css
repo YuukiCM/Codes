@@ -447,3 +447,59 @@
   color: #fff;
   opacity: 0.9;
 }
+
+/* --- 11. SETLIST INTERACTIVO CON AUDIO REAL --- */
+.comp-setlist-audio {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid color-mix(in srgb, var(--grupo-color, #00f0ff) 35%, transparent);
+  border-radius: 6px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11.5px;
+  margin: 10px 0;
+}
+.comp-setlist-audio-header {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--grupo-color, #00f0ff);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comp-setlist-audio-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+  opacity: 0.65;
+}
+.comp-setlist-audio-item.activo {
+  opacity: 1;
+  background: color-mix(in srgb, var(--grupo-color, #00f0ff) 8%, transparent);
+  border-left: 2px solid var(--grupo-color, #00f0ff);
+}
+.comp-setlist-audio-item .cancion {
+  color: #fff;
+  font-weight: 600;
+}
+.comp-setlist-audio-reproductor {
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+}
+.comp-setlist-audio-reproductor audio {
+  width: 100%;
+  height: 24px;
+  filter: invert(1) hue-rotate(180deg) brightness(0.9);
+}
