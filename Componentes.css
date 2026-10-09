@@ -503,3 +503,84 @@
   height: 24px;
   filter: invert(1) hue-rotate(180deg) brightness(0.9);
 }
+
+/* --- 12. INSTAGRAM STORY VIDEO WIDGET --- */
+.comp-ig-story {
+  width: 280px;
+  max-width: 100%;
+  background: #0f0f0f;
+  border: 1px solid color-mix(in srgb, var(--grupo-color, #00f0ff) 40%, transparent);
+  border-radius: 12px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11.5px;
+  margin: 15px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+.comp-ig-header {
+  padding: 10px 12px 6px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+.comp-ig-bars {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+.comp-ig-bar {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.comp-ig-bar-fill {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.comp-ig-user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.comp-ig-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--grupo-color, #00f0ff);
+}
+.comp-ig-username {
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+.comp-ig-time {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 9.5px;
+  margin-left: auto;
+}
+.comp-ig-video-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 9/16; /* Formato vertical típico de historia */
+  background: #000;
+}
+.comp-ig-video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comp-ig-caption {
+  padding: 10px 12px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
