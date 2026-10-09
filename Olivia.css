@@ -1,82 +1,96 @@
 /* ===================================================
-   BRING ME THE HORIZON - ESTILO ROCK / POST HUMAN
+   BRING ME THE HORIZON - EDICIÓN ESTÉTICA CON BANNER Y MÚSICA
    ================================================ */
 
-@keyframes bmth-flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 20px var(--bmth-color, #00ffff), 0 0 40px var(--bmth-color, #00ffff);
-    border-color: var(--bmth-color, #00ffff);
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2), inset 0 0 10px rgba(0, 255, 255, 0.2);
-  }
-  20%, 24%, 55% {
-    text-shadow: none;
-    border-color: rgba(255, 255, 255, 0.15);
-    box-shadow: none;
-  }
-}
-
-.temp-bmth {
+.temp-bmth-estetico {
   width: 100%;
-  max-width: 520px;
+  max-width: 480px;
   background: transparent !important;
-  border: 2px solid var(--bmth-color, #00ffff);
-  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px var(--neon-sutil, rgba(0, 240, 255, 0.15));
+  padding: 12px;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
   color: inherit;
   text-align: left;
-  border-radius: 2px; /* Bordes más rectos, estilo industrial */
-  animation: bmth-flicker 4s infinite alternate;
-  position: relative;
+  border-radius: 8px;
 }
 
-.temp-bmth .bmth-head {
+/* Banner de Imagen Superior */
+.temp-bmth-banner {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 12px;
+  filter: saturate(0.8) contrast(1.1);
+}
+
+/* Título superpuesto o superior minimalista */
+.temp-bmth-header {
+  padding: 8px 4px 12px 4px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px dashed var(--bmth-color, #00ffff);
-  padding-bottom: 12px;
-  margin-bottom: 15px;
+  align-items: baseline;
 }
 
-.temp-bmth .bmth-titulo {
+.temp-bmth-titulo {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: #fff;
-  animation: bmth-flicker 3s infinite alternate;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
-.temp-bmth .bmth-badge {
+.temp-bmth-sub {
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 2px;
-  color: var(--bmth-color, #00ffff);
+  color: var(--neon-sutil, #00f0ff);
   text-transform: uppercase;
-  border: 1px solid var(--bmth-color, #00ffff);
-  padding: 3px 8px;
+  opacity: 0.9;
 }
 
-.temp-bmth .bmth-cuerpo {
+/* Cuerpo de texto limpio y legible */
+.temp-bmth-cuerpo {
   font-size: 11.5px;
-  line-height: 1.7;
+  line-height: 1.8;
   text-align: justify;
+  padding: 0 4px;
   margin-bottom: 15px;
 }
 
-.temp-bmth p { margin: 0 0 10px 0; }
-.temp-bmth b { color: var(--bmth-color, #00ffff); }
+.temp-bmth-cuerpo p { margin: 0 0 12px 0; }
+.temp-bmth-cuerpo b { color: var(--neon-sutil, #00f0ff); font-weight: 600; }
 
-.temp-bmth .bmth-foot {
+/* Caja inferior del reproductor de música y datos */
+.temp-bmth-footer-box {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.temp-bmth-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   font-size: 9.5px;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  color: var(--bmth-color, #00ffff);
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  border-top: 1px dashed var(--bmth-color, #00ffff);
-  padding-top: 10px;
+}
+
+.temp-bmth-player {
+  width: 100%;
+  height: 25px;
+  opacity: 0.85;
+  filter: invert(1) hue-rotate(180deg) brightness(0.9); /* Adapta el reproductor nativo para que combine oscuro/estético */
 }
