@@ -1,0 +1,82 @@
+/* ===================================================
+   GLAM ROCK NEON - ESTILO ESPECIAL FÉMININO
+   ================================================ */
+
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px var(--neon-color, #ff2a85), 0 0 40px var(--neon-color, #ff2a85);
+    border-color: var(--neon-color, #ff2a85);
+    box-shadow: 0 0 8px rgba(255, 42, 133, 0.4), inset 0 0 8px rgba(255, 42, 133, 0.4);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    border-color: rgba(255, 42, 133, 0.3);
+    box-shadow: none;
+  }
+}
+
+.temp-glam-rock {
+  width: 100%;
+  max-width: 520px;
+  background: transparent !important;
+  border: 2px solid var(--neon-color, #ff2a85);
+  padding: 25px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+  border-radius: 12px;
+  animation: neon-flicker 4s infinite alternate;
+  position: relative;
+}
+
+.temp-glam-rock .glam-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed var(--neon-color, #ff2a85);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.temp-glam-rock .glam-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  animation: neon-flicker 3s infinite alternate;
+}
+
+.temp-glam-rock .glam-badge {
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--neon-color, #ff2a85);
+  text-transform: uppercase;
+  border: 1px solid var(--neon-color, #ff2a85);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.temp-glam-rock .glam-cuerpo {
+  font-size: 11.5px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.temp-glam-rock p { margin: 0 0 10px 0; }
+.temp-glam-rock b { color: var(--neon-color, #ff2a85); }
+
+.temp-glam-rock .glam-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--neon-color, #ff2a85);
+  text-transform: uppercase;
+  border-top: 1px dashed var(--neon-color, #ff2a85);
+  padding-top: 10px;
+}
