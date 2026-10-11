@@ -1001,7 +1001,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* ==========================================
-   Tablilla Apple Falls (Con carga de Fuente integrada)
+   Tablilla Apple Falls (Fondo Semi-transparente)
    ========================================== */
 .post-apple-falls {
   width: 100%;
@@ -1106,4 +1106,139 @@
   height: 1px;
   background: var(--grupo-color, #d97736);
   opacity: 0.5;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* ==========================================
+   Tablilla Otoño Estética & Elegante (Glass)
+   ========================================== */
+.post-otono-chic {
+  width: 100%;
+  max-width: 620px;
+  background: transparent !important;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.otono-chic-inner {
+  background: rgba(0, 0, 0, 0.20) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 2px solid var(--grupo-color, #d97736);
+  border-radius: 14px;
+  padding: 30px 28px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.otono-chic-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+}
+
+.otono-chic-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--grupo-color, #d97736);
+  opacity: 0.9;
+}
+
+.otono-chic-leaf {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.otono-chic-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.otono-chic-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+  text-transform: none;
+}
+
+.otono-chic-subtitle {
+  font-size: 11px;
+  font-style: italic;
+  color: var(--grupo-color, #d97736);
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+.otono-chic-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 11px;
+  color: #c5b5a5;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.otono-chic-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.otono-chic-meta-item i {
+  color: var(--grupo-color, #d97736);
+  font-size: 13px;
+}
+
+.otono-chic-meta-dot {
+  color: var(--grupo-color, #d97736);
+  opacity: 0.5;
+}
+
+.otono-chic-cuerpo {
+  font-size: 11.5px;
+  line-height: 1.85;
+  color: #e2d7cd;
+  margin-bottom: 24px;
+}
+
+.otono-chic-p {
+  margin-bottom: 14px;
+}
+
+.otono-chic-dialogo {
+  color: var(--grupo-color, #d97736);
+  font-weight: 700;
+}
+
+.otono-chic-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 11px;
+  color: var(--grupo-color, #d97736);
+  opacity: 0.75;
+}
+
+.otono-chic-bar {
+  flex-grow: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--grupo-color, #d97736), transparent);
 }
