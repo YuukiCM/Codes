@@ -2133,7 +2133,7 @@
 .post-pastillas .pastillas-cuerpo {
   border: 1px solid rgba(150,150,150,0.25);
   padding: 25px;
-  font-size: 13.5px;
+  font-size: 12px;
   line-height: 1.7;
   text-align: justify;
   color: inherit;
@@ -2194,7 +2194,7 @@
   border: 1px solid rgba(150,150,150,0.25);
   border-left: 3px solid var(--grupo-color, #c08a5e);
   padding: 25px;
-  font-size: 13.5px;
+  font-size: 12px;
   line-height: 1.7;
   text-align: justify;
   color: inherit;
@@ -2256,7 +2256,7 @@
   border: 1px solid rgba(150,150,150,0.25);
   border-radius: 12px;
   padding: 25px;
-  font-size: 13.5px;
+  font-size: 12px;
   line-height: 1.7;
   text-align: justify;
   color: inherit;
