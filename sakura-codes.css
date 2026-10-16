@@ -379,10 +379,14 @@
   margin: 0 0 14px;
 }
 
-.sc-aura-glow .sag-text b {
+/* Solo afecta a las negritas que van dentro de un diálogo estructurado con guiones */
+.sc-aura-glow .sag-text p b {
   font-weight: 700;
-  color: var(--grupo-color, #e0a3b8) !important;
 }
+
+/* Si quieres que los diálogos mantengan el color del grupo, 
+   te sugiero envolver el diálogo en un span o clase específica, 
+   o asegurarte de que las negritas normales del post no se coloreen sin querer */
 
 
 /* ---------------------------------------------------------
