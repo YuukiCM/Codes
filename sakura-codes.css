@@ -2,6 +2,15 @@
    SAKURA CODES - ARCHIVO MAESTRO UNIFICADO (100% ICOFONT)
    ========================================================= */
 
+/* Importación de fuentes y estilos base compartidos */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Quicksand:wght@300..700&display=swap');
+
+/* Variables base globales seguras */
+:root {
+  --grupo-color: #e0a3b8;
+  --yuuki-title: 'Playfair Display', serif;
+}
+
 /* ---------------------------------------------------------
    MODELO 1: SC-EXECUTIVE (Esquinas Vectoriales & Sombra)
    --------------------------------------------------------- */
@@ -317,6 +326,7 @@
   font-weight: 700;
   color: var(--grupo-color, #5c7080) !important;
 }
+
 
 /* ---------------------------------------------------------
    MODELO 6: SC-SIDEBAR-ASYMM (Barra Lateral Gruesa Minimalista)
@@ -1135,6 +1145,8 @@
   font-weight: 700;
   color: var(--grupo-color, #7ca982) !important;
 }
+
+
 /* ---------------------------------------------------------
    MODELO 16: SC-HERO-BANNER (Cabecera Visual con Banner)
    --------------------------------------------------------- */
@@ -1359,6 +1371,8 @@
   font-weight: 700;
   color: var(--grupo-color, #6b7a8d) !important;
 }
+
+
 /* ==========================================================
    SAKURA CODES - TABLILLAS TRANSPARENTES
    ========================================================== */
@@ -1533,18 +1547,10 @@
   color: var(--grupo-color, #d96b27);
 }
 
-/* ===================================================
-   SAKURA CODES - ESTILOS CSS EXTERNO PARA ROLES
-   ================================================   * /
 
-/* Importación de fuentes y estilos base compartidos */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Quicksand:wght@300..700&display=swap');
-
-/* Estilos Generales / Variables base */
-:root {
-  --grupo-color: #e0a3b8;
-  --yuuki-title: 'Playfair Display', serif;
-}
+/* ---------------------------------------------------------
+   MODELOS ADICIONALES (PORTAL FLUIDO, SILUETA, CYBER, ETC.)
+   --------------------------------------------------------- */
 
 /* 1. El Portal Fluido */
 .post-portal-fluido {
@@ -2091,182 +2097,6 @@
   text-transform: uppercase;
 }
 
-/* Triple Etiqueta & Marco Flotante Asimétrico */
-.post-triple {
-  width: 100%;
-  max-width: 520px;
-  background: transparent !important;
-  border: 1px solid rgba(150,150,150,0.3);
-  padding: 14px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  text-align: left;
-  box-sizing: border-box;
-}
-.post-triple .triple-grid {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 8px;
-  align-items: center;
-  margin-bottom: 12px;
-}
-.post-triple .triple-tag {
-  background: rgba(150,150,150,0.1) !important;
-  border: 1px solid rgba(150,150,150,0.25);
-  padding: 5px 12px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.post-triple .triple-cuerpo {
-  border: 1px solid rgba(150,150,150,0.25);
-  border-left: 3px solid var(--grupo-color, #c08a5e);
-  padding: 25px;
-  font-size: 12px;
-  line-height: 1.7;
-  text-align: justify;
-  color: inherit;
-}
-.post-triple .triple-p {
-  margin: 0 0 12px 0;
-}
-.post-triple .triple-dialogo {
-  color: var(--grupo-color, #c08a5e);
-}
-.post-triple .triple-foot {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  opacity: 0.85;
-  text-transform: uppercase;
-}
-
-/* Orgánico Botánico */
-.post-botanico {
-  width: 100%;
-  max-width: 520px;
-  background: transparent !important;
-  border: 1px solid rgba(150,150,150,0.3);
-  padding: 20px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  text-align: center;
-  box-sizing: border-box;
-}
-.post-botanico .botanico-svg-wrap {
-  margin-bottom: 10px;
-}
-.post-botanico .botanico-titulo {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--grupo-color, #c08a5e);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-.post-botanico .botanico-meta {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  opacity: 0.85;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.post-botanico .botanico-cuerpo {
-  border: 1px solid rgba(150,150,150,0.25);
-  border-radius: 12px;
-  padding: 25px;
-  font-size: 12px;
-  line-height: 1.7;
-  text-align: justify;
-  color: inherit;
-}
-.post-botanico .botanico-p {
-  margin: 0 0 12px 0;
-}
-.post-botanico .botanico-dialogo {
-  color: var(--grupo-color, #c08a5e);
-}
-
-/* Místico / Marea Mágica */
-.post-mistico {
-  width: 100%;
-  max-width: 520px;
-  background: transparent !important;
-  border: 2px solid rgba(150,150,150,0.3);
-  padding: 16px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  text-align: left;
-  box-sizing: border-box;
-}
-.post-mistico .mistico-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 12px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(150,150,150,0.2);
-}
-.post-mistico .mistico-titulo-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.post-mistico .mistico-titulo {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  text-transform: uppercase;
-}
-.post-mistico .mistico-fecha {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  opacity: 0.8;
-  text-transform: uppercase;
-}
-.post-mistico .mistico-cuerpo {
-  border: 1px solid rgba(150,150,150,0.25);
-  padding: 22px;
-  font-size: 13.5px;
-  line-height: 1.7;
-  text-align: justify;
-  color: inherit;
-}
-.post-mistico .mistico-p {
-  margin: 0 0 12px 0;
-}
-.post-mistico .mistico-dialogo {
-  color: var(--grupo-color, #c08a5e);
-}
-.post-mistico .mistico-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 12px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #c08a5e);
-  text-transform: uppercase;
-}
-
 /* Cerezos */
 .post-cerezo {
   width: 100%;
@@ -2360,308 +2190,7 @@
   background: #b85d72;
 }
 
-/* Watermark */
-.post-watermark {
-  width: 100%;
-  max-width: 480px;
-  background: transparent !important;
-  border: 4px solid var(--grupo-color, #708090);
-  padding: 30px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-.post-watermark .watermark-bg-icon {
-  position: absolute;
-  bottom: -15px;
-  right: -15px;
-  font-size: 160px;
-  color: var(--grupo-color, #708090);
-  opacity: 0.12;
-  text-shadow: 0 0 10px rgba(0,0,0,0.1);
-  pointer-events: none;
-  z-index: 1;
-  line-height: 1;
-}
-.post-watermark .watermark-content {
-  position: relative;
-  z-index: 2;
-}
-.post-watermark .watermark-titulo {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--grupo-color, #708090);
-  letter-spacing: 2px;
-  margin-bottom: 5px;
-}
-.post-watermark .watermark-sub {
-  font-size: 9.5px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--grupo-color, #708090);
-  margin-bottom: 20px;
-  opacity: 0.8;
-  text-transform: uppercase;
-}
-.post-watermark .watermark-meta {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--grupo-color, #708090);
-  border-top: 1px solid var(--grupo-color, #708090);
-  border-bottom: 1px solid var(--grupo-color, #708090);
-  padding: 10px 0;
-  margin: 15px 0 20px 0;
-}
-.post-watermark .watermark-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.post-watermark .watermark-cuerpo {
-  font-size: 13.5px;
-  line-height: 1.8;
-  text-align: justify;
-  color: inherit;
-  padding: 0 5px;
-}
-.post-watermark .watermark-p {
-  margin: 0 0 15px 0;
-}
-.post-watermark .watermark-dialogo {
-  color: var(--grupo-color, #708090);
-}
-.post-watermark .watermark-foot {
-  margin-top: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  color: var(--grupo-color, #708090);
-  font-size: 14px;
-}
-
-/* Bloque lateral */
-.post-lateral {
-  width: 100%;
-  max-width: 480px;
-  background: transparent !important;
-  border: 3px solid var(--grupo-color, #708090);
-  box-shadow: 8px 8px 0px var(--grupo-color, #708090);
-  padding: 25px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-.post-lateral .lateral-bg-icon {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  font-size: 150px;
-  color: var(--grupo-color, #708090);
-  opacity: 0.1;
-  pointer-events: none;
-  z-index: 1;
-  line-height: 1;
-}
-.post-lateral .lateral-content {
-  position: relative;
-  z-index: 2;
-}
-.post-lateral .lateral-row {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 15px;
-}
-.post-lateral .lateral-img {
-  width: 100px;
-  height: 100px;
-  background-image: url('URL_DE_IMAGEN_AQUI');
-  background-size: cover;
-  background-position: center;
-  border: 2px solid var(--grupo-color, #708090);
-  flex-shrink: 0;
-}
-.post-lateral .lateral-info {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.post-lateral .lateral-titulo {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--grupo-color, #708090);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-.post-lateral .lateral-sub {
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--grupo-color, #708090);
-  line-height: 1.5;
-  border-left: 2px solid var(--grupo-color, #708090);
-  padding-left: 6px;
-  opacity: 0.9;
-}
-.post-lateral .lateral-cuerpo {
-  font-size: 13.5px;
-  line-height: 1.8;
-  text-align: justify;
-  color: inherit;
-  padding: 0 5px;
-}
-.post-lateral .lateral-p {
-  margin: 0 0 15px 0;
-}
-.post-lateral .lateral-dialogo {
-  color: var(--grupo-color, #708090);
-}
-
-/* Complejo */
-.post-complejo {
-  width: 100%;
-  max-width: 520px;
-  background: transparent !important;
-  border: 2px solid var(--grupo-color, #708090);
-  box-shadow: 10px 10px 0px rgba(0,0,0,0.15), 0 0 25px rgba(0,0,0,0.05);
-  padding: 35px;
-  font-family: 'Quicksand', sans-serif;
-  color: inherit;
-  box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
-}
-.post-complejo .complejo-bg-icon {
-  position: absolute;
-  top: -20px;
-  right: -15px;
-  font-size: 220px;
-  color: var(--grupo-color, #708090);
-  opacity: 0.06;
-  pointer-events: none;
-  z-index: 1;
-  line-height: 1;
-}
-.post-complejo .complejo-content {
-  position: relative;
-  z-index: 2;
-}
-.post-complejo .complejo-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 3px solid var(--grupo-color, #708090);
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-}
-.post-complejo .complejo-head-left {
-  text-align: left;
-}
-.post-complejo .complejo-sub {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  color: var(--grupo-color, #708090);
-  opacity: 0.8;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-}
-.post-complejo .complejo-titulo {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--grupo-color, #708090);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  line-height: 1.1;
-}
-.post-complejo .complejo-head-img {
-  width: 55px;
-  height: 55px;
-  background-image: url('URL_DE_IMAGEN_AQUI');
-  background-size: cover;
-  background-position: center;
-  border: 2px solid var(--grupo-color, #708090);
-  box-shadow: 3px 3px 0px var(--grupo-color, #708090);
-  flex-shrink: 0;
-}
-.post-complejo .complejo-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-.post-complejo .complejo-tag {
-  background: var(--grupo-color, #708090);
-  color: #fff;
-  padding: 6px 4px;
-  text-align: center;
-  font-size: 8.5px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.post-complejo .complejo-cuerpo {
-  border-left: 3px solid var(--grupo-color, #708090);
-  padding-left: 15px;
-  margin-bottom: 20px;
-  font-size: 13px;
-  line-height: 1.8;
-  text-align: justify;
-  color: inherit;
-}
-.post-complejo .complejo-p {
-  margin: 0 0 12px 0;
-}
-.post-complejo .complejo-box-dialogo {
-  background: rgba(0,0,0,0.02);
-  border: 1px dashed var(--grupo-color, #708090);
-  padding: 15px;
-  margin-bottom: 20px;
-  font-size: 13px;
-  line-height: 1.8;
-  text-align: justify;
-  color: inherit;
-}
-.post-complejo .complejo-p-dialogo {
-  margin: 0;
-}
-.post-complejo .complejo-dash {
-  color: var(--grupo-color, #708090);
-  font-weight: 700;
-  margin: 0 5px;
-}
-.post-complejo .complejo-dialogo {
-  color: var(--grupo-color, #708090);
-}
-.post-complejo .complejo-foot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--grupo-color, #708090);
-  padding-top: 10px;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: var(--grupo-color, #708090);
-  text-transform: uppercase;
-}
-.post-complejo .complejo-foot-icons {
-  display: flex;
-  gap: 5px;
-}
-
-/* TABLILLA */
+/* TABLILLA GENERAL */
 .post-tablilla-wrap {
   width: 100%;
   max-width: 520px;
