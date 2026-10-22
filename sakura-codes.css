@@ -2710,3 +2710,80 @@
   color: var(--grupo-color, #708090);
   text-transform: uppercase;
 }
+/* Triple Etiqueta & Marco Flotante Asimétrico (Con Marca de Agua) */
+.post-triple {
+  width: 100%;
+  max-width: 520px;
+  background: transparent !important;
+  border: 1px solid rgba(150,150,150,0.3);
+  padding: 14px;
+  font-family: 'Quicksand', sans-serif;
+  color: inherit;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.triple-bg-icon {
+  position: absolute;
+  bottom: -15px;
+  right: -10px;
+  font-size: 140px;
+  color: var(--grupo-color, #c08a5e);
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 1;
+  line-height: 1;
+}
+.triple-grid, .triple-cuerpo, .triple-foot {
+  position: relative;
+  z-index: 2;
+}
+.triple-grid {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.triple-tag {
+  background: rgba(150,150,150,0.1) !important;
+  border: 1px solid rgba(150,150,150,0.25);
+  padding: 5px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--grupo-color, #c08a5e);
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.triple-cuerpo {
+  border: 1px solid rgba(150,150,150,0.25);
+  border-left: 3px solid var(--grupo-color, #c08a5e);
+  padding: 25px;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: justify;
+  color: inherit;
+}
+.triple-p {
+  margin: 0 0 12px 0;
+}
+.triple-dialogo {
+  color: var(--grupo-color, #c08a5e);
+}
+.triple-foot {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--grupo-color, #c08a5e);
+  opacity: 0.85;
+  text-transform: uppercase;
+}
