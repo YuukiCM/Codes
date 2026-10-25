@@ -107,15 +107,15 @@
   opacity: 0.85 !important;
 }
 /* ==========================================
-   MODELO: CRONOLOGÍA LIMPIA & ESTRUCTURADA
+   MODELO: SC-CRONOLOGIA (Estructura Limpia & Fácil de Editar)
    ========================================== */
-.tbdl-crono {
+.sc-cronologia {
   width: 100% !important;
   max-width: 550px !important;
   background: transparent !important;
   border: 1px solid rgba(150, 150, 150, 0.3) !important;
   border-radius: 12px !important;
-  padding: 15px !important;
+  padding: 12px 15px !important;
   font-family: 'Quicksand', sans-serif !important;
   color: inherit !important;
   box-sizing: border-box !important;
@@ -124,37 +124,30 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
-.tbdl-crono-titulo {
+.cronologia-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 8px !important;
+}
+
+.cronologia-titulo {
   font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
   font-size: 20px !important;
   font-weight: 700 !important;
   color: var(--grupo-color, #d97736) !important;
-  text-transform: uppercase !important;
-  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
-  padding-bottom: 8px !important;
-  margin-bottom: 12px !important;
-  letter-spacing: 1px !important;
+  text-transform: none !important;
 }
 
-.tbdl-crono-mes {
-  margin-bottom: 15px !important;
-}
-
-.tbdl-crono-mes-titulo {
-  font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
-  color: var(--grupo-color, #d97736) !important;
-  margin: 10px 0 6px 2px !important;
-  border-bottom: 1px dashed rgba(150,150,150,0.3) !important;
-  padding-bottom: 3px !important;
+.cronologia-lista {
   display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  text-transform: capitalize !important;
+  flex-direction: column !important;
+  gap: 4px !important;
 }
 
-.tbdl-crono-box {
+.cronologia-item {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
@@ -164,39 +157,35 @@
   border-radius: 4px !important;
   font-size: 11px !important;
   box-sizing: border-box !important;
-  margin-bottom: 4px !important;
 }
 
-.tbdl-crono-box div:nth-child(2) {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
-  margin-left: 10px !important;
-}
-
-.tbdl-crono-box a {
+.cronologia-link {
   color: inherit !important;
   text-decoration: none !important;
   font-weight: 600 !important;
 }
 
-.tbdl-crono-box a:hover {
+.cronologia-link:hover {
   color: var(--grupo-color, #d97736) !important;
   text-decoration: underline !important;
 }
 
-.tbdl-crono-box i {
-  font-size: 10px !important;
-  opacity: 0.85 !important;
-  font-style: normal !important;
+.cronologia-info-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
 
-/* Estilos de las etiquetas de Estado (Semáforo + Grupal Lila) */
-.tbdl-crono-box activo,
-.tbdl-crono-box cerrado,
-.tbdl-crono-box abandonado,
-.tbdl-crono-box grupal {
+.cronologia-meta-info {
+  font-size: 10px !important;
+  opacity: 0.85 !important;
+}
+
+/* Etiquetas de Estado con autorrelleno y colores */
+.cronologia-item activo,
+.cronologia-item cerrado,
+.cronologia-item abandonado,
+.cronologia-item grupal {
   display: inline-flex !important;
   align-items: center !important;
   font-size: 9px !important;
@@ -209,33 +198,32 @@
   flex-shrink: 0 !important;
 }
 
-.tbdl-crono-box activo {
+.cronologia-item activo {
   color: #2ecc71 !important;
   background: rgba(46, 204, 113, 0.08) !important;
 }
-.tbdl-crono-box activo::before { content: "Activo"; }
+.cronologia-item activo::before { content: "Activo"; }
 
-.tbdl-crono-box abandonado {
+.cronologia-item abandonado {
   color: #f39c12 !important;
   background: rgba(243, 156, 18, 0.08) !important;
 }
-.tbdl-crono-box abandonado::before { content: "En Pausa"; }
+.cronologia-item abandonado::before { content: "En Pausa"; }
 
-.tbdl-crono-box cerrado {
+.cronologia-item cerrado {
   color: #e74c3c !important;
   background: rgba(231, 76, 60, 0.08) !important;
 }
-.tbdl-crono-box cerrado::before { content: "Cerrado"; }
+.cronologia-item cerrado::before { content: "Cerrado"; }
 
-/* Estado Grupal (Lila con su cajita y relleno) */
-.tbdl-crono-box grupal {
+.cronologia-item grupal {
   color: #9b59b6 !important;
   background: rgba(155, 89, 182, 0.08) !important;
 }
-.tbdl-crono-box grupal::before { content: "Grupal"; }
+.cronologia-item grupal::before { content: "Grupal"; }
 
-/* Bordes izquierdos dinámicos según la etiqueta */
-.tbdl-crono-box:has(activo) { border-left: 3px solid #2ecc71 !important; }
-.tbdl-crono-box:has(abandonado) { border-left: 3px solid #f39c12 !important; }
-.tbdl-crono-box:has(cerrado) { border-left: 3px solid #e74c3c !important; }
-.tbdl-crono-box:has(grupal) { border-left: 3px solid #9b59b6 !important; }
+/* Bordes laterales dinámicos */
+.cronologia-item:has(activo) { border-left: 3px solid #2ecc71 !important; }
+.cronologia-item:has(abandonado) { border-left: 3px solid #f39c12 !important; }
+.cronologia-item:has(cerrado) { border-left: 3px solid #e74c3c !important; }
+.cronologia-item:has(grupal) { border-left: 3px solid #9b59b6 !important; }
