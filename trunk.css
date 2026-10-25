@@ -33,114 +33,6 @@
   text-transform: none !important;
 }
 
-.cronologia-estado {
-  display: inline-flex !important;
-  align-items: center !important;
-  gap: 5px !important;
-  font-size: 9px !important;
-  font-weight: 700 !important;
-  letter-spacing: 1.2px !important;
-  text-transform: uppercase !important;
-  padding: 2px 7px !important;
-  border-radius: 20px !important;
-  border: 1px solid currentColor !important;
-}
-
-.cronologia-estado.activo {
-  color: #2ecc71 !important;
-  background: rgba(46, 204, 113, 0.08) !important;
-}
-
-.cronologia-estado.abandonado {
-  color: #f39c12 !important;
-  background: rgba(243, 156, 18, 0.08) !important;
-}
-
-.cronologia-estado.cerrado {
-  color: #e74c3c !important;
-  background: rgba(231, 76, 60, 0.08) !important;
-}
-
-.cronologia-estado.grupal {
-  color: #9b59b6 !important;
-  background: rgba(155, 89, 182, 0.08) !important;
-}
-
-.cronologia-lista {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 4px !important; /* Espacio mínimo entre filas */
-}
-
-.cronologia-item {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  background: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid rgba(150, 150, 150, 0.15) !important;
-  border-left: 3px solid var(--grupo-color, #d97736) !important;
-  padding: 6px 12px !important; /* Cajas más estrechas verticalmente */
-  border-radius: 4px !important;
-  font-size: 11px !important;
-  box-sizing: border-box !important;
-}
-
-.cronologia-link {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-weight: 600 !important;
-}
-
-.cronologia-link:hover {
-  color: var(--grupo-color, #d97736) !important;
-  text-decoration: underline !important;
-}
-
-.cronologia-info-left {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-}
-
-.cronologia-meta-info {
-  font-size: 10px !important;
-  opacity: 0.85 !important;
-}
-/* ==========================================
-   MODELO: SC-CRONOLOGIA (Estructura Limpia & Fácil de Editar)
-   ========================================== */
-.sc-cronologia {
-  width: 100% !important;
-  max-width: 550px !important;
-  background: transparent !important;
-  border: 1px solid rgba(150, 150, 150, 0.3) !important;
-  border-radius: 12px !important;
-  padding: 12px 15px !important;
-  font-family: 'Quicksand', sans-serif !important;
-  color: inherit !important;
-  box-sizing: border-box !important;
-  margin: 15px auto !important;
-  text-align: left !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
-}
-
-.cronologia-header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
-  padding-bottom: 6px !important;
-  margin-bottom: 8px !important;
-}
-
-.cronologia-titulo {
-  font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  color: var(--grupo-color, #d97736) !important;
-  text-transform: none !important;
-}
-
 .cronologia-lista {
   display: flex !important;
   flex-direction: column !important;
@@ -185,7 +77,8 @@
 .cronologia-item activo,
 .cronologia-item cerrado,
 .cronologia-item abandonado,
-.cronologia-item grupal {
+.cronologia-item grupal,
+.cronologia-item evento {
   display: inline-flex !important;
   align-items: center !important;
   font-size: 9px !important;
@@ -222,8 +115,16 @@
 }
 .cronologia-item grupal::before { content: "Grupal"; }
 
+/* Estado Evento (Rosa) */
+.cronologia-item evento {
+  color: #e84393 !important;
+  background: rgba(232, 67, 147, 0.08) !important;
+}
+.cronologia-item evento::before { content: "Evento"; }
+
 /* Bordes laterales dinámicos */
 .cronologia-item:has(activo) { border-left: 3px solid #2ecc71 !important; }
 .cronologia-item:has(abandonado) { border-left: 3px solid #f39c12 !important; }
 .cronologia-item:has(cerrado) { border-left: 3px solid #e74c3c !important; }
 .cronologia-item:has(grupal) { border-left: 3px solid #9b59b6 !important; }
+.cronologia-item:has(evento) { border-left: 3px solid #e84393 !important; }
