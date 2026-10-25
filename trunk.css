@@ -232,7 +232,7 @@
 .cronologia-item:has(evento) { border-left: 3px solid #e84393 !important; }
 
 /* ==========================================
-   MODELO: SC-BAUL-VÍNCULOS / RELACIONES (Con Clases de Grupo)
+   MODELO: SC-BAUL-VÍNCULOS (Ultra Simplificado)
    ========================================== */
 .baul-relaciones-container {
   width: 100% !important;
@@ -254,7 +254,6 @@
   font-size: 18px !important;
   font-weight: 700 !important;
   color: var(--grupo-color, #d97736) !important;
-  text-transform: none !important;
   border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
   padding-bottom: 6px !important;
   margin-bottom: 12px !important;
@@ -267,7 +266,7 @@
   gap: 12px !important;
 }
 
-.baul-relacion-card {
+.vinculo {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
@@ -276,14 +275,9 @@
   padding: 10px 12px !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
-  transition: all 0.2s ease !important;
 }
 
-.baul-relacion-card:hover {
-  background: rgba(255, 255, 255, 0.05) !important;
-}
-
-.baul-relacion-avatar {
+.vinculo img {
   width: 60px !important;
   height: 65px !important;
   object-fit: cover !important;
@@ -291,14 +285,14 @@
   flex-shrink: 0 !important;
 }
 
-.baul-relacion-info {
+.vinculo div {
   display: flex !important;
   flex-direction: column !important;
   overflow: hidden !important;
   flex-grow: 1 !important;
 }
 
-.baul-relacion-nombre {
+.vinculo a {
   font-size: 11.5px !important;
   font-weight: 700 !important;
   color: inherit !important;
@@ -308,11 +302,7 @@
   text-overflow: ellipsis !important;
 }
 
-.baul-relacion-nombre:hover {
-  text-decoration: underline !important;
-}
-
-.baul-relacion-tipo {
+.vinculo span {
   font-size: 9.5px !important;
   font-weight: 600 !important;
   text-transform: uppercase !important;
@@ -321,42 +311,27 @@
   margin-top: 3px !important;
 }
 
-/* ==========================================
-   CONFIGURACIÓN AUTOMÁTICA DE GRUPOS
-   ========================================== */
+/* Colores automáticos por grupo */
+.vinculo.lyra { border-left: 3px solid #C9956B !important; }
+.vinculo.lyra img { border: 1.5px solid #C9956B !important; }
+.vinculo.lyra span, .vinculo.lyra a:hover { color: #C9956B !important; }
 
-/* 1. Lyra */
-.baul-relacion-card.lyra { border-left: 3px solid #C9956B !important; }
-.baul-relacion-card.lyra .baul-relacion-avatar { border: 1.5px solid #C9956B !important; }
-.baul-relacion-card.lyra .baul-relacion-nombre:hover,
-.baul-relacion-card.lyra .baul-relacion-tipo { color: #C9956B !important; }
+.vinculo.hydra { border-left: 3px solid #bc8f8f !important; }
+.vinculo.hydra img { border: 1.5px solid #bc8f8f !important; }
+.vinculo.hydra span, .vinculo.hydra a:hover { color: #bc8f8f !important; }
 
-/* 2. Hydra */
-.baul-relacion-card.hydra { border-left: 3px solid #bc8f8f !important; }
-.baul-relacion-card.hydra .baul-relacion-avatar { border: 1.5px solid #bc8f8f !important; }
-.baul-relacion-card.hydra .baul-relacion-nombre:hover,
-.baul-relacion-card.hydra .baul-relacion-tipo { color: #bc8f8f !important; }
+.vinculo.cygnus { border-left: 3px solid #95bac7 !important; }
+.vinculo.cygnus img { border: 1.5px solid #95bac7 !important; }
+.vinculo.cygnus span, .vinculo.cygnus a:hover { color: #95bac7 !important; }
 
-/* 3. Cygnus */
-.baul-relacion-card.cygnus { border-left: 3px solid #95bac7 !important; }
-.baul-relacion-card.cygnus .baul-relacion-avatar { border: 1.5px solid #95bac7 !important; }
-.baul-relacion-card.cygnus .baul-relacion-nombre:hover,
-.baul-relacion-card.cygnus .baul-relacion-tipo { color: #95bac7 !important; }
+.vinculo.perseus { border-left: 3px solid #8a72a7 !important; }
+.vinculo.perseus img { border: 1.5px solid #8a72a7 !important; }
+.vinculo.perseus span, .vinculo.perseus a:hover { color: #8a72a7 !important; }
 
-/* 4. Perseus */
-.baul-relacion-card.perseus { border-left: 3px solid #8a72a7 !important; }
-.baul-relacion-card.perseus .baul-relacion-avatar { border: 1.5px solid #8a72a7 !important; }
-.baul-relacion-card.perseus .baul-relacion-nombre:hover,
-.baul-relacion-card.perseus .baul-relacion-tipo { color: #8a72a7 !important; }
+.vinculo.universitarios { border-left: 3px solid #994545 !important; }
+.vinculo.universitarios img { border: 1.5px solid #994545 !important; }
+.vinculo.universitarios span, .vinculo.universitarios a:hover { color: #994545 !important; }
 
-/* 5. Universitarios */
-.baul-relacion-card.universitarios { border-left: 3px solid #994545 !important; }
-.baul-relacion-card.universitarios .baul-relacion-avatar { border: 1.5px solid #994545 !important; }
-.baul-relacion-card.universitarios .baul-relacion-nombre:hover,
-.baul-relacion-card.universitarios .baul-relacion-tipo { color: #994545 !important; }
-
-/* 6. Ciudadanos */
-.baul-relacion-card.ciudadanos { border-left: 3px solid #305c77 !important; }
-.baul-relacion-card.ciudadanos .baul-relacion-avatar { border: 1.5px solid #305c77 !important; }
-.baul-relacion-card.ciudadanos .baul-relacion-nombre:hover,
-.baul-relacion-card.ciudadanos .baul-relacion-tipo { color: #305c77 !important; }
+.vinculo.ciudadanos { border-left: 3px solid #305c77 !important; }
+.vinculo.ciudadanos img { border: 1.5px solid #305c77 !important; }
+.vinculo.ciudadanos span, .vinculo.ciudadanos a:hover { color: #305c77 !important; }
