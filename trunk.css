@@ -231,7 +231,7 @@
 .cronologia-item:has(grupal) { border-left: 3px solid #9b59b6 !important; }
 .cronologia-item:has(evento) { border-left: 3px solid #e84393 !important; }
 /* ==========================================
-   MODELO: SC-BAUL-VÍNCULOS / RELACIONES
+   MODELO: SC-BAUL-VÍNCULOS / RELACIONES (Actualizado)
    ========================================== */
 .baul-relaciones-container {
   width: 100% !important;
@@ -263,17 +263,17 @@
 .baul-relaciones-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 10px !important;
+  gap: 12px !important;
 }
 
 .baul-relacion-card {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 12px !important;
   background: rgba(255, 255, 255, 0.02) !important;
   border: 1px solid rgba(150, 150, 150, 0.15) !important;
   border-left: 3px solid var(--grupo-relacion, var(--grupo-color, #d97736)) !important;
-  padding: 8px 10px !important;
+  padding: 10px 12px !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
   transition: all 0.2s ease !important;
@@ -283,11 +283,12 @@
   background: rgba(255, 255, 255, 0.05) !important;
 }
 
+/* Fotos cuadradas, más grandes y con bordes redondeados */
 .baul-relacion-avatar {
-  width: 42px !important;
-  height: 42px !important;
+  width: 60px !important;
+  height: 65px !important;
   object-fit: cover !important;
-  border-radius: 50% !important;
+  border-radius: 8px !important;
   border: 1.5px solid var(--grupo-relacion, var(--grupo-color, #d97736)) !important;
   flex-shrink: 0 !important;
 }
@@ -321,5 +322,5 @@
   letter-spacing: 0.8px !important;
   color: var(--grupo-relacion, var(--grupo-color, #d97736)) !important;
   opacity: 0.9 !important;
-  margin-top: 2px !important;
+  margin-top: 3px !important;
 }
