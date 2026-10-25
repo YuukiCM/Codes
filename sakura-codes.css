@@ -2787,3 +2787,83 @@
   opacity: 0.85;
   text-transform: uppercase;
 }
+/* =========================================================
+   ROSELLE
+   ========================================================= */
+
+.roselle{
+width:470px;
+max-width:94%;
+margin:20px auto 0;
+padding:21px 28px 3px;
+box-sizing:border-box;
+color:inherit;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
+text-align:left
+}
+
+.roselle h1{
+height:var(--yuuki-title-height);
+margin:0;
+display:flex;
+align-items:center;
+justify-content:center;
+font:normal var(--yuuki-title-size,38px)/1.1 var(--yuuki-title,serif);
+color:var(--grupo-color);
+text-align:center
+}
+
+.roselle-data{
+margin:1px 0 0;
+text-align:center;
+font:500 var(--yuuki-data-size)/1.4 var(--yuuki-post-font);
+letter-spacing:var(--yuuki-data-spacing);
+text-transform:uppercase;
+opacity:.65
+}
+
+.roselle-sep{
+display:flex;
+align-items:center;
+gap:9px;
+margin:15px 0 19px
+}
+
+.roselle-sep:before{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.roselle-sep span{
+color:var(--grupo-color);
+font-size:9px
+}
+
+.roselle-text{
+padding:0 9px;
+font:var(--yuuki-post-size)/1.7 var(--yuuki-post-font);
+text-align:justify
+}
+
+.roselle-foot{
+display:flex;
+align-items:center;
+gap:9px;
+margin:28px 0 0
+}
+
+.roselle-foot:before{
+content:"";
+height:1px;
+flex:1;
+background:var(--grupo-color);
+opacity:.4
+}
+
+.roselle-foot span{
+color:var(--grupo-color);
+font-size:9px
+}
