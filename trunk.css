@@ -232,7 +232,7 @@
 .cronologia-item:has(evento) { border-left: 3px solid #e84393 !important; }
 
 /* ==========================================
-   MODELO: SC-BAUL-VÍNCULOS (Corregido y Ajustado)
+   MODELO: SC-BAUL-VÍNCULOS (Centrado Forzado y Grid Corregido)
    ========================================== */
 .baul-relaciones-container {
   width: 100% !important;
@@ -245,6 +245,7 @@
   color: inherit !important;
   box-sizing: border-box !important;
   margin: 15px auto !important;
+  float: none !important;
   text-align: left !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
 }
@@ -260,31 +261,32 @@
   letter-spacing: 0.5px !important;
 }
 
-/* Forzamos las dos columnas de forma estricta */
+/* Forzamos el comportamiento exacto de dos columnas simétricas */
 .baul-relaciones-grid {
   display: grid !important;
   grid-template-columns: repeat(2, 1fr) !important;
-  gap: 10px !important;
+  gap: 12px !important;
+  width: 100% !important;
   box-sizing: border-box !important;
 }
 
 .vinculo {
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
+  gap: 10px !important;
   background: rgba(255, 255, 255, 0.02) !important;
   border: 1px solid rgba(150, 150, 150, 0.15) !important;
   padding: 8px 10px !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
   width: 100% !important;
-  overflow: hidden !important;
+  min-width: 0 !important;
 }
 
-/* Tamaño rectangular equilibrado para las fotos */
+/* Fotos rectangulares equilibradas */
 .vinculo img {
-  width: 55px !important;
-  height: 62px !important;
+  width: 50px !important;
+  height: 58px !important;
   object-fit: cover !important;
   border-radius: 6px !important;
   flex-shrink: 0 !important;
@@ -295,6 +297,7 @@
   flex-direction: column !important;
   overflow: hidden !important;
   flex-grow: 1 !important;
+  min-width: 0 !important;
 }
 
 .vinculo a {
@@ -316,7 +319,7 @@
   margin-top: 3px !important;
 }
 
-/* Colores automáticos por grupo con sus clases cortas */
+/* Colores automáticos por grupo */
 .vinculo.lyra { border-left: 3px solid #C9956B !important; }
 .vinculo.lyra img { border: 1.5px solid #C9956B !important; }
 .vinculo.lyra span, .vinculo.lyra a:hover { color: #C9956B !important; }
