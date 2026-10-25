@@ -1,5 +1,5 @@
 /* ==========================================
-   MODELO: SC-CRONOLOGIA (Compacto y Ajustado)
+   MODELO: SC-CRONOLOGIA
    ========================================== */
 .sc-cronologia {
   width: 100% !important;
@@ -7,7 +7,7 @@
   background: transparent !important;
   border: 1px solid rgba(150, 150, 150, 0.3) !important;
   border-radius: 12px !important;
-  padding: 15px !important;
+  padding: 12px 15px !important;
   font-family: 'Quicksand', sans-serif !important;
   color: inherit !important;
   box-sizing: border-box !important;
@@ -21,8 +21,8 @@
   justify-content: space-between !important;
   align-items: center !important;
   border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
-  padding-bottom: 8px !important;
-  margin-bottom: 10px !important;
+  padding-bottom: 6px !important;
+  margin-bottom: 8px !important;
 }
 
 .cronologia-titulo {
@@ -37,11 +37,11 @@
   display: inline-flex !important;
   align-items: center !important;
   gap: 5px !important;
-  font-size: 9.5px !important;
+  font-size: 9px !important;
   font-weight: 700 !important;
   letter-spacing: 1.2px !important;
   text-transform: uppercase !important;
-  padding: 3px 8px !important;
+  padding: 2px 7px !important;
   border-radius: 20px !important;
   border: 1px solid currentColor !important;
 }
@@ -61,7 +61,6 @@
   background: rgba(231, 76, 60, 0.08) !important;
 }
 
-/* Nuevo estado Lila para Grupal */
 .cronologia-estado.grupal {
   color: #9b59b6 !important;
   background: rgba(155, 89, 182, 0.08) !important;
@@ -70,7 +69,7 @@
 .cronologia-lista {
   display: flex !important;
   flex-direction: column !important;
-  gap: 8px !important;
+  gap: 4px !important; /* Espacio mínimo entre filas */
 }
 
 .cronologia-item {
@@ -80,9 +79,9 @@
   background: rgba(255, 255, 255, 0.02) !important;
   border: 1px solid rgba(150, 150, 150, 0.15) !important;
   border-left: 3px solid var(--grupo-color, #d97736) !important;
-  padding: 8px 12px !important;
-  border-radius: 6px !important;
-  font-size: 11.5px !important;
+  padding: 6px 12px !important; /* Cajas más estrechas verticalmente */
+  border-radius: 4px !important;
+  font-size: 11px !important;
   box-sizing: border-box !important;
 }
 
@@ -104,6 +103,6 @@
 }
 
 .cronologia-meta-info {
-  font-size: 10.5px !important;
+  font-size: 10px !important;
   opacity: 0.85 !important;
 }
