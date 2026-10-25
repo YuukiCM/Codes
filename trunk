@@ -1,0 +1,97 @@
+/* Contenedor principal de la cronología */
+.cronologia-sakura {
+    max-width: 600px;
+    margin: 20px auto;
+    background: transparent !important;
+    font-family: 'Quicksand', sans-serif;
+    color: #665c54;
+    border: 1px solid #d9c5b2;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Título principal */
+.cronologia-sakura .crono-titulo {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a67c52;
+    margin-bottom: 20px;
+    border-bottom: 2px dashed #d9c5b2;
+    padding-bottom: 10px;
+}
+
+/* Bloque de cada mes */
+.cronologia-sakura .crono-mes-bloque {
+    margin-bottom: 20px;
+}
+
+.cronologia-sakura .crono-mes-nombre {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c6747;
+    background: rgba(217, 197, 178, 0.2);
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Estilo de cada tema individual */
+.cronologia-sakura .crono-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+.cronologia-sakura .crono-item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+.cronologia-sakura .crono-item-info a {
+    color: #8c6747;
+    text-decoration: none;
+}
+
+.cronologia-sakura .crono-item-compañero {
+    font-size: 11px;
+    font-style: italic;
+    color: #998c82;
+}
+
+/* Sistema de Semáforo (Bordes y colores de iconos) */
+.cronologia-sakura .activo {
+    border-left: 3px solid #72b575;
+}
+.cronologia-sakura .activo i {
+    color: #72b575;
+    font-size: 11px;
+}
+
+.cronologia-sakura .abandonado {
+    border-left: 3px solid #e5b365;
+}
+.cronologia-sakura .abandonado i {
+    color: #e5b365;
+    font-size: 11px;
+}
+
+.cronologia-sakura .cerrado {
+    border-left: 3px solid #d97777;
+}
+.cronologia-sakura .cerrado i {
+    color: #d97777;
+    font-size: 11px;
+}
