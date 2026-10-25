@@ -1,5 +1,5 @@
 /* ==========================================
-   MODELO: SC-BAUL-VÍNCULOS / RELACIONES (Definitivo)
+   MODELO: SC-BAUL-VÍNCULOS / RELACIONES (Con Clases de Grupo)
    ========================================== */
 .baul-relaciones-container {
   width: 100% !important;
@@ -89,47 +89,41 @@
 }
 
 /* ==========================================
-   CONFIGURACIÓN DE ETIQUETAS AUTOMÁTICAS
+   CONFIGURACIÓN AUTOMÁTICA DE GRUPOS
    ========================================== */
 
-/* Lyra (#C9956B) */
-.baul-relacion-card:has(lyra) { border-left: 3px solid #C9956B !important; }
-.baul-relacion-card:has(lyra) .baul-relacion-avatar { border: 1.5px solid #C9956B !important; }
-.baul-relacion-card:has(lyra) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(lyra) .baul-relacion-tipo { color: #C9956B !important; }
-lyra { display: none !important; }
+/* 1. Lyra */
+.baul-relacion-card.lyra { border-left: 3px solid #C9956B !important; }
+.baul-relacion-card.lyra .baul-relacion-avatar { border: 1.5px solid #C9956B !important; }
+.baul-relacion-card.lyra .baul-relacion-nombre:hover,
+.baul-relacion-card.lyra .baul-relacion-tipo { color: #C9956B !important; }
 
-/* Hydra (#bc8f8f) */
-.baul-relacion-card:has(hydra) { border-left: 3px solid #bc8f8f !important; }
-.baul-relacion-card:has(hydra) .baul-relacion-avatar { border: 1.5px solid #bc8f8f !important; }
-.baul-relacion-card:has(hydra) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(hydra) .baul-relacion-tipo { color: #bc8f8f !important; }
-hydra { display: none !important; }
+/* 2. Hydra */
+.baul-relacion-card.hydra { border-left: 3px solid #bc8f8f !important; }
+.baul-relacion-card.hydra .baul-relacion-avatar { border: 1.5px solid #bc8f8f !important; }
+.baul-relacion-card.hydra .baul-relacion-nombre:hover,
+.baul-relacion-card.hydra .baul-relacion-tipo { color: #bc8f8f !important; }
 
-/* Cygnus (#95bac7) */
-.baul-relacion-card:has(cygnus) { border-left: 3px solid #95bac7 !important; }
-.baul-relacion-card:has(cygnus) .baul-relacion-avatar { border: 1.5px solid #95bac7 !important; }
-.baul-relacion-card:has(cygnus) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(cygnus) .baul-relacion-tipo { color: #95bac7 !important; }
-cygnus { display: none !important; }
+/* 3. Cygnus */
+.baul-relacion-card.cygnus { border-left: 3px solid #95bac7 !important; }
+.baul-relacion-card.cygnus .baul-relacion-avatar { border: 1.5px solid #95bac7 !important; }
+.baul-relacion-card.cygnus .baul-relacion-nombre:hover,
+.baul-relacion-card.cygnus .baul-relacion-tipo { color: #95bac7 !important; }
 
-/* Perseus (#8a72a7) */
-.baul-relacion-card:has(perseus) { border-left: 3px solid #8a72a7 !important; }
-.baul-relacion-card:has(perseus) .baul-relacion-avatar { border: 1.5px solid #8a72a7 !important; }
-.baul-relacion-card:has(perseus) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(perseus) .baul-relacion-tipo { color: #8a72a7 !important; }
-perseus { display: none !important; }
+/* 4. Perseus */
+.baul-relacion-card.perseus { border-left: 3px solid #8a72a7 !important; }
+.baul-relacion-card.perseus .baul-relacion-avatar { border: 1.5px solid #8a72a7 !important; }
+.baul-relacion-card.perseus .baul-relacion-nombre:hover,
+.baul-relacion-card.perseus .baul-relacion-tipo { color: #8a72a7 !important; }
 
-/* Universitarios (#994545) */
-.baul-relacion-card:has(universitarios) { border-left: 3px solid #994545 !important; }
-.baul-relacion-card:has(universitarios) .baul-relacion-avatar { border: 1.5px solid #994545 !important; }
-.baul-relacion-card:has(universitarios) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(universitarios) .baul-relacion-tipo { color: #994545 !important; }
-universitarios { display: none !important; }
+/* 5. Universitarios */
+.baul-relacion-card.universitarios { border-left: 3px solid #994545 !important; }
+.baul-relacion-card.universitarios .baul-relacion-avatar { border: 1.5px solid #994545 !important; }
+.baul-relacion-card.universitarios .baul-relacion-nombre:hover,
+.baul-relacion-card.universitarios .baul-relacion-tipo { color: #994545 !important; }
 
-/* Ciudadanos (#305c77) */
-.baul-relacion-card:has(ciudadanos) { border-left: 3px solid #305c77 !important; }
-.baul-relacion-card:has(ciudadanos) .baul-relacion-avatar { border: 1.5px solid #305c77 !important; }
-.baul-relacion-card:has(ciudadanos) .baul-relacion-nombre:hover,
-.baul-relacion-card:has(ciudadanos) .baul-relacion-tipo { color: #305c77 !important; }
-ciudadanos { display: none !important; }
+/* 6. Ciudadanos */
+.baul-relacion-card.ciudadanos { border-left: 3px solid #305c77 !important; }
+.baul-relacion-card.ciudadanos .baul-relacion-avatar { border: 1.5px solid #305c77 !important; }
+.baul-relacion-card.ciudadanos .baul-relacion-nombre:hover,
+.baul-relacion-card.ciudadanos .baul-relacion-tipo { color: #305c77 !important; }
