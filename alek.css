@@ -1,0 +1,162 @@
+/* ==========================================
+   SISTEMA DE CRONOLOGÍA DESDE CERO (ICONOS)
+   ========================================== */
+
+.crono-zero-container {
+  width: 100% !important;
+  max-width: 550px !important;
+  background: rgba(255, 255, 255, 0.01) !important;
+  border: 1px solid rgba(150, 150, 150, 0.25) !important;
+  border-radius: 8px !important;
+  padding: 18px !important;
+  font-family: 'Quicksand', sans-serif !important;
+  color: inherit !important;
+  box-sizing: border-box !important;
+  margin: 20px auto !important;
+  text-align: left !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+}
+
+.crono-zero-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-bottom: 2px solid var(--grupo-color, #d97736) !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 12px !important;
+}
+
+.crono-zero-title {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: var(--grupo-color, #d97736) !important;
+}
+
+/* Desplegables de Meses */
+.crono-zero-mes-details {
+  margin-bottom: 8px !important;
+}
+
+.crono-zero-mes-summary {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: var(--grupo-color, #d97736) !important;
+  padding: 6px 10px !important;
+  background: rgba(150, 150, 150, 0.04) !important;
+  border: 1px solid rgba(150, 150, 150, 0.15) !important;
+  border-radius: 4px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  list-style: none !important;
+}
+
+.crono-zero-mes-summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.crono-zero-mes-summary::after {
+  content: "+" !important;
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: rgba(217, 119, 54, 0.1) !important;
+  transition: transform 0.2s ease !important;
+}
+
+.crono-zero-mes-details[open] .crono-zero-mes-summary::after {
+  content: "-" !important;
+}
+
+.crono-zero-contenido {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  margin-top: 6px !important;
+  padding-left: 4px !important;
+}
+
+/* Fila de Tema individual */
+.crono-zero-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(150, 150, 150, 0.15) !important;
+  padding: 7px 10px !important;
+  border-radius: 4px !important;
+  font-size: 11.5px !important;
+  box-sizing: border-box !important;
+}
+
+.crono-zero-left {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.crono-zero-link {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+.crono-zero-link:hover {
+  color: var(--grupo-color, #d97736) !important;
+  text-decoration: underline !important;
+}
+
+.crono-zero-meta {
+  font-size: 10px !important;
+  opacity: 0.8 !important;
+}
+
+/* Iconos de Estado (Semaforización por Iconos) */
+.crono-zero-item open,
+.crono-zero-item close,
+.crono-zero-item abandoned,
+.crono-zero-item group,
+.crono-zero-item event,
+.crono-zero-item master {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  font-size: 11px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Open (Activo) - Verde */
+.crono-zero-item open { color: #2ecc71 !important; background: rgba(46, 204, 113, 0.1) !important; }
+.crono-zero-item open::before { content: "\eba1"; font-family: 'icofont' !important; } /* Icono play/check */
+
+/* Close (Cerrado) - Rojo */
+.crono-zero-item close { color: #e74c3c !important; background: rgba(231, 76, 60, 0.1) !important; }
+.crono-zero-item close::before { content: "\ec74"; font-family: 'icofont' !important; } /* Icono candado/lock */
+
+/* Abandoned (Abandonado/Pausa) - Naranja */
+.crono-zero-item abandoned { color: #f39c12 !important; background: rgba(243, 156, 18, 0.1) !important; }
+.crono-zero-item abandoned::before { content: "\ed54"; font-family: 'icofont' !important; } /* Icono pausa/clock */
+
+/* Group (Grupal) - Morado */
+.crono-zero-item group { color: #9b59b6 !important; background: rgba(155, 89, 182, 0.1) !important; }
+.crono-zero-item group::before { content: "\ef53"; font-family: 'icofont' !important; } /* Icono usuarios/users */
+
+/* Event (Evento) - Rosa */
+.crono-zero-item event { color: #e84393 !important; background: rgba(232, 67, 147, 0.1) !important; }
+.crono-zero-item event::before { content: "\f01b"; font-family: 'icofont' !important; } /* Icono estrella/spark */
+
+/* Master (Trama Principal / Master) - Azul o Color de Grupo */
+.crono-zero-item master { color: var(--grupo-color, #d97736) !important; background: rgba(217, 119, 54, 0.1) !important; }
+.crono-zero-item master::before { content: "\ef14"; font-family: 'icofont' !important; } /* Icono corona/crown o hito */
