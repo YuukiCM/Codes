@@ -1,0 +1,180 @@
+/* ==========================================
+   DOSSIER / BAÚL DE TAE-YOON (Estilo Desde Cero)
+   ========================================== */
+.ty-baul {
+  width: 100% !important;
+  max-width: 560px !important;
+  background: #14171a !important; /* Fondo oscuro sutil y elegante */
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(123, 147, 178, 0.2) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  font-family: 'Quicksand', sans-serif !important;
+  box-sizing: border-box !important;
+  margin: 15px auto !important;
+  text-align: left !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Cabecera de Identidad */
+.ty-header {
+  display: flex !important;
+  gap: 20px !important;
+  align-items: center !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px solid rgba(123, 147, 178, 0.2) !important;
+  padding-bottom: 20px !important;
+}
+
+.ty-avatar-box {
+  width: 120px !important;
+  height: 140px !important;
+  flex-shrink: 0 !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  border: 1px solid #7b93b2 !important;
+}
+
+.ty-avatar-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+
+.ty-info-box {
+  flex-grow: 1 !important;
+}
+
+.ty-name {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 28px !important;
+  font-weight: 700 !important;
+  color: #f8fafc !important;
+  line-height: 1.1 !important;
+  margin-bottom: 4px !important;
+}
+
+.ty-subtitle {
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: #7b93b2 !important;
+  margin-bottom: 12px !important;
+}
+
+.ty-bio {
+  font-size: 11.5px !important;
+  line-height: 1.6 !important;
+  color: #94a3b8 !important;
+}
+
+/* Secciones Internas */
+.ty-section-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #f8fafc !important;
+  margin: 20px 0 10px 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+.ty-section-title i {
+  color: #7b93b2 !important;
+  font-size: 14px !important;
+}
+
+/* Cronología Minimalista Nueva */
+.ty-crono-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+}
+
+.ty-crono-item {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  padding: 8px 12px !important;
+  border-radius: 6px !important;
+  font-size: 11.5px !important;
+}
+
+.ty-crono-item a {
+  color: #f8fafc !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+.ty-crono-item a:hover {
+  color: #7b93b2 !important;
+  text-decoration: underline !important;
+}
+
+.ty-tag {
+  font-size: 9px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
+}
+.ty-tag.activo { background: rgba(46, 204, 113, 0.15); color: #2ecc71; border: 1px solid rgba(46, 204, 113, 0.3); }
+.ty-tag.evento { background: rgba(232, 67, 147, 0.15); color: #e84393; border: 1px solid rgba(232, 67, 147, 0.3); }
+.ty-tag.grupal { background: rgba(155, 89, 182, 0.15); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.3); }
+
+/* Vínculos / Relaciones Nuevas */
+.ty-vinc-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 10px !important;
+}
+
+.ty-vinc-card {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  background: rgba(255, 255, 255, 0.02) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  padding: 8px !important;
+  border-radius: 8px !important;
+}
+
+.ty-vinc-img {
+  width: 45px !important;
+  height: 50px !important;
+  border-radius: 6px !important;
+  object-fit: cover !important;
+  flex-shrink: 0 !important;
+}
+
+.ty-vinc-data {
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+}
+
+.ty-vinc-name {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: #f8fafc !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.ty-vinc-name:hover { text-decoration: underline !important; }
+
+.ty-vinc-type {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  color: #7b93b2 !important;
+  margin-top: 2px !important;
+}
