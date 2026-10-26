@@ -1,5 +1,5 @@
 /* ==========================================
-   NUEVO SISTEMA UNIFICADO: BAÚL, CRONOLOGÍA Y VÍNCULOS
+   NUEVO SISTEMA VISUAL: BAÚL, CRONOLOGÍA Y VÍNCULOS (ESTILO MODERNO)
    ========================================== */
 
 :root {
@@ -11,183 +11,206 @@
   --ciudadadanos: #305c77;
 }
 
-/* Contenedor Base Compartido */
-.sc-sistema-base {
+/* Contenedor Base Nuevo (Estilo Tarjeta Elevada) */
+.sc-sistema-moderno {
   width: 100% !important;
   max-width: 550px !important;
-  background: transparent !important;
-  border: 1px solid rgba(150, 150, 150, 0.3) !important;
-  border-radius: 12px !important;
-  padding: 18px !important;
+  background: rgba(255, 255, 255, 0.01) !important;
+  border: 1.5px solid var(--grupo-color, #d97736) !important;
+  border-radius: 4px 16px 4px 16px !important;
+  padding: 20px !important;
   font-family: 'Quicksand', sans-serif !important;
   color: inherit !important;
   box-sizing: border-box !important;
-  margin: 15px auto !important;
+  margin: 20px auto !important;
   text-align: left !important;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+  position: relative !important;
 }
 
-/* --- 1. PORTADA NUEVA --- */
-.sc-portada-nueva {
+
+/* --- 1. NUEVA PORTADA --- */
+.portada-moderna-grid {
   display: flex !important;
-  gap: 15px !important;
+  gap: 18px !important;
   align-items: center !important;
 }
-.portada-avatar-box {
+
+.portada-moderna-avatar {
   width: 100px !important;
-  height: 110px !important;
+  height: 120px !important;
   object-fit: cover !important;
-  border-radius: 8px !important;
+  border-radius: 4px 12px 4px 12px !important;
   border: 2px solid var(--grupo-color, #d97736) !important;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15) !important;
   flex-shrink: 0 !important;
 }
-.portada-info-box {
+
+.portada-moderna-info {
   flex-grow: 1 !important;
 }
-.portada-titulo {
+
+.portada-moderna-titulo {
   font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
-  font-size: 22px !important;
+  font-size: 24px !important;
   font-weight: 700 !important;
   color: var(--grupo-color, #d97736) !important;
-  margin-bottom: 2px !important;
+  line-height: 1.1 !important;
+  margin-bottom: 4px !important;
 }
-.portada-sub {
-  font-size: 9.5px !important;
+
+.portada-moderna-sub {
+  font-size: 9px !important;
   font-weight: 700 !important;
   letter-spacing: 2px !important;
   text-transform: uppercase !important;
-  opacity: 0.75 !important;
-  margin-bottom: 8px !important;
+  opacity: 0.8 !important;
+  margin-bottom: 10px !important;
+  display: block !important;
 }
-.portada-texto {
-  font-size: 11px !important;
-  line-height: 1.6 !important;
+
+.portada-moderna-texto {
+  font-size: 11.5px !important;
+  line-height: 1.65 !important;
   opacity: 0.9 !important;
   text-align: justify !important;
 }
 
 
-/* --- 2. CRONOLOGÍA NUEVA --- */
-.cronologia-header-nuevo {
+/* --- 2. NUEVA CRONOLOGÍA --- */
+.crono-moderna-header {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
-  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
-  padding-bottom: 6px !important;
-  margin-bottom: 10px !important;
+  border-bottom: 2px solid var(--grupo-color, #d97736) !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 14px !important;
 }
-.cronologia-titulo-nuevo {
+
+.crono-moderna-titulo {
   font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
   font-size: 20px !important;
   font-weight: 700 !important;
   color: var(--grupo-color, #d97736) !important;
 }
-.cronologia-lista-nuevo {
+
+.crono-moderna-lista {
   display: flex !important;
   flex-direction: column !important;
-  gap: 5px !important;
+  gap: 6px !important;
 }
-.cronologia-item-nuevo {
+
+.crono-moderna-item {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  background: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid rgba(150, 150, 150, 0.15) !important;
-  padding: 6px 12px !important;
-  border-radius: 4px !important;
-  font-size: 11px !important;
+  background: rgba(150, 150, 150, 0.03) !important;
+  border: 1px solid rgba(150, 150, 150, 0.2) !important;
+  border-left: 4px solid var(--grupo-color, #d97736) !important;
+  padding: 8px 12px !important;
+  border-radius: 0 6px 6px 0 !important;
+  font-size: 11.5px !important;
   box-sizing: border-box !important;
 }
-.cronologia-info-left {
+
+.crono-moderna-left {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
+  gap: 12px !important;
 }
-.cronologia-link-nuevo {
+
+.crono-moderna-link {
   color: inherit !important;
   text-decoration: none !important;
   font-weight: 600 !important;
 }
-.cronologia-link-nuevo:hover {
+
+.crono-moderna-link:hover {
   color: var(--grupo-color, #d97736) !important;
   text-decoration: underline !important;
 }
-.cronologia-meta {
+
+.crono-moderna-meta {
   font-size: 10px !important;
-  opacity: 0.85 !important;
+  opacity: 0.8 !important;
 }
 
-/* Semáforos Cronología */
-.cronologia-item-nuevo activo,
-.cronologia-item-nuevo cerrado,
-.cronologia-item-nuevo abandonado,
-.cronologia-item-nuevo grupal,
-.cronologia-item-nuevo evento {
+/* Semáforos y estados para la nueva cronología */
+.crono-moderna-item activo,
+.crono-moderna-item cerrado,
+.crono-moderna-item abandonado,
+.crono-moderna-item grupal,
+.crono-moderna-item evento {
   display: inline-flex !important;
   align-items: center !important;
-  font-size: 9px !important;
+  font-size: 8.5px !important;
   font-weight: 700 !important;
-  letter-spacing: 1.2px !important;
+  letter-spacing: 1px !important;
   text-transform: uppercase !important;
-  padding: 2px 7px !important;
-  border-radius: 20px !important;
+  padding: 2px 8px !important;
+  border-radius: 4px !important;
   border: 1px solid currentColor !important;
   flex-shrink: 0 !important;
 }
-.cronologia-item-nuevo activo { color: #2ecc71 !important; background: rgba(46, 204, 113, 0.08) !important; }
-.cronologia-item-nuevo activo::before { content: "Activo"; }
 
-.cronologia-item-nuevo abandonado { color: #f39c12 !important; background: rgba(243, 156, 18, 0.08) !important; }
-.cronologia-item-nuevo abandonado::before { content: "En Pausa"; }
+.crono-moderna-item activo { color: #2ecc71 !important; background: rgba(46, 204, 113, 0.1) !important; }
+.crono-moderna-item activo::before { content: "Activo"; }
 
-.cronologia-item-nuevo cerrado { color: #e74c3c !important; background: rgba(231, 76, 60, 0.08) !important; }
-.cronologia-item-nuevo cerrado::before { content: "Cerrado"; }
+.crono-moderna-item abandonado { color: #f39c12 !important; background: rgba(243, 156, 18, 0.1) !important; }
+.crono-moderna-item abandonado::before { content: "En Pausa"; }
 
-.cronologia-item-nuevo grupal { color: #9b59b6 !important; background: rgba(155, 89, 182, 0.08) !important; }
-.cronologia-item-nuevo grupal::before { content: "Grupal"; }
+.crono-moderna-item cerrado { color: #e74c3c !important; background: rgba(231, 76, 60, 0.1) !important; }
+.crono-moderna-item cerrado::before { content: "Cerrado"; }
 
-.cronologia-item-nuevo evento { color: #e84393 !important; background: rgba(232, 67, 147, 0.08) !important; }
-.cronologia-item-nuevo evento::before { content: "Evento"; }
+.crono-moderna-item grupal { color: #9b59b6 !important; background: rgba(155, 89, 182, 0.1) !important; }
+.crono-moderna-item grupal::before { content: "Grupal"; }
 
-/* Bordes laterales dinámicos de semáforo */
-.cronologia-item-nuevo:has(activo) { border-left: 3px solid #2ecc71 !important; }
-.cronologia-item-nuevo:has(abandonado) { border-left: 3px solid #f39c12 !important; }
-.cronologia-item-nuevo:has(cerrado) { border-left: 3px solid #e74c3c !important; }
-.cronologia-item-nuevo:has(grupal) { border-left: 3px solid #9b59b6 !important; }
-.cronologia-item-nuevo:has(evento) { border-left: 3px solid #e84393 !important; }
+.crono-moderna-item evento { color: #e84393 !important; background: rgba(232, 67, 147, 0.1) !important; }
+.crono-moderna-item evento::before { content: "Evento"; }
+
+/* Bordes automáticos según el estado */
+.crono-moderna-item:has(activo) { border-left-color: #2ecc71 !important; }
+.crono-moderna-item:has(abandonado) { border-left-color: #f39c12 !important; }
+.crono-moderna-item:has(cerrado) { border-left-color: #e74c3c !important; }
+.crono-moderna-item:has(grupal) { border-left-color: #9b59b6 !important; }
+.crono-moderna-item:has(evento) { border-left-color: #e84393 !important; }
 
 
-/* --- 3. RELACIONES NUEVAS (Con Clases de Grupo Heredadas) --- */
-.relaciones-grid-nuevo {
+/* --- 3. NUEVAS RELACIONES --- */
+.relaciones-moderna-grid {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
-  gap: 10px !important;
+  gap: 12px !important;
 }
-.relacion-card-nuevo {
+
+.relacion-moderna-card {
   display: flex !important;
   align-items: center !important;
-  gap: 10px !important;
-  background: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid rgba(150, 150, 150, 0.15) !important;
-  padding: 8px 10px !important;
-  border-radius: 6px !important;
+  gap: 12px !important;
+  background: rgba(150, 150, 150, 0.02) !important;
+  border: 1px solid rgba(150, 150, 150, 0.2) !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
   box-sizing: border-box !important;
 }
-.relacion-avatar-nuevo {
+
+.relacion-moderna-avatar {
   width: 55px !important;
   height: 60px !important;
   object-fit: cover !important;
   border-radius: 6px !important;
   flex-shrink: 0 !important;
 }
-.relacion-info-nuevo {
+
+.relacion-moderna-info {
   display: flex !important;
   flex-direction: column !important;
   overflow: hidden !important;
   flex-grow: 1 !important;
 }
-.relacion-nombre-nuevo {
-  font-size: 11px !important;
+
+.relacion-moderna-nombre {
+  font-size: 11.5px !important;
   font-weight: 700 !important;
   color: inherit !important;
   text-decoration: none !important;
@@ -195,43 +218,45 @@
   overflow: hidden !important;
   text-overflow: ellipsis !important;
 }
-.relacion-nombre-nuevo:hover { text-decoration: underline !important; }
-.relacion-tipo-nuevo {
+
+.relacion-moderna-nombre:hover { text-decoration: underline !important; }
+
+.relacion-moderna-tipo {
   font-size: 9px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   text-transform: uppercase !important;
-  letter-spacing: 0.8px !important;
-  opacity: 0.9 !important;
-  margin-top: 2px !important;
+  letter-spacing: 1px !important;
+  opacity: 0.85 !important;
+  margin-top: 3px !important;
 }
 
-/* Automatización de Colores por Grupo para Relaciones */
-.relacion-card-nuevo.lyra { border-left: 3px solid var(--lyra) !important; }
-.relacion-card-nuevo.lyra .relacion-avatar-nuevo { border: 1.5px solid var(--lyra) !important; }
-.relacion-card-nuevo.lyra .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.lyra .relacion-tipo-nuevo { color: var(--lyra) !important; }
+/* Colores de Grupo Automáticos para Relaciones Nuevas */
+.relacion-moderna-card.lyra { border-top: 3px solid var(--lyra) !important; }
+.relacion-moderna-card.lyra .relacion-moderna-avatar { border: 1.5px solid var(--lyra) !important; }
+.relacion-moderna-card.lyra .relacion-moderna-nombre:hover,
+.relacion-moderna-card.lyra .relacion-moderna-tipo { color: var(--lyra) !important; }
 
-.relacion-card-nuevo.hydra { border-left: 3px solid var(--hydra) !important; }
-.relacion-card-nuevo.hydra .relacion-avatar-nuevo { border: 1.5px solid var(--hydra) !important; }
-.relacion-card-nuevo.hydra .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.hydra .relacion-tipo-nuevo { color: var(--hydra) !important; }
+.relacion-moderna-card.hydra { border-top: 3px solid var(--hydra) !important; }
+.relacion-moderna-card.hydra .relacion-moderna-avatar { border: 1.5px solid var(--hydra) !important; }
+.relacion-moderna-card.hydra .relacion-moderna-nombre:hover,
+.relacion-moderna-card.hydra .relacion-moderna-tipo { color: var(--hydra) !important; }
 
-.relacion-card-nuevo.cygnus { border-left: 3px solid var(--cygnus) !important; }
-.relacion-card-nuevo.cygnus .relacion-avatar-nuevo { border: 1.5px solid var(--cygnus) !important; }
-.relacion-card-nuevo.cygnus .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.cygnus .relacion-tipo-nuevo { color: var(--cygnus) !important; }
+.relacion-moderna-card.cygnus { border-top: 3px solid var(--cygnus) !important; }
+.relacion-moderna-card.cygnus .relacion-moderna-avatar { border: 1.5px solid var(--cygnus) !important; }
+.relacion-moderna-card.cygnus .relacion-moderna-nombre:hover,
+.relacion-moderna-card.cygnus .relacion-moderna-tipo { color: var(--cygnus) !important; }
 
-.relacion-card-nuevo.perseus { border-left: 3px solid var(--perseus) !important; }
-.relacion-card-nuevo.perseus .relacion-avatar-nuevo { border: 1.5px solid var(--perseus) !important; }
-.relacion-card-nuevo.perseus .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.perseus .relacion-tipo-nuevo { color: var(--perseus) !important; }
+.relacion-moderna-card.perseus { border-top: 3px solid var(--perseus) !important; }
+.relacion-moderna-card.perseus .relacion-moderna-avatar { border: 1.5px solid var(--perseus) !important; }
+.relacion-moderna-card.perseus .relacion-moderna-nombre:hover,
+.relacion-moderna-card.perseus .relacion-moderna-tipo { color: var(--perseus) !important; }
 
-.relacion-card-nuevo.universitarios { border-left: 3px solid var(--universitarios) !important; }
-.relacion-card-nuevo.universitarios .relacion-avatar-nuevo { border: 1.5px solid var(--universitarios) !important; }
-.relacion-card-nuevo.universitarios .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.universitarios .relacion-tipo-nuevo { color: var(--universitarios) !important; }
+.relacion-moderna-card.universitarios { border-top: 3px solid var(--universitarios) !important; }
+.relacion-moderna-card.universitarios .relacion-moderna-avatar { border: 1.5px solid var(--universitarios) !important; }
+.relacion-moderna-card.universitarios .relacion-moderna-nombre:hover,
+.relacion-moderna-card.universitarios .relacion-moderna-tipo { color: var(--universitarios) !important; }
 
-.relacion-card-nuevo.ciudadanos { border-left: 3px solid var(--ciudadadanos) !important; }
-.relacion-card-nuevo.ciudadanos .relacion-avatar-nuevo { border: 1.5px solid var(--ciudadadanos) !important; }
-.relacion-card-nuevo.ciudadanos .relacion-nombre-nuevo:hover,
-.relacion-card-nuevo.ciudadanos .relacion-tipo-nuevo { color: var(--ciudadadanos) !important; }
+.relacion-moderna-card.ciudadanos { border-top: 3px solid var(--ciudadadanos) !important; }
+.relacion-moderna-card.ciudadanos .relacion-moderna-avatar { border: 1.5px solid var(--ciudadadanos) !important; }
+.relacion-moderna-card.ciudadanos .relacion-moderna-nombre:hover,
+.relacion-moderna-card.ciudadanos .relacion-moderna-tipo { color: var(--ciudadadanos) !important; }
