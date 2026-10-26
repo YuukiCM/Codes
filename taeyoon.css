@@ -190,6 +190,62 @@
   flex-shrink: 0 !important;
 }
 
+/* ==========================================
+   DESPLEGABLE DE MESES (ACORDEÓN)
+   ========================================== */
+.crono-mes-details {
+  margin-bottom: 10px !important;
+}
+
+.crono-mes-summary {
+  font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
+  font-size: 13px !important;
+  font-weight: bold !important;
+  color: var(--grupo-color, #d97736) !important;
+  margin: 4px 0 !important;
+  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
+  padding-bottom: 3px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  list-style: none !important; /* Oculta la flecha por defecto del navegador */
+}
+
+/* Ocultar la flecha fea en navegadores webkit (Chrome/Safari) */
+.crono-mes-summary::-webkit-details-marker {
+  display: none !important;
+}
+
+/* Icono de más/menos dinámico */
+.crono-mes-summary::after {
+  content: "+" !important;
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  width: 18px !important;
+  height: 18px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  background: rgba(217, 119, 54, 0.1) !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* Cuando el spoiler esté abierto, el "+" cambia a "-" */
+.crono-mes-details[open] .crono-mes-summary::after {
+  content: "-" !important;
+}
+
+/* Contenedor interno de la lista que se despliega */
+.crono-mes-contenido {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 6px !important;
+  margin-top: 6px !important;
+}
+
 /* --- 3. NUEVAS RELACIONES --- */
 .relaciones-moderna-grid {
   display: grid !important;
