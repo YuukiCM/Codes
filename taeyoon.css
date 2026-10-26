@@ -140,7 +140,8 @@
 .crono-moderna-item cerrado,
 .crono-moderna-item abandonado,
 .crono-moderna-item grupal,
-.crono-moderna-item evento {
+.crono-moderna-item evento, 
+.crono-moderna-item master {
   display: inline-flex !important;
   align-items: center !important;
   font-size: 8.5px !important;
@@ -186,7 +187,8 @@
 .crono-moderna-item cerrado,
 .crono-moderna-item abandonado,
 .crono-moderna-item grupal,
-.crono-moderna-item evento {
+.crono-moderna-item evento,
+.crono-moderna-item master {
   width: 105px !important;
   text-align: center !important;
   justify-content: center !important;
