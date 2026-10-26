@@ -168,6 +168,9 @@
 .crono-moderna-item evento { color: #e84393 !important; background: rgba(232, 67, 147, 0.1) !important; }
 .crono-moderna-item evento::before { content: "Evento"; }
 
+.crono-moderna-item master { color: #21c1fc !important; background: rgba(33, 193, 252, 0.1) !important; }
+.crono-moderna-item master::before { content: "Master"; }
+
 /* Bordes automáticos según el estado */
 .crono-moderna-item:has(activo) { border-left-color: #2ecc71 !important; }
 .crono-moderna-item:has(abandonado) { border-left-color: #f39c12 !important; }
