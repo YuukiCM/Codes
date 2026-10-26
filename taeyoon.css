@@ -175,6 +175,20 @@
 .crono-moderna-item:has(grupal) { border-left-color: #9b59b6 !important; }
 .crono-moderna-item:has(evento) { border-left-color: #e84393 !important; }
 
+/* ==========================================
+   ETIQUETAS DE CRONOLOGÍA DE TAMAÑO UNIFORME
+   ========================================== */
+.crono-moderna-item activo,
+.crono-moderna-item cerrado,
+.crono-moderna-item abandonado,
+.crono-moderna-item grupal,
+.crono-moderna-item evento {
+  width: 105px !important;
+  text-align: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+}
 
 /* --- 3. NUEVAS RELACIONES --- */
 .relaciones-moderna-grid {
@@ -260,3 +274,4 @@
 .relacion-moderna-card.ciudadanos .relacion-moderna-avatar { border: 1.5px solid var(--ciudadadanos) !important; }
 .relacion-moderna-card.ciudadanos .relacion-moderna-nombre:hover,
 .relacion-moderna-card.ciudadanos .relacion-moderna-tipo { color: var(--ciudadadanos) !important; }
+
