@@ -157,7 +157,7 @@
 .crono-moderna-item activo::before { content: "Activo"; }
 
 .crono-moderna-item abandonado { color: #f39c12 !important; background: rgba(243, 156, 18, 0.1) !important; }
-.crono-moderna-item abandonado::before { content: "En Pausa"; }
+.crono-moderna-item abandonado::before { content: "Abandonado"; }
 
 .crono-moderna-item cerrado { color: #e74c3c !important; background: rgba(231, 76, 60, 0.1) !important; }
 .crono-moderna-item cerrado::before { content: "Cerrado"; }
