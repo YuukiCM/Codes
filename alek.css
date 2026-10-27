@@ -171,22 +171,16 @@
   width: 24px !important;
   height: 24px !important;
   border-radius: 50% !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   flex-shrink: 0 !important;
 }
 
 .crono-icon.open { color: #2ecc71 !important; background: rgba(46, 204, 113, 0.12) !important; }
-.crono-icon.open::before { content: "\eba1" !important; font-family: 'icofont' !important; }
-
 .crono-icon.close { color: #e74c3c !important; background: rgba(231, 76, 60, 0.12) !important; }
-.crono-icon.close::before { content: "\ec74" !important; font-family: 'icofont' !important; }
-
 .crono-icon.abandoned { color: #f39c12 !important; background: rgba(243, 156, 18, 0.12) !important; }
-.crono-icon.abandoned::before { content: "\ed54" !important; font-family: 'icofont' !important; }
-
 .crono-icon.group { color: #9b59b6 !important; background: rgba(155, 89, 182, 0.12) !important; }
-.crono-icon.group::before { content: "\ef53" !important; font-family: 'icofont' !important; }
-
+.crono-icon.event { color: #e84393 !important; background: rgba(232, 67, 147, 0.12) !important; }
+.crono-icon.master { color: var(--grupo-color, #d97736) !important; background: rgba(217, 119, 54, 0.12) !important; }
 .crono-icon.event { color: #e84393 !important; background: rgba(232, 67, 147, 0.12) !important; }
 .crono-icon.event::before { content: "\f01b" !important; font-family: 'icofont' !important; }
 
