@@ -1,146 +1,84 @@
 /* ==========================================
-   NUEVA CRONOLOGÍA DESDE CERO (ESTILO MODERNO)
+   OPCIÓN 1: LÍNEA DE TIEMPO VERTICAL
    ========================================== */
-
-.crono-zero-container {
+.crono-tl-container {
   width: 100% !important;
   max-width: 550px !important;
   background: rgba(255, 255, 255, 0.01) !important;
-  border: 1px solid rgba(150, 150, 150, 0.25) !important;
-  border-radius: 8px !important;
-  padding: 18px !important;
+  border: 1px solid rgba(150, 150, 150, 0.2) !important;
+  border-radius: 10px !important;
+  padding: 20px !important;
   font-family: 'Quicksand', sans-serif !important;
-  color: inherit !important;
   box-sizing: border-box !important;
   margin: 20px auto !important;
   text-align: left !important;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1) !important;
 }
 
-.crono-zero-header {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  border-bottom: 2px solid var(--grupo-color, #d97736) !important;
-  padding-bottom: 8px !important;
-  margin-bottom: 12px !important;
-}
-
-.crono-zero-title {
+.crono-tl-header {
   font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 700 !important;
   color: var(--grupo-color, #d97736) !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  border-bottom: 1px dashed rgba(150, 150, 150, 0.3) !important;
+  padding-bottom: 10px !important;
 }
 
-/* Desplegables de Meses */
-.crono-zero-mes-details {
-  margin-bottom: 8px !important;
+.crono-tl-lista {
+  position: relative !important;
+  padding-left: 20px !important;
+  border-left: 2px solid var(--grupo-color, #d97736) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 15px !important;
 }
 
-.crono-zero-mes-summary {
+.crono-tl-mes-details {
+  position: relative !important;
+}
+
+.crono-tl-mes-summary {
   font-family: var(--yuuki-title, 'Playfair Display'), serif !important;
   font-size: 13px !important;
   font-weight: bold !important;
   color: var(--grupo-color, #d97736) !important;
-  padding: 6px 10px !important;
-  background: rgba(150, 150, 150, 0.04) !important;
-  border: 1px solid rgba(150, 150, 150, 0.15) !important;
-  border-radius: 4px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center !important;
   cursor: pointer !important;
   list-style: none !important;
-}
-
-.crono-zero-mes-summary::-webkit-details-marker {
-  display: none !important;
-}
-
-.crono-zero-mes-summary::after {
-  content: "+" !important;
-  font-family: 'Quicksand', sans-serif !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  width: 16px !important;
-  height: 16px !important;
-  display: inline-flex !important;
+  display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
+  gap: 8px !important;
+}
+
+.crono-tl-mes-summary::-webkit-details-marker { display: none !important; }
+
+/* Nodo indicador en la línea */
+.crono-tl-mes-summary::before {
+  content: "" !important;
+  position: absolute !important;
+  left: -26.5px !important;
+  width: 9px !important;
+  height: 9px !important;
+  background: var(--grupo-color, #d97736) !important;
   border-radius: 50% !important;
-  background: rgba(217, 119, 54, 0.1) !important;
-  transition: transform 0.2s ease !important;
+  border: 2px solid #fff !important;
 }
 
-.crono-zero-mes-details[open] .crono-zero-mes-summary::after {
-  content: "-" !important;
-}
-
-.crono-zero-contenido {
+.crono-tl-contenido {
+  margin-top: 8px !important;
+  padding-left: 10px !important;
   display: flex !important;
   flex-direction: column !important;
   gap: 6px !important;
-  margin-top: 6px !important;
-  padding-left: 4px !important;
 }
 
-/* Fila de Tema individual */
-.crono-zero-item {
+.crono-tl-item {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  background: rgba(255, 255, 255, 0.02) !important;
-  border: 1px solid rgba(150, 150, 150, 0.15) !important;
-  padding: 7px 10px !important;
+  background: rgba(150, 150, 150, 0.03) !important;
+  padding: 6px 10px !important;
   border-radius: 4px !important;
   font-size: 11.5px !important;
-  box-sizing: border-box !important;
 }
-
-.crono-zero-left {
-  display: flex !important;
-  align-items: center !important;
-  gap: 10px !important;
-}
-
-.crono-zero-link {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-weight: 600 !important;
-}
-
-.crono-zero-link:hover {
-  color: var(--grupo-color, #d97736) !important;
-  text-decoration: underline !important;
-}
-
-.crono-zero-meta {
-  font-size: 10px !important;
-  opacity: 0.8 !important;
-}
-
-/* Círculos de Iconos limpios */
-.crono-icon {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 24px !important;
-  height: 24px !important;
-  border-radius: 50% !important;
-  font-size: 11px !important;
-  flex-shrink: 0 !important;
-}
-
-.crono-icon i {
-  display: inline-block !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.crono-icon.open { color: #2ecc71 !important; background: rgba(46, 204, 113, 0.12) !important; }
-.crono-icon.close { color: #e74c3c !important; background: rgba(231, 76, 60, 0.12) !important; }
-.crono-icon.abandoned { color: #f39c12 !important; background: rgba(243, 156, 18, 0.12) !important; }
-.crono-icon.group { color: #9b59b6 !important; background: rgba(155, 89, 182, 0.12) !important; }
-.crono-icon.event { color: #e84393 !important; background: rgba(232, 67, 147, 0.12) !important; }
-.crono-icon.master { color: #3498db !important; background: rgba(52, 152, 219, 0.12) !important; }
