@@ -238,3 +238,121 @@
   border-radius: 0px;
   font-weight: 600;
 }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+.arikel-box {
+  background: transparent !important;
+  width: 100%;
+  max-width: 480px;
+  margin: 30px auto;
+  font-family: 'Quicksand', sans-serif;
+  border: 2px solid var(--grupo-color, #c0a080);
+  padding: 26px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  /* Efecto de esquinas recortadas único */
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%);
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* Marca de agua gigante y dinámica en la esquina superior derecha */
+.arikel-marcaagua {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 110px;
+  color: var(--grupo-color, #c0a080);
+  opacity: 0.06;
+  pointer-events: none;
+  transform: rotate(15deg);
+}
+
+/* Cabecera minimalista con línea de acento lateral */
+.arikel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-left: 4px solid var(--grupo-color, #c0a080);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.arikel-main-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--grupo-color, #c0a080);
+  text-transform: none;
+  line-height: 1.2;
+}
+
+.arikel-sub {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.arikel-icono-top {
+  font-size: 20px;
+  color: var(--grupo-color, #c0a080);
+  opacity: 0.8;
+}
+
+/* Cuerpo de texto a 12px exactos */
+.arikel-text {
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.arikel-text p {
+  margin-bottom: 14px;
+}
+
+.arikel-text b, .arikel-text strong {
+  color: var(--grupo-color, #c0a080);
+  font-weight: 600;
+}
+
+/* Caja de diálogo estilo "tarjeta flotante" interna */
+.arikel-caja-dialogo {
+  background: rgba(128, 128, 128, 0.06);
+  border: 1px dashed var(--grupo-color, #c0a080);
+  padding: 12px 16px;
+  margin: 16px 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+.arikel-caja-dialogo::before {
+  content: '“';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background: inherit;
+  padding: 0 5px;
+  font-size: 20px;
+  color: var(--grupo-color, #c0a080);
+}
+
+/* Pie de post sutil */
+.arikel-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.arikel-badge {
+  color: var(--grupo-color, #c0a080);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
