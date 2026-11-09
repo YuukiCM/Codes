@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+/* Reglas Globales de Tablillas */
+[class^="st-"] {
+    background: transparent !important;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    line-height: 1.6;
+    color: inherit;
+    box-sizing: border-box;
+    margin: 15px auto;
+}
+
+[class^="st-"] h1, [class^="st-"] h2, [class^="st-"] h3 {
+    text-transform: none;
+    margin: 0;
+}
+
+[class^="st-"] b {
+    color: var(--grupo-color, currentColor);
+    font-weight: 700;
+}
+
+.st-body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+}
+
+/* 1. Cyber Hexagon */
+.st-cyber { width: 500px; border: 1px solid var(--grupo-color, currentColor); padding: 20px; position: relative; clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%); }
+.st-cyber-head { border-bottom: 2px dashed var(--grupo-color, currentColor); padding-bottom: 10px; margin-bottom: 15px; }
+.st-cyber-meta { display: flex; gap: 15px; font-size: 11px; opacity: 0.8; margin-top: 5px; }
+
+/* 2. Vintage Archive */
+.st-archive { width: 480px; border: 2px solid currentColor; padding: 15px; box-shadow: 4px 4px 0px var(--grupo-color, currentColor); }
+.st-archive-stamp { display: inline-block; border: 1px solid var(--grupo-color, currentColor); padding: 2px 8px; font-size: 10px; text-transform: uppercase; color: var(--grupo-color, currentColor); margin-bottom: 10px; }
+
+/* 3. Minimalist Line */
+.st-minimal { width: 460px; border-left: 4px solid var(--grupo-color, currentColor); padding-left: 20px; }
+.st-minimal-meta { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; opacity: 0.7; }
+
+/* 4. Split Dual Card */
+.st-split { width: 520px; display: grid; grid-template-columns: 140px 1fr; gap: 15px; border: 1px solid currentColor; padding: 10px; }
+.st-split-side { border-right: 1px solid var(--grupo-color, currentColor); padding-right: 10px; font-size: 11px; }
+
+/* 5. Neon Frame */
+.st-neon { width: 490px; border: 1px solid var(--grupo-color, currentColor); outline: 1px solid currentColor; outline-offset: -5px; padding: 25px; }
+
+/* 6. Celestial Wings */
+.st-celestial { width: 470px; border-top: 2px solid var(--grupo-color, currentColor); border-bottom: 2px solid var(--grupo-color, currentColor); padding: 20px 10px; text-align: center; }
+.st-celestial .st-body { text-align: justify; }
+
+/* 7. Gothic Pillar */
+.st-gothic { width: 450px; border-left: 2px solid var(--grupo-color, currentColor); border-right: 2px solid var(--grupo-color, currentColor); padding: 0 20px; }
+
+/* 8. Modern Pill */
+.st-pill { width: 500px; border: 1px solid currentColor; border-radius: 20px; padding: 20px; }
+.st-pill-head { background: var(--grupo-color, currentColor); color: #fff; padding: 5px 15px; border-radius: 10px; margin-bottom: 15px; }
+
+/* 9. Ticket Pass */
+.st-ticket { width: 480px; border: 2px dashed var(--grupo-color, currentColor); padding: 15px; position: relative; }
+.st-ticket-meta { border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; padding: 5px 0; margin: 10px 0; display: flex; justify-content: space-between; font-size: 11px; }
+
+/* 10. Polaroid Focus */
+.st-polaroid { width: 440px; border: 1px solid currentColor; padding: 15px; background: transparent; }
+.st-polaroid-box { border: 1px solid var(--grupo-color, currentColor); padding: 10px; margin-bottom: 15px; text-align: center; font-size: 11px; }
+
+/* 11. Minimal Dot */
+.st-dot { width: 480px; border: 1px dotted var(--grupo-color, currentColor); padding: 20px; }
+
+/* 12. Left Badge */
+.st-badge { width: 510px; border: 1px solid currentColor; padding: 15px; position: relative; }
+.st-badge-tag { position: absolute; top: -10px; left: 20px; background: var(--grupo-color, currentColor); color: #fff; padding: 2px 10px; font-size: 10px; border-radius: 3px; }
+
+/* 13. Double Border */
+.st-double { width: 470px; border: 3px double var(--grupo-color, currentColor); padding: 18px; }
+
+/* 14. Corner Accents */
+.st-corners { width: 490px; border: 1px solid transparent; padding: 20px; position: relative; background-image: linear-gradient(var(--grupo-color, currentColor), var(--grupo-color, currentColor)), linear-gradient(var(--grupo-color, currentColor), var(--grupo-color, currentColor)); background-size: 15px 2px, 2px 15px; background-repeat: no-repeat; background-position: top left, top left; }
+
+/* 15. Compact Side Tag */
+.st-sidetag { width: 480px; border: 1px solid currentColor; padding: 15px; border-left: 8px solid var(--grupo-color, currentColor); }
+
+/* 16. Terminal Block */
+.st-terminal { width: 500px; border: 1px solid var(--grupo-color, currentColor); padding: 15px; }
+.st-terminal-bar { font-family: monospace; font-size: 11px; border-bottom: 1px solid currentColor; padding-bottom: 5px; margin-bottom: 15px; color: var(--grupo-color, currentColor); }
+
+/* 17. Floating Header */
+.st-float { width: 460px; border: 1px solid currentColor; padding: 20px; margin-top: 30px; }
+.st-float-head { margin-top: -35px; background: var(--grupo-color, currentColor); color: #fff; display: inline-block; padding: 5px 15px; font-weight: bold; }
+
+/* 18. Clean Envelope */
+.st-envelope { width: 475px; border: 1px solid var(--grupo-color, currentColor); padding: 20px; outline: 1px dashed var(--grupo-color, currentColor); outline-offset: -6px; }
+
+/* 19. Geometric Ribbon */
+.st-ribbon { width: 490px; border: 1px solid currentColor; padding: 20px; position: relative; }
+.st-ribbon-bar { height: 4px; background: var(--grupo-color, currentColor); margin: 10px 0 15px 0; }
+
+/* 20. Simple Bracket */
+.st-bracket { width: 460px; padding: 10px 20px; border-left: 2px solid var(--grupo-color, currentColor); border-right: 2px solid var(--grupo-color, currentColor); }
+.st-bracket-meta { font-size: 11px; border-bottom: 1px solid currentColor; padding-bottom: 5px; margin-bottom: 12px; }
