@@ -4,36 +4,49 @@
 .arikel-box {
   background: transparent !important;
   width: 100%;
-  max-width: 520px;
-  margin: 20px auto;
+  max-width: 580px;
+  margin: 25px auto;
   font-family: 'Quicksand', sans-serif;
-  border: 1px solid var(--grupo-color, #c0a080);
-  border-radius: 8px;
-  padding: 22px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 12px;
+  padding: 28px;
   box-sizing: border-box;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Detalle elegante superior tipo marca de agua o acento */
+.arikel-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--grupo-color, #c0a080);
 }
 
 .arikel-head {
   display: flex;
   align-items: center;
-  gap: 12px;
-  border-bottom: 2px dashed var(--grupo-color, #c0a080);
-  padding-bottom: 12px;
-  margin-bottom: 15px;
+  gap: 15px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .arikel-icon {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   background: var(--grupo-color, #c0a080);
   color: #fff;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   flex-shrink: 0;
 }
 
@@ -43,29 +56,29 @@
 }
 
 .arikel-main-title {
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   color: var(--grupo-color, #c0a080);
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .arikel-sub {
   font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  opacity: 0.75;
-  margin-top: 3px;
+  letter-spacing: 2px;
+  opacity: 0.7;
+  margin-top: 4px;
 }
 
 .arikel-text {
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.8;
   text-align: justify;
 }
 
 .arikel-text p {
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .arikel-text b, .arikel-text strong {
@@ -74,28 +87,32 @@
 }
 
 .arikel-caja-dialogo {
-  background: rgba(128, 128, 128, 0.08);
-  border-left: 3px solid var(--grupo-color, #c0a080);
-  padding: 10px 14px;
-  margin: 12px 0;
-  border-radius: 0 6px 6px 0;
+  background: rgba(128, 128, 128, 0.05);
+  border: 1px solid rgba(128, 128, 128, 0.12);
+  border-left: 4px solid var(--grupo-color, #c0a080);
+  padding: 14px 18px;
+  margin: 18px 0;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .arikel-foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 15px;
-  padding-top: 10px;
-  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 1px dashed rgba(128, 128, 128, 0.2);
   font-size: 11px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .arikel-badge {
-  background: var(--grupo-color, #c0a080);
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
+  background: rgba(128, 128, 128, 0.08);
+  border: 1px solid var(--grupo-color, #c0a080);
+  color: var(--grupo-color, #c0a080);
+  padding: 3px 10px;
+  border-radius: 6px;
   font-weight: 600;
+  letter-spacing: 0.5px;
 }
