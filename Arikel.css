@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+/* Estructura Principal */
+.arikel-post {
+  background: transparent !important;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
+  color: #dcdcdc;
+}
+
+/* Encabezado */
+.arikel-header {
+  border-bottom: 2px solid var(--grupo-color, #c0a080);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.arikel-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--grupo-color, #c0a080);
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.arikel-subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+/* Cuerpo del Post */
+.arikel-body {
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.arikel-body p {
+  margin-bottom: 15px;
+}
+
+/* Formato de Diálogos y Negritas */
+.arikel-body b {
+  color: var(--grupo-color, #c0a080);
+  font-weight: 600;
+}
+
+/* Pie de Post / Menciones */
+.arikel-footer {
+  margin-top: 25px;
+  padding-top: 10px;
+  border-top: 1px dashed rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arikel-tag {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--grupo-color, #c0a080);
+  color: var(--grupo-color, #c0a080);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
